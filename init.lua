@@ -27,23 +27,19 @@ else
     package.cpath = app_dir .. '/.rocks/lib/tarantool/?.dylib;' .. package.cpath
 end
 
-local has_module, compat = pcall(require, 'compat')
-if has_module then
-    compat.fiber_slice_default = 'new'
-end
-
 -- configure cartridge
 
 local cartridge = require('cartridge')
-
 local ok, err = cartridge.cfg({
     roles = {
-        'cartridge.roles.vshard-storage',
-        'cartridge.roles.vshard-router',
         'cartridge.roles.metrics',
-        'app.roles.custom',
+        'app.roles.api',
+        'app.roles.storage',
+        'app.roles.myqueue',
     },
+    cluster_cookie = 'myapp-cluster-cookie',
 })
+
 
 assert(ok, tostring(err))
 

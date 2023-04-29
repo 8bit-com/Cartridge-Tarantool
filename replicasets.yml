@@ -3,15 +3,16 @@ router:
   - router
   roles:
   - failover-coordinator
-  - vshard-router
-  - app.roles.custom
+  - crud-router
+  - app.roles.api
   all_rw: false
 s-1:
   instances:
   - s1-master
   - s1-replica
   roles:
-  - vshard-storage
+  - crud-storage
+  - app.roles.storage
   weight: 1
   all_rw: false
   vshard_group: default
@@ -20,7 +21,16 @@ s-2:
   - s2-master
   - s2-replica
   roles:
-  - vshard-storage
+  - crud-storage
+  - app.roles.storage
+  weight: 1
+  all_rw: false
+  vshard_group: default
+s-3:
+  instances:
+    - s3-master
+  roles:
+    - app.roles.myqueue
   weight: 1
   all_rw: false
   vshard_group: default
