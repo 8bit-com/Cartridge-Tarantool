@@ -13,12 +13,10 @@ local function init_spaces()
             if_not_exists = true,
         }
     )
-
     -- создадим индекс по id пользователя
     customer:create_index('customer_id', {
         if_not_exists = true,
     })
-
 end
 
 local function init(opts)

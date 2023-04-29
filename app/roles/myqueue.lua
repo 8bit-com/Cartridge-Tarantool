@@ -42,7 +42,7 @@ local function on_replace_function(customer)
 end
 
 -- создаём функцию на получение данных из очереди
-local function customer_handler()
+local function queue_take()
     if box.space.cust_queue:len() == 0 then
         return 'Очередь пуста'
     else
@@ -54,9 +54,8 @@ end
 
 local exported_functions = {
     on_replace_function = on_replace_function,
-    customer_handler = customer_handler,
+    queue_take = queue_take,
 }
-
 
 local function init(opts)
     if opts.is_master then
@@ -80,4 +79,6 @@ end
 return {
     role_name = 'myqueue',
     init = init,
+    on_replace_function = on_replace_function,
+    queue_take = queue_take,
 }

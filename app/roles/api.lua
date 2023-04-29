@@ -18,6 +18,8 @@ local function http_customer_add(req)
         return resp
     end
 
+    cartridge.rpc_call('myqueue', 'on_replace_function', {customer})
+
     local resp = req:render({json = { info = "Successfully created" }})
     resp.status = 201
 
@@ -102,6 +104,38 @@ local function http_customer_delete(req)
     return resp
 end
 
+local function http_customer_pop(req)
+    local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
+
+    if error then
+        local resp = req:render({json = {
+            info = "Internal error",
+            error = error
+        }})
+        resp.status = 500
+        return resp
+    end
+
+    local headers_true = {
+        ['Content-Type'] = 'application/json',
+        ['isImportant'] = 'true'
+    }
+    local headers_false = {
+        ['Content-Type'] = 'application/json',
+        ['isImportant'] = 'false'
+    }
+
+    local resp = req:render({json = customer})
+    resp.status = 200
+
+    if customer == "Очередь пуста" then
+        resp.headers = headers_false
+    else
+        resp.headers = headers_true
+    end
+    return resp
+end
+
 local function init(opts)
 
     if opts.is_master then
@@ -135,7 +169,10 @@ local function init(opts)
         { path = '/storage/customers/delete/:customer_id', method = 'GET', public = true },
         http_customer_delete
     )
-
+    httpd:route(
+        { path = '/storage/customers/pop', method = 'GET', public = true },
+        http_customer_pop
+    )
     return true
 end
 
