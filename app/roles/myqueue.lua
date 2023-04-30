@@ -39,6 +39,17 @@ end
 
 local function on_replace_function(customer)
     queue.tube.cust_queue:put(customer)
+
+    local http_client = require('http.client')
+    local json = require('json')
+    local data = 'mail'
+    local body = json.encode(data)
+    local headers = {
+        ['Content-Type'] = 'application/json',
+        ['isImportant'] = 'false'
+    }
+    local response = http_client.request('POST', 'http://localhost:8383/camel/mail', body, { headers = headers })
+    log.info(response)
 end
 
 -- создаём функцию на получение данных из очереди

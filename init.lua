@@ -34,6 +34,7 @@ local ok, err = cartridge.cfg({
     roles = {
         'cartridge.roles.metrics',
         'app.roles.api',
+        'app.roles.repo_api',
         'app.roles.storage',
         'app.roles.myqueue',
     },

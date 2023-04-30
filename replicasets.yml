@@ -5,6 +5,7 @@ router:
   - failover-coordinator
   - crud-router
   - app.roles.api
+  - app.roles.repo_api
   all_rw: false
 s-1:
   instances:
