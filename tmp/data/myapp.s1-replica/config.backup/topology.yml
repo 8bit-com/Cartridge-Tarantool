@@ -1,0 +1,115 @@
+---
+replicasets:
+  12ae805a-ff6c-4796-8d7b-71d2d0a4a6ce:
+    weight: 0
+    master:
+    - 1e5ce9e6-5028-414c-b765-1ab109423697
+    alias: unnamed
+    roles:
+      ddl-manager: true
+      api: true
+      crud-router: true
+      metrics: true
+      vshard-router: true
+    all_rw: false
+  2e61ac7c-076f-4997-bbfd-e789a8c3e07c:
+    weight: 1
+    master:
+    - 28c6e513-df25-4653-b351-bca1b8d877da
+    alias: unnamed
+    vshard_group: default
+    roles:
+      ddl-manager: true
+      storage: true
+      crud-storage: true
+      metrics: true
+      vshard-storage: true
+    all_rw: false
+  3eb84ac8-9505-4ce2-95fc-c934ae00dd4d:
+    weight: 0
+    master:
+    - b00c7b28-45ff-47e3-863e-7f8b3f664522
+    alias: unnamed
+    roles:
+      ddl-manager: true
+      myqueue: true
+      metrics: true
+    all_rw: false
+  06729fed-7182-4120-9569-07054a856579:
+    weight: 1
+    master:
+    - f7388db3-00a9-4c01-bd6f-6a0939c6d7d6
+    alias: unnamed
+    vshard_group: default
+    all_rw: false
+    roles:
+      ddl-manager: true
+      failover-coordinator: true
+      storage: true
+      crud-storage: true
+      metrics: true
+      vshard-storage: true
+  39351de8-007c-4204-86c4-e270c1e7c54a:
+    weight: 1
+    master:
+    - a91b5b2e-6526-4dbf-b10d-4d36ab356d5e
+    alias: unnamed
+    vshard_group: default
+    roles:
+      ddl-manager: true
+      storage: true
+      crud-storage: true
+      metrics: true
+      vshard-storage: true
+    all_rw: false
+  facd6326-f8e2-44ea-a286-5704b4281480:
+    weight: 1
+    master:
+    - 3fdd0fc8-42ae-4036-87b1-1ef24063bce4
+    alias: unnamed
+    vshard_group: default
+    all_rw: false
+    roles:
+      ddl-manager: true
+      storage: true
+      crud-storage: true
+      metrics: true
+      vshard-storage: true
+servers:
+  28c6e513-df25-4653-b351-bca1b8d877da:
+    electable: true
+    replicaset_uuid: 2e61ac7c-076f-4997-bbfd-e789a8c3e07c
+    uri: localhost:3303
+    disabled: false
+  f7388db3-00a9-4c01-bd6f-6a0939c6d7d6:
+    electable: true
+    replicaset_uuid: 06729fed-7182-4120-9569-07054a856579
+    uri: localhost:3302
+    disabled: false
+  b00c7b28-45ff-47e3-863e-7f8b3f664522:
+    electable: true
+    replicaset_uuid: 3eb84ac8-9505-4ce2-95fc-c934ae00dd4d
+    uri: localhost:3306
+    disabled: false
+  a91b5b2e-6526-4dbf-b10d-4d36ab356d5e:
+    electable: true
+    replicaset_uuid: 39351de8-007c-4204-86c4-e270c1e7c54a
+    uri: localhost:3305
+    disabled: false
+  3fdd0fc8-42ae-4036-87b1-1ef24063bce4:
+    electable: true
+    replicaset_uuid: facd6326-f8e2-44ea-a286-5704b4281480
+    uri: localhost:3304
+    disabled: false
+  1e5ce9e6-5028-414c-b765-1ab109423697:
+    electable: true
+    replicaset_uuid: 12ae805a-ff6c-4796-8d7b-71d2d0a4a6ce
+    uri: localhost:3301
+    disabled: false
+failover:
+  tarantool_params:
+    password: passwd
+    uri: localhost:4401
+  mode: stateful
+  state_provider: tarantool
+...

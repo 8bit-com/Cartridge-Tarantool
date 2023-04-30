@@ -1,0 +1,6 @@
+rock_manifest = {
+   doc = {
+      ["README.md"] = "fea4c61b6e5379d6f0714efd9b4b2545"
+   },
+   ["myapp-scm-1.rockspec"] = "07932bf91a150be29c8967a37ba28621"
+}

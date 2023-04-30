@@ -1,0 +1,2254 @@
+commands = {
+   luacheck = {
+      "luacheck/0.26.0-1"
+   },
+   luacov = {
+      "luacov/0.13.0-1"
+   },
+   luatest = {
+      "luatest/0.5.6-1"
+   },
+   stateboard = {
+      "cartridge/2.7.9-1"
+   }
+}
+dependencies = {
+   argparse = {
+      ["0.6.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   cartridge = {
+      ["2.7.9-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     1, 6, 2, revision = 1, string = "1.6.2-1"
+                  }
+               }
+            },
+            name = "ddl"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     1, 4, 0, revision = 1, string = "1.4.0-1"
+                  }
+               }
+            },
+            name = "http"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     3, 2, 0, revision = 1, string = "3.2.0-1"
+                  }
+               }
+            },
+            name = "checks"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     2, 2, 1, revision = 1, string = "2.2.1-1"
+                  }
+               }
+            },
+            name = "errors"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     0, 1, 23, revision = 1, string = "0.1.23-1"
+                  }
+               }
+            },
+            name = "vshard"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     2, 4, 0, revision = 1, string = "2.4.0-1"
+                  }
+               }
+            },
+            name = "membership"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     8, 2, 1, revision = 1, string = "8.2.1-1"
+                  }
+               }
+            },
+            name = "frontend-core"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     0, 2, 0, revision = 1, string = "0.2.0-1"
+                  }
+               }
+            },
+            name = "graphql"
+         }
+      }
+   },
+   ["cartridge-cli-extensions"] = {
+      ["1.1.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = "~>",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   checks = {
+      ["3.1.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      },
+      ["3.2.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   crud = {
+      ["1.0.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = "~>",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     3, 1, 0, revision = 1, string = "3.1.0-1"
+                  }
+               }
+            },
+            name = "checks"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     2, 2, 1, revision = 1, string = "2.2.1-1"
+                  }
+               }
+            },
+            name = "errors"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     0, 1, 18, revision = 1, string = "0.1.18-1"
+                  }
+               }
+            },
+            name = "vshard"
+         }
+      }
+   },
+   ddl = {
+      ["1.3.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {},
+            name = "tarantool"
+         }
+      },
+      ["1.6.2-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {},
+            name = "tarantool"
+         }
+      }
+   },
+   errors = {
+      ["2.2.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   ["frontend-core"] = {
+      ["8.2.1-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   graphql = {
+      ["0.2.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     0, 2, 0, revision = 1, string = "0.2.0-1"
+                  }
+               }
+            },
+            name = "luagraphqlparser"
+         }
+      }
+   },
+   http = {
+      ["1.4.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luacheck = {
+      ["0.26.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     0, 6, 0, string = "0.6.0"
+                  }
+               }
+            },
+            name = "argparse"
+         }
+      }
+   },
+   luacov = {
+      ["0.13.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               },
+               {
+                  op = "<",
+                  version = {
+                     5, 4, string = "5.4"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luagraphqlparser = {
+      ["0.2.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   luatest = {
+      ["0.5.6-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     3, 0, 0, string = "3.0.0"
+                  }
+               }
+            },
+            name = "checks"
+         }
+      }
+   },
+   membership = {
+      ["2.4.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = "~>",
+                  version = {
+                     3, string = "3"
+                  }
+               }
+            },
+            name = "checks"
+         }
+      }
+   },
+   metrics = {
+      ["0.16.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     2, 0, 0, string = "2.0.0"
+                  }
+               }
+            },
+            name = "checks"
+         }
+      }
+   },
+   myapp = {
+      ["scm-1"] = {
+         {
+            constraints = {},
+            name = "tarantool"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     3, 2, 0, revision = 1, string = "3.2.0-1"
+                  }
+               }
+            },
+            name = "checks"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     2, 7, 9, revision = 1, string = "2.7.9-1"
+                  }
+               }
+            },
+            name = "cartridge"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     1, 0, 0, revision = 1, string = "1.0.0-1"
+                  }
+               }
+            },
+            name = "crud"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     0, 16, 0, revision = 1, string = "0.16.0-1"
+                  }
+               }
+            },
+            name = "metrics"
+         },
+         {
+            constraints = {
+               {
+                  op = "==",
+                  version = {
+                     1, 3, 0, revision = 1, string = "1.3.0-1"
+                  }
+               }
+            },
+            name = "ddl"
+         },
+         {
+            constraints = {},
+            name = "queue"
+         }
+      }
+   },
+   queue = {
+      ["scm-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   vshard = {
+      ["0.1.23-1"] = {
+         {
+            constraints = {
+               {
+                  op = "~>",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   }
+}
+modules = {
+   argparse = {
+      "argparse/0.6.0-1"
+   },
+   cartridge = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge-cli-extensions.admin"] = {
+      "cartridge-cli-extensions/1.1.1-1"
+   },
+   ["cartridge.VERSION"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.admin"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.argparse"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.auth"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.auth-backend"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.cluster-cookie"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.clusterwide-config"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.confapplier"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.etcd2"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.etcd2-client"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.failover"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.failover.leader_autoreturn"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.failover.raft"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.feedback"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.front-bundle"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.funcall"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.execute"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.funcall"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.parse"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.schema"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.types"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.graphql.validate"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.health"] = {
+      "metrics/0.16.0-1"
+   },
+   ["cartridge.hotreload"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.invalid-format"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.issues"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.label-utils"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.logging_whitelist"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.boxinfo"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.compression"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.deprecated"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.edit-topology"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.failover"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.get-topology"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.proxy"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.stat"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.topology"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.lua-api.vshard"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.pool"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.remote-control"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.roles"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.roles.coordinator"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.roles.crud-router"] = {
+      "crud/1.0.0-1"
+   },
+   ["cartridge.roles.crud-storage"] = {
+      "crud/1.0.0-1"
+   },
+   ["cartridge.roles.ddl-manager"] = {
+      "ddl/1.6.2-1"
+   },
+   ["cartridge.roles.metrics"] = {
+      "metrics/0.16.0-1"
+   },
+   ["cartridge.roles.vshard-router"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.roles.vshard-storage"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.rpc"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.service-registry"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.sslsocket"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.stateboard"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.stateboard-client"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.tar"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.test-helpers"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.test-helpers.cluster"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.test-helpers.etcd"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.test-helpers.server"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.test-helpers.stateboard"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.topology"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.twophase"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.upload"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.user-defined-role"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.utils"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.vars"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.vshard-utils"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-auth"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-compression"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-config"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-ddl"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-failover"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-issues"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-suggestions"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-topology"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.api-vshard"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.gql-boxinfo"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge.webui.gql-stat"] = {
+      "cartridge/2.7.9-1"
+   },
+   ["cartridge/VERSION.lua.in"] = {
+      "cartridge/2.7.9-1"
+   },
+   checks = {
+      "checks/3.2.0-1",
+      "checks/3.1.0-1"
+   },
+   crud = {
+      "crud/1.0.0-1"
+   },
+   ["crud.borders"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.cfg"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.batching_utils"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.call"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.collations"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.compat"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.const"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.dev_checks"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.map_call_cases.base_iter"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.map_call_cases.base_postprocessor"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.map_call_cases.batch_insert_iter"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.map_call_cases.batch_postprocessor"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.map_call_cases.batch_upsert_iter"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.schema"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.init"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.router_metadata_cache"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.sharding_func"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.sharding_key"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.sharding_metadata"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.storage_metadata_cache"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding.utils"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding_func"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.sharding_key"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.stash"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.common.utils"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.comparators"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.conditions"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.filters"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.keydef"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.plan"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.compare.type_comparators"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.count"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.delete"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.get"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.insert"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.insert_many"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.len"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.ratelimit"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.replace"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.replace_many"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.compat.common"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.compat.select"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.compat.select_old"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.executor"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.iterator"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.select.merger"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.stats.init"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.stats.local_registry"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.stats.metrics_registry"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.stats.operation"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.stats.registry_utils"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.truncate"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.update"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.upsert"] = {
+      "crud/1.0.0-1"
+   },
+   ["crud.upsert_many"] = {
+      "crud/1.0.0-1"
+   },
+   ddl = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   ["ddl.cache"] = {
+      "ddl/1.6.2-1"
+   },
+   ["ddl.check"] = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   ["ddl.db"] = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   ["ddl.get"] = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   ["ddl.set"] = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   ["ddl.utils"] = {
+      "ddl/1.6.2-1",
+      "ddl/1.3.0-1"
+   },
+   errors = {
+      "errors/2.2.1-1"
+   },
+   ["errors.deprecate"] = {
+      "errors/2.2.1-1"
+   },
+   ["frontend-core"] = {
+      "frontend-core/8.2.1-1"
+   },
+   ["frontend-core.bundle"] = {
+      "frontend-core/8.2.1-1"
+   },
+   ["graphql.execute"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.init"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.introspection"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.parse"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.query_util"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.rules"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.schema"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.types"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.util"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.validate"] = {
+      "graphql/0.2.0-1"
+   },
+   ["graphql.validate_variables"] = {
+      "graphql/0.2.0-1"
+   },
+   ["http.codes"] = {
+      "http/1.4.0-1"
+   },
+   ["http.lib"] = {
+      "http/1.4.0-1"
+   },
+   ["http.mime_types"] = {
+      "http/1.4.0-1"
+   },
+   ["http.server"] = {
+      "http/1.4.0-1"
+   },
+   ["luacheck.builtin_standards.init"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.builtin_standards.love"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.builtin_standards.ngx"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.builtin_standards.tarantool"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.cache"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.check"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.check_state"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.config"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.core_utils"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.decoder"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.expand_rockspec"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.filter"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.format"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.default"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.junit"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.plain"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.sonar"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.tap"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.formatter.visual_studio"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.fs"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.fs_adapter"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.globbing"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.init"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.lexer"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.main"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.multithreading"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.options"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.parser"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.profiler"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.runner"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.serializer"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_bad_whitespace"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_cyclomatic_complexity"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_empty_blocks"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_empty_statements"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_globals"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_reversed_fornum_loops"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_unbalanced_assignments"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_uninit_accesses"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_unreachable_code"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_unused_fields"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.detect_unused_locals"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.init"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.linearize"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.name_functions"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.parse"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.parse_inline_options"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.resolve_locals"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.stages.unwrap_parens"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.standards"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.unicode"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.unicode_printability_boundaries"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.utils"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.bit32_ops"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.bit_ops"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.common"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.init"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.lua53_ops"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.vendor.sha1.pure_lua_ops"] = {
+      "luacheck/0.26.0-1"
+   },
+   ["luacheck.version"] = {
+      "luacheck/0.26.0-1"
+   },
+   luacov = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.defaults"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.hook"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.linescanner"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.reporter"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.reporter.default"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.runner"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.stats"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.tick"] = {
+      "luacov/0.13.0-1"
+   },
+   ["luacov.util"] = {
+      "luacov/0.13.0-1"
+   },
+   luagraphqlparser = {
+      "luagraphqlparser/0.2.0-1"
+   },
+   ["luarocks.test.luatest"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.VERSION"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.assertions"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.capture"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.capturing"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.class"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.cli_entrypoint"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.comparator"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.coverage"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.coverage_utils"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.ffi_io"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.group"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.helpers"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.hooks"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.http_response"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.init"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.loader"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.mismatch_formatter"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.monitor"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output.generic"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output.junit"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output.nil"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output.tap"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output.text"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.output_beautifier"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.parametrizer"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.pp"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.process"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.runner"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.sandboxed_runner"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.server"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.sorted_pairs"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.test_instance"] = {
+      "luatest/0.5.6-1"
+   },
+   ["luatest.utils"] = {
+      "luatest/0.5.6-1"
+   },
+   membership = {
+      "membership/2.4.0-1"
+   },
+   ["membership.events"] = {
+      "membership/2.4.0-1"
+   },
+   ["membership.members"] = {
+      "membership/2.4.0-1"
+   },
+   ["membership.network"] = {
+      "membership/2.4.0-1"
+   },
+   ["membership.options"] = {
+      "membership/2.4.0-1"
+   },
+   ["membership.stash"] = {
+      "membership/2.4.0-1"
+   },
+   ["metrics.cartridge.failover"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.cartridge.issues"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.collectors.counter"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.collectors.gauge"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.collectors.histogram"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.collectors.shared"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.collectors.summary"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.const"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.http_middleware"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.init"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.plugins.graphite"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.plugins.json"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.plugins.prometheus"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.psutils.cpu"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.psutils.psutils_linux"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.quantile"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.registry"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.clock"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.cpu"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.event_loop"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.fibers"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.info"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.luajit"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.memory"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.memtx"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.network"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.operations"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.replicas"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.runtime"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.slab"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.spaces"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.system"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.tarantool.vinyl"] = {
+      "metrics/0.16.0-1"
+   },
+   ["metrics.utils"] = {
+      "metrics/0.16.0-1"
+   },
+   ["queue.abstract"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.driver.fifo"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.driver.fifottl"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.driver.limfifottl"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.driver.utube"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.driver.utubettl"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.queue_session"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.queue_state"] = {
+      "queue/scm-1"
+   },
+   ["queue.abstract.state"] = {
+      "queue/scm-1"
+   },
+   ["queue.compat"] = {
+      "queue/scm-1"
+   },
+   ["queue.init"] = {
+      "queue/scm-1"
+   },
+   ["queue.util"] = {
+      "queue/scm-1"
+   },
+   ["queue.version"] = {
+      "queue/scm-1"
+   },
+   ["vshard.cfg"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.consts"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.error"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.hash"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.heap"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.init"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.registry"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.replicaset"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.rlist"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.router.init"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.service_info"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.storage.init"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.storage.ref"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.storage.reload_evolution"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.storage.sched"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.util"] = {
+      "vshard/0.1.23-1"
+   },
+   ["vshard.version"] = {
+      "vshard/0.1.23-1"
+   }
+}
+repository = {
+   argparse = {
+      ["0.6.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               argparse = "argparse.lua"
+            }
+         }
+      }
+   },
+   cartridge = {
+      ["2.7.9-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               stateboard = "stateboard"
+            },
+            dependencies = {
+               checks = "3.2.0-1",
+               ddl = "1.6.2-1",
+               errors = "2.2.1-1",
+               ["frontend-core"] = "8.2.1-1",
+               graphql = "0.2.0-1",
+               http = "1.4.0-1",
+               luagraphqlparser = "0.2.0-1",
+               membership = "2.4.0-1",
+               vshard = "0.1.23-1"
+            },
+            modules = {
+               cartridge = "cartridge.lua",
+               ["cartridge.VERSION"] = "cartridge/VERSION.lua",
+               ["cartridge.admin"] = "cartridge/admin.lua",
+               ["cartridge.argparse"] = "cartridge/argparse.lua",
+               ["cartridge.auth"] = "cartridge/auth.lua",
+               ["cartridge.auth-backend"] = "cartridge/auth-backend.lua",
+               ["cartridge.cluster-cookie"] = "cartridge/cluster-cookie.lua",
+               ["cartridge.clusterwide-config"] = "cartridge/clusterwide-config.lua",
+               ["cartridge.confapplier"] = "cartridge/confapplier.lua",
+               ["cartridge.etcd2"] = "cartridge/etcd2.lua",
+               ["cartridge.etcd2-client"] = "cartridge/etcd2-client.lua",
+               ["cartridge.failover"] = "cartridge/failover.lua",
+               ["cartridge.failover.leader_autoreturn"] = "cartridge/failover/leader_autoreturn.lua",
+               ["cartridge.failover.raft"] = "cartridge/failover/raft.lua",
+               ["cartridge.feedback"] = "cartridge/feedback.lua",
+               ["cartridge.front-bundle"] = "cartridge/front-bundle.lua",
+               ["cartridge.funcall"] = "cartridge/funcall.lua",
+               ["cartridge.graphql"] = "cartridge/graphql.lua",
+               ["cartridge.graphql.execute"] = "cartridge/graphql/execute.lua",
+               ["cartridge.graphql.funcall"] = "cartridge/graphql/funcall.lua",
+               ["cartridge.graphql.parse"] = "cartridge/graphql/parse.lua",
+               ["cartridge.graphql.schema"] = "cartridge/graphql/schema.lua",
+               ["cartridge.graphql.types"] = "cartridge/graphql/types.lua",
+               ["cartridge.graphql.validate"] = "cartridge/graphql/validate.lua",
+               ["cartridge.hotreload"] = "cartridge/hotreload.lua",
+               ["cartridge.invalid-format"] = "cartridge/invalid-format.lua",
+               ["cartridge.issues"] = "cartridge/issues.lua",
+               ["cartridge.label-utils"] = "cartridge/label-utils.lua",
+               ["cartridge.logging_whitelist"] = "cartridge/logging_whitelist.lua",
+               ["cartridge.lua-api.boxinfo"] = "cartridge/lua-api/boxinfo.lua",
+               ["cartridge.lua-api.compression"] = "cartridge/lua-api/compression.lua",
+               ["cartridge.lua-api.deprecated"] = "cartridge/lua-api/deprecated.lua",
+               ["cartridge.lua-api.edit-topology"] = "cartridge/lua-api/edit-topology.lua",
+               ["cartridge.lua-api.failover"] = "cartridge/lua-api/failover.lua",
+               ["cartridge.lua-api.get-topology"] = "cartridge/lua-api/get-topology.lua",
+               ["cartridge.lua-api.proxy"] = "cartridge/lua-api/proxy.lua",
+               ["cartridge.lua-api.stat"] = "cartridge/lua-api/stat.lua",
+               ["cartridge.lua-api.topology"] = "cartridge/lua-api/topology.lua",
+               ["cartridge.lua-api.vshard"] = "cartridge/lua-api/vshard.lua",
+               ["cartridge.pool"] = "cartridge/pool.lua",
+               ["cartridge.remote-control"] = "cartridge/remote-control.lua",
+               ["cartridge.roles"] = "cartridge/roles.lua",
+               ["cartridge.roles.coordinator"] = "cartridge/roles/coordinator.lua",
+               ["cartridge.roles.vshard-router"] = "cartridge/roles/vshard-router.lua",
+               ["cartridge.roles.vshard-storage"] = "cartridge/roles/vshard-storage.lua",
+               ["cartridge.rpc"] = "cartridge/rpc.lua",
+               ["cartridge.service-registry"] = "cartridge/service-registry.lua",
+               ["cartridge.sslsocket"] = "cartridge/sslsocket.lua",
+               ["cartridge.stateboard"] = "cartridge/stateboard.lua",
+               ["cartridge.stateboard-client"] = "cartridge/stateboard-client.lua",
+               ["cartridge.tar"] = "cartridge/tar.lua",
+               ["cartridge.test-helpers"] = "cartridge/test-helpers.lua",
+               ["cartridge.test-helpers.cluster"] = "cartridge/test-helpers/cluster.lua",
+               ["cartridge.test-helpers.etcd"] = "cartridge/test-helpers/etcd.lua",
+               ["cartridge.test-helpers.server"] = "cartridge/test-helpers/server.lua",
+               ["cartridge.test-helpers.stateboard"] = "cartridge/test-helpers/stateboard.lua",
+               ["cartridge.topology"] = "cartridge/topology.lua",
+               ["cartridge.twophase"] = "cartridge/twophase.lua",
+               ["cartridge.upload"] = "cartridge/upload.lua",
+               ["cartridge.user-defined-role"] = "cartridge/user-defined-role.lua",
+               ["cartridge.utils"] = "cartridge/utils.lua",
+               ["cartridge.vars"] = "cartridge/vars.lua",
+               ["cartridge.vshard-utils"] = "cartridge/vshard-utils.lua",
+               ["cartridge.webui"] = "cartridge/webui.lua",
+               ["cartridge.webui.api-auth"] = "cartridge/webui/api-auth.lua",
+               ["cartridge.webui.api-compression"] = "cartridge/webui/api-compression.lua",
+               ["cartridge.webui.api-config"] = "cartridge/webui/api-config.lua",
+               ["cartridge.webui.api-ddl"] = "cartridge/webui/api-ddl.lua",
+               ["cartridge.webui.api-failover"] = "cartridge/webui/api-failover.lua",
+               ["cartridge.webui.api-issues"] = "cartridge/webui/api-issues.lua",
+               ["cartridge.webui.api-suggestions"] = "cartridge/webui/api-suggestions.lua",
+               ["cartridge.webui.api-topology"] = "cartridge/webui/api-topology.lua",
+               ["cartridge.webui.api-vshard"] = "cartridge/webui/api-vshard.lua",
+               ["cartridge.webui.gql-boxinfo"] = "cartridge/webui/gql-boxinfo.lua",
+               ["cartridge.webui.gql-stat"] = "cartridge/webui/gql-stat.lua",
+               ["cartridge/VERSION.lua.in"] = "cartridge/VERSION.lua.in"
+            }
+         }
+      }
+   },
+   ["cartridge-cli-extensions"] = {
+      ["1.1.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["cartridge-cli-extensions.admin"] = "cartridge-cli-extensions/admin.lua"
+            }
+         }
+      }
+   },
+   checks = {
+      ["3.1.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               checks = "checks.lua"
+            }
+         }
+      },
+      ["3.2.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               checks = "checks.lua"
+            }
+         }
+      }
+   },
+   crud = {
+      ["1.0.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               checks = "3.1.0-1",
+               errors = "2.2.1-1",
+               vshard = "0.1.23-1"
+            },
+            modules = {
+               ["cartridge.roles.crud-router"] = "cartridge/roles/crud-router.lua",
+               ["cartridge.roles.crud-storage"] = "cartridge/roles/crud-storage.lua",
+               crud = "crud.lua",
+               ["crud.borders"] = "crud/borders.lua",
+               ["crud.cfg"] = "crud/cfg.lua",
+               ["crud.common.batching_utils"] = "crud/common/batching_utils.lua",
+               ["crud.common.call"] = "crud/common/call.lua",
+               ["crud.common.collations"] = "crud/common/collations.lua",
+               ["crud.common.compat"] = "crud/common/compat.lua",
+               ["crud.common.const"] = "crud/common/const.lua",
+               ["crud.common.dev_checks"] = "crud/common/dev_checks.lua",
+               ["crud.common.map_call_cases.base_iter"] = "crud/common/map_call_cases/base_iter.lua",
+               ["crud.common.map_call_cases.base_postprocessor"] = "crud/common/map_call_cases/base_postprocessor.lua",
+               ["crud.common.map_call_cases.batch_insert_iter"] = "crud/common/map_call_cases/batch_insert_iter.lua",
+               ["crud.common.map_call_cases.batch_postprocessor"] = "crud/common/map_call_cases/batch_postprocessor.lua",
+               ["crud.common.map_call_cases.batch_upsert_iter"] = "crud/common/map_call_cases/batch_upsert_iter.lua",
+               ["crud.common.schema"] = "crud/common/schema.lua",
+               ["crud.common.sharding.init"] = "crud/common/sharding/init.lua",
+               ["crud.common.sharding.router_metadata_cache"] = "crud/common/sharding/router_metadata_cache.lua",
+               ["crud.common.sharding.sharding_func"] = "crud/common/sharding/sharding_func.lua",
+               ["crud.common.sharding.sharding_key"] = "crud/common/sharding/sharding_key.lua",
+               ["crud.common.sharding.sharding_metadata"] = "crud/common/sharding/sharding_metadata.lua",
+               ["crud.common.sharding.storage_metadata_cache"] = "crud/common/sharding/storage_metadata_cache.lua",
+               ["crud.common.sharding.utils"] = "crud/common/sharding/utils.lua",
+               ["crud.common.sharding_func"] = "crud/common/sharding_func.lua",
+               ["crud.common.sharding_key"] = "crud/common/sharding_key.lua",
+               ["crud.common.stash"] = "crud/common/stash.lua",
+               ["crud.common.utils"] = "crud/common/utils.lua",
+               ["crud.compare.comparators"] = "crud/compare/comparators.lua",
+               ["crud.compare.conditions"] = "crud/compare/conditions.lua",
+               ["crud.compare.filters"] = "crud/compare/filters.lua",
+               ["crud.compare.keydef"] = "crud/compare/keydef.lua",
+               ["crud.compare.plan"] = "crud/compare/plan.lua",
+               ["crud.compare.type_comparators"] = "crud/compare/type_comparators.lua",
+               ["crud.count"] = "crud/count.lua",
+               ["crud.delete"] = "crud/delete.lua",
+               ["crud.get"] = "crud/get.lua",
+               ["crud.insert"] = "crud/insert.lua",
+               ["crud.insert_many"] = "crud/insert_many.lua",
+               ["crud.len"] = "crud/len.lua",
+               ["crud.ratelimit"] = "crud/ratelimit.lua",
+               ["crud.replace"] = "crud/replace.lua",
+               ["crud.replace_many"] = "crud/replace_many.lua",
+               ["crud.select"] = "crud/select.lua",
+               ["crud.select.compat.common"] = "crud/select/compat/common.lua",
+               ["crud.select.compat.select"] = "crud/select/compat/select.lua",
+               ["crud.select.compat.select_old"] = "crud/select/compat/select_old.lua",
+               ["crud.select.executor"] = "crud/select/executor.lua",
+               ["crud.select.iterator"] = "crud/select/iterator.lua",
+               ["crud.select.merger"] = "crud/select/merger.lua",
+               ["crud.stats.init"] = "crud/stats/init.lua",
+               ["crud.stats.local_registry"] = "crud/stats/local_registry.lua",
+               ["crud.stats.metrics_registry"] = "crud/stats/metrics_registry.lua",
+               ["crud.stats.operation"] = "crud/stats/operation.lua",
+               ["crud.stats.registry_utils"] = "crud/stats/registry_utils.lua",
+               ["crud.truncate"] = "crud/truncate.lua",
+               ["crud.update"] = "crud/update.lua",
+               ["crud.upsert"] = "crud/upsert.lua",
+               ["crud.upsert_many"] = "crud/upsert_many.lua"
+            }
+         }
+      }
+   },
+   ddl = {
+      ["1.3.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ddl = "ddl.lua",
+               ["ddl.check"] = "ddl/check.lua",
+               ["ddl.db"] = "ddl/db.lua",
+               ["ddl.get"] = "ddl/get.lua",
+               ["ddl.set"] = "ddl/set.lua",
+               ["ddl.utils"] = "ddl/utils.lua"
+            }
+         }
+      },
+      ["1.6.2-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["cartridge.roles.ddl-manager"] = "cartridge/roles/ddl-manager.lua",
+               ddl = "ddl.lua",
+               ["ddl.cache"] = "ddl/cache.lua",
+               ["ddl.check"] = "ddl/check.lua",
+               ["ddl.db"] = "ddl/db.lua",
+               ["ddl.get"] = "ddl/get.lua",
+               ["ddl.set"] = "ddl/set.lua",
+               ["ddl.utils"] = "ddl/utils.lua"
+            }
+         }
+      }
+   },
+   errors = {
+      ["2.2.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               errors = "errors.lua",
+               ["errors.deprecate"] = "errors/deprecate.lua"
+            }
+         }
+      }
+   },
+   ["frontend-core"] = {
+      ["8.2.1-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["frontend-core"] = "frontend-core.lua",
+               ["frontend-core.bundle"] = "frontend-core/bundle.lua"
+            }
+         }
+      }
+   },
+   graphql = {
+      ["0.2.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               luagraphqlparser = "0.2.0-1"
+            },
+            modules = {
+               ["graphql.execute"] = "graphql/execute.lua",
+               ["graphql.init"] = "graphql/init.lua",
+               ["graphql.introspection"] = "graphql/introspection.lua",
+               ["graphql.parse"] = "graphql/parse.lua",
+               ["graphql.query_util"] = "graphql/query_util.lua",
+               ["graphql.rules"] = "graphql/rules.lua",
+               ["graphql.schema"] = "graphql/schema.lua",
+               ["graphql.types"] = "graphql/types.lua",
+               ["graphql.util"] = "graphql/util.lua",
+               ["graphql.validate"] = "graphql/validate.lua",
+               ["graphql.validate_variables"] = "graphql/validate_variables.lua"
+            }
+         }
+      }
+   },
+   http = {
+      ["1.4.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["http.codes"] = "http/codes.lua",
+               ["http.lib"] = "http/lib.so",
+               ["http.mime_types"] = "http/mime_types.lua",
+               ["http.server"] = "http/server.lua"
+            }
+         }
+      }
+   },
+   luacheck = {
+      ["0.26.0-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               luacheck = "luacheck"
+            },
+            dependencies = {
+               argparse = "0.6.0-1"
+            },
+            modules = {
+               ["luacheck.builtin_standards.init"] = "luacheck/builtin_standards/init.lua",
+               ["luacheck.builtin_standards.love"] = "luacheck/builtin_standards/love.lua",
+               ["luacheck.builtin_standards.ngx"] = "luacheck/builtin_standards/ngx.lua",
+               ["luacheck.builtin_standards.tarantool"] = "luacheck/builtin_standards/tarantool.lua",
+               ["luacheck.cache"] = "luacheck/cache.lua",
+               ["luacheck.check"] = "luacheck/check.lua",
+               ["luacheck.check_state"] = "luacheck/check_state.lua",
+               ["luacheck.config"] = "luacheck/config.lua",
+               ["luacheck.core_utils"] = "luacheck/core_utils.lua",
+               ["luacheck.decoder"] = "luacheck/decoder.lua",
+               ["luacheck.expand_rockspec"] = "luacheck/expand_rockspec.lua",
+               ["luacheck.filter"] = "luacheck/filter.lua",
+               ["luacheck.format"] = "luacheck/format.lua",
+               ["luacheck.formatter.default"] = "luacheck/formatter/default.lua",
+               ["luacheck.formatter.junit"] = "luacheck/formatter/junit.lua",
+               ["luacheck.formatter.plain"] = "luacheck/formatter/plain.lua",
+               ["luacheck.formatter.sonar"] = "luacheck/formatter/sonar.lua",
+               ["luacheck.formatter.tap"] = "luacheck/formatter/tap.lua",
+               ["luacheck.formatter.visual_studio"] = "luacheck/formatter/visual_studio.lua",
+               ["luacheck.fs"] = "luacheck/fs.lua",
+               ["luacheck.fs_adapter"] = "luacheck/fs_adapter.lua",
+               ["luacheck.globbing"] = "luacheck/globbing.lua",
+               ["luacheck.init"] = "luacheck/init.lua",
+               ["luacheck.lexer"] = "luacheck/lexer.lua",
+               ["luacheck.main"] = "luacheck/main.lua",
+               ["luacheck.multithreading"] = "luacheck/multithreading.lua",
+               ["luacheck.options"] = "luacheck/options.lua",
+               ["luacheck.parser"] = "luacheck/parser.lua",
+               ["luacheck.profiler"] = "luacheck/profiler.lua",
+               ["luacheck.runner"] = "luacheck/runner.lua",
+               ["luacheck.serializer"] = "luacheck/serializer.lua",
+               ["luacheck.stages.detect_bad_whitespace"] = "luacheck/stages/detect_bad_whitespace.lua",
+               ["luacheck.stages.detect_cyclomatic_complexity"] = "luacheck/stages/detect_cyclomatic_complexity.lua",
+               ["luacheck.stages.detect_empty_blocks"] = "luacheck/stages/detect_empty_blocks.lua",
+               ["luacheck.stages.detect_empty_statements"] = "luacheck/stages/detect_empty_statements.lua",
+               ["luacheck.stages.detect_globals"] = "luacheck/stages/detect_globals.lua",
+               ["luacheck.stages.detect_reversed_fornum_loops"] = "luacheck/stages/detect_reversed_fornum_loops.lua",
+               ["luacheck.stages.detect_unbalanced_assignments"] = "luacheck/stages/detect_unbalanced_assignments.lua",
+               ["luacheck.stages.detect_uninit_accesses"] = "luacheck/stages/detect_uninit_accesses.lua",
+               ["luacheck.stages.detect_unreachable_code"] = "luacheck/stages/detect_unreachable_code.lua",
+               ["luacheck.stages.detect_unused_fields"] = "luacheck/stages/detect_unused_fields.lua",
+               ["luacheck.stages.detect_unused_locals"] = "luacheck/stages/detect_unused_locals.lua",
+               ["luacheck.stages.init"] = "luacheck/stages/init.lua",
+               ["luacheck.stages.linearize"] = "luacheck/stages/linearize.lua",
+               ["luacheck.stages.name_functions"] = "luacheck/stages/name_functions.lua",
+               ["luacheck.stages.parse"] = "luacheck/stages/parse.lua",
+               ["luacheck.stages.parse_inline_options"] = "luacheck/stages/parse_inline_options.lua",
+               ["luacheck.stages.resolve_locals"] = "luacheck/stages/resolve_locals.lua",
+               ["luacheck.stages.unwrap_parens"] = "luacheck/stages/unwrap_parens.lua",
+               ["luacheck.standards"] = "luacheck/standards.lua",
+               ["luacheck.unicode"] = "luacheck/unicode.lua",
+               ["luacheck.unicode_printability_boundaries"] = "luacheck/unicode_printability_boundaries.lua",
+               ["luacheck.utils"] = "luacheck/utils.lua",
+               ["luacheck.vendor.sha1.bit32_ops"] = "luacheck/vendor/sha1/bit32_ops.lua",
+               ["luacheck.vendor.sha1.bit_ops"] = "luacheck/vendor/sha1/bit_ops.lua",
+               ["luacheck.vendor.sha1.common"] = "luacheck/vendor/sha1/common.lua",
+               ["luacheck.vendor.sha1.init"] = "luacheck/vendor/sha1/init.lua",
+               ["luacheck.vendor.sha1.lua53_ops"] = "luacheck/vendor/sha1/lua53_ops.lua",
+               ["luacheck.vendor.sha1.pure_lua_ops"] = "luacheck/vendor/sha1/pure_lua_ops.lua",
+               ["luacheck.version"] = "luacheck/version.lua"
+            }
+         }
+      }
+   },
+   luacov = {
+      ["0.13.0-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               luacov = "luacov"
+            },
+            dependencies = {},
+            modules = {
+               luacov = "luacov.lua",
+               ["luacov.defaults"] = "luacov/defaults.lua",
+               ["luacov.hook"] = "luacov/hook.lua",
+               ["luacov.linescanner"] = "luacov/linescanner.lua",
+               ["luacov.reporter"] = "luacov/reporter.lua",
+               ["luacov.reporter.default"] = "luacov/reporter/default.lua",
+               ["luacov.runner"] = "luacov/runner.lua",
+               ["luacov.stats"] = "luacov/stats.lua",
+               ["luacov.tick"] = "luacov/tick.lua",
+               ["luacov.util"] = "luacov/util.lua"
+            }
+         }
+      }
+   },
+   luagraphqlparser = {
+      ["0.2.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               luagraphqlparser = "luagraphqlparser.so"
+            }
+         }
+      }
+   },
+   luatest = {
+      ["0.5.6-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               luatest = "luatest"
+            },
+            dependencies = {
+               checks = "3.2.0-1"
+            },
+            modules = {
+               ["luarocks.test.luatest"] = "luarocks/test/luatest.lua",
+               ["luatest.VERSION"] = "luatest/VERSION.lua",
+               ["luatest.assertions"] = "luatest/assertions.lua",
+               ["luatest.capture"] = "luatest/capture.lua",
+               ["luatest.capturing"] = "luatest/capturing.lua",
+               ["luatest.class"] = "luatest/class.lua",
+               ["luatest.cli_entrypoint"] = "luatest/cli_entrypoint.lua",
+               ["luatest.comparator"] = "luatest/comparator.lua",
+               ["luatest.coverage"] = "luatest/coverage.lua",
+               ["luatest.coverage_utils"] = "luatest/coverage_utils.lua",
+               ["luatest.ffi_io"] = "luatest/ffi_io.lua",
+               ["luatest.group"] = "luatest/group.lua",
+               ["luatest.helpers"] = "luatest/helpers.lua",
+               ["luatest.hooks"] = "luatest/hooks.lua",
+               ["luatest.http_response"] = "luatest/http_response.lua",
+               ["luatest.init"] = "luatest/init.lua",
+               ["luatest.loader"] = "luatest/loader.lua",
+               ["luatest.mismatch_formatter"] = "luatest/mismatch_formatter.lua",
+               ["luatest.monitor"] = "luatest/monitor.lua",
+               ["luatest.output.generic"] = "luatest/output/generic.lua",
+               ["luatest.output.junit"] = "luatest/output/junit.lua",
+               ["luatest.output.nil"] = "luatest/output/nil.lua",
+               ["luatest.output.tap"] = "luatest/output/tap.lua",
+               ["luatest.output.text"] = "luatest/output/text.lua",
+               ["luatest.output_beautifier"] = "luatest/output_beautifier.lua",
+               ["luatest.parametrizer"] = "luatest/parametrizer.lua",
+               ["luatest.pp"] = "luatest/pp.lua",
+               ["luatest.process"] = "luatest/process.lua",
+               ["luatest.runner"] = "luatest/runner.lua",
+               ["luatest.sandboxed_runner"] = "luatest/sandboxed_runner.lua",
+               ["luatest.server"] = "luatest/server.lua",
+               ["luatest.sorted_pairs"] = "luatest/sorted_pairs.lua",
+               ["luatest.test_instance"] = "luatest/test_instance.lua",
+               ["luatest.utils"] = "luatest/utils.lua"
+            }
+         }
+      }
+   },
+   membership = {
+      ["2.4.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               checks = "3.2.0-1"
+            },
+            modules = {
+               membership = "membership.lua",
+               ["membership.events"] = "membership/events.lua",
+               ["membership.members"] = "membership/members.lua",
+               ["membership.network"] = "membership/network.lua",
+               ["membership.options"] = "membership/options.lua",
+               ["membership.stash"] = "membership/stash.lua"
+            }
+         }
+      }
+   },
+   metrics = {
+      ["0.16.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               checks = "3.2.0-1"
+            },
+            modules = {
+               ["cartridge.health"] = "cartridge/health.lua",
+               ["cartridge.roles.metrics"] = "cartridge/roles/metrics.lua",
+               ["metrics.cartridge.failover"] = "metrics/cartridge/failover.lua",
+               ["metrics.cartridge.issues"] = "metrics/cartridge/issues.lua",
+               ["metrics.collectors.counter"] = "metrics/collectors/counter.lua",
+               ["metrics.collectors.gauge"] = "metrics/collectors/gauge.lua",
+               ["metrics.collectors.histogram"] = "metrics/collectors/histogram.lua",
+               ["metrics.collectors.shared"] = "metrics/collectors/shared.lua",
+               ["metrics.collectors.summary"] = "metrics/collectors/summary.lua",
+               ["metrics.const"] = "metrics/const.lua",
+               ["metrics.http_middleware"] = "metrics/http_middleware.lua",
+               ["metrics.init"] = "metrics/init.lua",
+               ["metrics.plugins.graphite"] = "metrics/plugins/graphite.lua",
+               ["metrics.plugins.json"] = "metrics/plugins/json.lua",
+               ["metrics.plugins.prometheus"] = "metrics/plugins/prometheus.lua",
+               ["metrics.psutils.cpu"] = "metrics/psutils/cpu.lua",
+               ["metrics.psutils.psutils_linux"] = "metrics/psutils/psutils_linux.lua",
+               ["metrics.quantile"] = "metrics/quantile.lua",
+               ["metrics.registry"] = "metrics/registry.lua",
+               ["metrics.tarantool"] = "metrics/tarantool.lua",
+               ["metrics.tarantool.clock"] = "metrics/tarantool/clock.lua",
+               ["metrics.tarantool.cpu"] = "metrics/tarantool/cpu.lua",
+               ["metrics.tarantool.event_loop"] = "metrics/tarantool/event_loop.lua",
+               ["metrics.tarantool.fibers"] = "metrics/tarantool/fibers.lua",
+               ["metrics.tarantool.info"] = "metrics/tarantool/info.lua",
+               ["metrics.tarantool.luajit"] = "metrics/tarantool/luajit.lua",
+               ["metrics.tarantool.memory"] = "metrics/tarantool/memory.lua",
+               ["metrics.tarantool.memtx"] = "metrics/tarantool/memtx.lua",
+               ["metrics.tarantool.network"] = "metrics/tarantool/network.lua",
+               ["metrics.tarantool.operations"] = "metrics/tarantool/operations.lua",
+               ["metrics.tarantool.replicas"] = "metrics/tarantool/replicas.lua",
+               ["metrics.tarantool.runtime"] = "metrics/tarantool/runtime.lua",
+               ["metrics.tarantool.slab"] = "metrics/tarantool/slab.lua",
+               ["metrics.tarantool.spaces"] = "metrics/tarantool/spaces.lua",
+               ["metrics.tarantool.system"] = "metrics/tarantool/system.lua",
+               ["metrics.tarantool.vinyl"] = "metrics/tarantool/vinyl.lua",
+               ["metrics.utils"] = "metrics/utils.lua"
+            }
+         }
+      }
+   },
+   myapp = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {
+               cartridge = "2.7.9-1",
+               checks = "3.2.0-1",
+               crud = "1.0.0-1",
+               ddl = "1.6.2-1",
+               errors = "2.2.1-1",
+               ["frontend-core"] = "8.2.1-1",
+               graphql = "0.2.0-1",
+               http = "1.4.0-1",
+               luagraphqlparser = "0.2.0-1",
+               membership = "2.4.0-1",
+               metrics = "0.16.0-1",
+               queue = "scm-1",
+               vshard = "0.1.23-1"
+            },
+            modules = {}
+         }
+      }
+   },
+   queue = {
+      ["scm-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["queue.abstract"] = "queue/abstract.lua",
+               ["queue.abstract.driver.fifo"] = "queue/abstract/driver/fifo.lua",
+               ["queue.abstract.driver.fifottl"] = "queue/abstract/driver/fifottl.lua",
+               ["queue.abstract.driver.limfifottl"] = "queue/abstract/driver/limfifottl.lua",
+               ["queue.abstract.driver.utube"] = "queue/abstract/driver/utube.lua",
+               ["queue.abstract.driver.utubettl"] = "queue/abstract/driver/utubettl.lua",
+               ["queue.abstract.queue_session"] = "queue/abstract/queue_session.lua",
+               ["queue.abstract.queue_state"] = "queue/abstract/queue_state.lua",
+               ["queue.abstract.state"] = "queue/abstract/state.lua",
+               ["queue.compat"] = "queue/compat.lua",
+               ["queue.init"] = "queue/init.lua",
+               ["queue.util"] = "queue/util.lua",
+               ["queue.version"] = "queue/version.lua"
+            }
+         }
+      }
+   },
+   vshard = {
+      ["0.1.23-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               ["vshard.cfg"] = "vshard/cfg.lua",
+               ["vshard.consts"] = "vshard/consts.lua",
+               ["vshard.error"] = "vshard/error.lua",
+               ["vshard.hash"] = "vshard/hash.lua",
+               ["vshard.heap"] = "vshard/heap.lua",
+               ["vshard.init"] = "vshard/init.lua",
+               ["vshard.registry"] = "vshard/registry.lua",
+               ["vshard.replicaset"] = "vshard/replicaset.lua",
+               ["vshard.rlist"] = "vshard/rlist.lua",
+               ["vshard.router.init"] = "vshard/router/init.lua",
+               ["vshard.service_info"] = "vshard/service_info.lua",
+               ["vshard.storage.init"] = "vshard/storage/init.lua",
+               ["vshard.storage.ref"] = "vshard/storage/ref.lua",
+               ["vshard.storage.reload_evolution"] = "vshard/storage/reload_evolution.lua",
+               ["vshard.storage.sched"] = "vshard/storage/sched.lua",
+               ["vshard.util"] = "vshard/util.lua",
+               ["vshard.version"] = "vshard/version.lua"
+            }
+         }
+      }
+   }
+}

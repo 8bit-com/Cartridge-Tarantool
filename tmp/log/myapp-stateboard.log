@@ -1,0 +1,48 @@
+2023-04-29 20:01:29.417 [30199] main/103/stateboard.init.lua I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
+2023-04-29 20:01:29.417 [30199] main/103/stateboard.init.lua I> log level 5
+2023-04-29 20:01:29.417 [30199] main/103/stateboard.init.lua I> wal/engine cleanup is paused
+2023-04-29 20:01:29.418 [30199] main/103/stateboard.init.lua I> mapping 268435456 bytes for memtx tuple arena...
+2023-04-29 20:01:29.418 [30199] main/103/stateboard.init.lua I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2023-04-29 20:01:29.418 [30199] main/103/stateboard.init.lua I> mapping 134217728 bytes for vinyl tuple arena...
+2023-04-29 20:01:29.418 [30199] main/103/stateboard.init.lua I> Recovering snapshot with schema version 2.10.5
+2023-04-29 20:01:29.419 [30199] main/103/stateboard.init.lua I> update replication_synchro_quorum = 1
+2023-04-29 20:01:29.419 [30199] main/103/stateboard.init.lua I> instance uuid e3726336-bd14-4b4e-bec6-7c2e890c16aa
+2023-04-29 20:01:29.449 [30199] main/103/stateboard.init.lua I> instance vclock {1: 95}
+2023-04-29 20:01:29.449 [30199] main/103/stateboard.init.lua I> recovery start
+2023-04-29 20:01:29.449 [30199] main/103/stateboard.init.lua I> recovering from `./00000000000000000000.snap'
+2023-04-29 20:01:29.450 [30199] main/103/stateboard.init.lua I> cluster uuid d50369f3-2bc7-4fb0-b161-b78818366f56
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> assigned id 1 to replica e3726336-bd14-4b4e-bec6-7c2e890c16aa
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> update replication_synchro_quorum = 1
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000000.xlog'
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> done `./00000000000000000000.xlog'
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000058.xlog'
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> done `./00000000000000000058.xlog'
+2023-04-29 20:01:29.467 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000059.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000059.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000060.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000060.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000087.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000087.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000089.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000089.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000091.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000091.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000093.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000093.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> recover from `./00000000000000000095.xlog'
+2023-04-29 20:01:29.468 [30199] main/103/stateboard.init.lua I> done `./00000000000000000095.xlog'
+2023-04-29 20:01:29.469 [30199] main/103/stateboard.init.lua I> RAFT: fencing enabled
+2023-04-29 20:01:29.469 [30199] main/103/stateboard.init.lua I> ready to accept requests
+2023-04-29 20:01:29.469 [30199] main/103/stateboard.init.lua I> leaving orphan mode
+2023-04-29 20:01:29.469 [30199] main/104/gc I> wal/engine cleanup is resumed
+2023-04-29 20:01:29.469 [30199] main/103/stateboard.init.lua I> set 'log_level' configuration option to 5
+2023-04-29 20:01:29.469 [30199] main/105/checkpoint_daemon I> scheduled next checkpoint for Sat Apr 29 21:46:08 2023
+2023-04-29 20:01:29.469 [30199] main/103/stateboard.init.lua I> set 'log_format' configuration option to "plain"
+2023-04-29 20:01:29.471 [30199] main/103/stateboard.init.lua I> tcp_server: remove dead UNIX socket: /home/user/myapp/tmp/run/myapp-stateboard.control
+2023-04-29 20:01:29.472 [30199] main/118/console/unix/:/home/user/myapp/tmp/run/myapp-stateboard.control I> started
+2023-04-29 20:01:29.474 [30199] main/103/stateboard.init.lua I> tx_binary: bound to 127.0.0.1:4401
+2023-04-29 20:01:29.474 [30199] main/103/stateboard.init.lua I> set 'listen' configuration option to "localhost:4401"
+2023-04-29 20:01:29.474 [30199] main I> entering the event loop
+2023-04-29 20:01:30.602 [30199] main/125/main I> Long live the coordinator "localhost:3302" (f7388db3-00a9-4c01-bd6f-6a0939c6d7d6)!
+2023-04-29 20:02:07.279 [30199] main C> got signal 15 - Terminated
+2023-04-29 20:02:07.279 [30199] main/138/iproto.shutdown I> tx_binary: stopped

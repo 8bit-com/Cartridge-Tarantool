@@ -1,0 +1,92 @@
+rock_manifest = {
+   ["crud-1.0.0-1.rockspec"] = "8cfe232b92c64864e67b0b3e2e02f238",
+   doc = {
+      dev = {
+         ["schema.md"] = "05c32789e25447c1392ce7dd261f21f9"
+      },
+      ["pairs.md"] = "45b646b22483845b438e37f28c535593",
+      ["playground.lua"] = "4c5b9fbd7fcd25ceaa855b100d75ff09",
+      ["select.md"] = "f8ab01c3959220538de1c8ef2ad731b9"
+   },
+   lua = {
+      cartridge = {
+         roles = {
+            ["crud-router.lua"] = "6ae2cca58ec8de1486a3bfffff9c0c4c",
+            ["crud-storage.lua"] = "ee1878c1062d156745930cfa044e2d3a"
+         }
+      },
+      crud = {
+         ["borders.lua"] = "fcf0c23f9335f74100ae03df65796ac9",
+         ["cfg.lua"] = "4e73340896811aba00fd8e3b2e4a54cd",
+         common = {
+            ["batching_utils.lua"] = "255fbc15b3e444467d5ea38c26a5e824",
+            ["call.lua"] = "351bbf97cd92b8f539482e1cb406be5f",
+            ["collations.lua"] = "777f9f8cec976d65da141ec3c5f4528b",
+            ["compat.lua"] = "13292221df4ef1c9e848b15a8abf2e8e",
+            ["const.lua"] = "aac90cdd4aabdac6f264b4f64ea2b65d",
+            ["dev_checks.lua"] = "81a52e893e4d713f9411008cfa269ef2",
+            map_call_cases = {
+               ["base_iter.lua"] = "2e236c095913e646e77b5faee6b8ef45",
+               ["base_postprocessor.lua"] = "413cc137b25145d6175815f497b0c5e2",
+               ["batch_insert_iter.lua"] = "d77787ad332751fb6894cdff0a9d0421",
+               ["batch_postprocessor.lua"] = "d33072009f44703d89074286b62ed48d",
+               ["batch_upsert_iter.lua"] = "7bdfba75c059d2d6d62a2bf60a47efb4"
+            },
+            ["schema.lua"] = "017c348437fdf9ff7a87f9e7ec5a64fe",
+            sharding = {
+               ["init.lua"] = "ce6d9d25fe5d6fa97732ba2094a08dd8",
+               ["router_metadata_cache.lua"] = "4fe5a1b6731a10f3cd8ae866d6f3a4b5",
+               ["sharding_func.lua"] = "bc81bf7968f3f7cd10a204f87841fd99",
+               ["sharding_key.lua"] = "0c7fdc6c8bfe472d36e9ce67ddd67ad8",
+               ["sharding_metadata.lua"] = "2cd54b989ad058bec23366082602319f",
+               ["storage_metadata_cache.lua"] = "ce104cebd9e43e9684b13b93c6887a34",
+               ["utils.lua"] = "255bee13463869efc0ad3ff4e62bd06b"
+            },
+            ["sharding_func.lua"] = "a1e55a27d48e9e5c8ab1afca0811e292",
+            ["sharding_key.lua"] = "eb24d8da57a37cce3b076a9ca48a9eab",
+            ["stash.lua"] = "1be72ff613ce7764289cb3e0ef6869a5",
+            ["utils.lua"] = "76d661d86ce415406f1039248ccc2f32"
+         },
+         compare = {
+            ["comparators.lua"] = "7f20e6e41c8d7a10a57abad5b376aa48",
+            ["conditions.lua"] = "8617cd237d5fefffd58131cb73ff14be",
+            ["filters.lua"] = "2d46dd7fa6b51f3ea495fd1c5e719d5c",
+            ["keydef.lua"] = "f8e8ef18003e19c337e89c9dbd255a99",
+            ["plan.lua"] = "31e31c76ee0226d0c7b7e3a5ee3a0836",
+            ["type_comparators.lua"] = "b7f2d1594889405194fc447d6f8c2ba0"
+         },
+         ["count.lua"] = "785b506151cd67cdb693e392de90ef79",
+         ["delete.lua"] = "d4107daaf5714b1e92c405f740a5b2a4",
+         ["get.lua"] = "1703b164888be204fb86ef9cc1b6e682",
+         ["insert.lua"] = "b797778831127e3bb61e10ef4b73525a",
+         ["insert_many.lua"] = "6f18f98817ae094a4bb262a5e13545ee",
+         ["len.lua"] = "13a12d6f4003e2189ab7c18909ac6b2b",
+         ["ratelimit.lua"] = "f936d056ab094f45722e2405c337ea76",
+         ["replace.lua"] = "b9fbda75ae9c33e1e81a079be081f86e",
+         ["replace_many.lua"] = "15d68283ab88ac3d15fa31d3f2498702",
+         select = {
+            compat = {
+               ["common.lua"] = "589cfd7ace834f6dda61ac1be27cfe87",
+               ["select.lua"] = "1baeb1b73df3a043eff5a7e6b9e84b06",
+               ["select_old.lua"] = "271d0b9ecdee4791541893d66327eafb"
+            },
+            ["executor.lua"] = "df1d31b18c7c54c1cef755f95d762657",
+            ["iterator.lua"] = "f01c0ce712e1ca9873b5b034f5b39529",
+            ["merger.lua"] = "4e91d25021104e653dac01252d7a069c"
+         },
+         ["select.lua"] = "b27218363453991753b04c42e372133b",
+         stats = {
+            ["init.lua"] = "b56371c8d70b5eca90986012aae290bf",
+            ["local_registry.lua"] = "211da4b8255d368150a1c3bd2cdc97cb",
+            ["metrics_registry.lua"] = "2915ba11bb14061898b1ab2cdff4f1d8",
+            ["operation.lua"] = "19569530fb5c4e5cae391b1ef3cd59df",
+            ["registry_utils.lua"] = "85effd778b203fea194182586bdf14cb"
+         },
+         ["truncate.lua"] = "f1eb701268394848647ea8891b435524",
+         ["update.lua"] = "b82cdd85555866d3a1ed497caf4ba196",
+         ["upsert.lua"] = "6b7a80eb72c84a727128bc75dcc4b954",
+         ["upsert_many.lua"] = "cab296c60f606e1d66a29d56f6eed593"
+      },
+      ["crud.lua"] = "87295027da0e3fdd5a498c3f9b7f6fa3"
+   }
+}

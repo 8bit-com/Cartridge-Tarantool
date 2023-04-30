@@ -1,0 +1,13 @@
+local const = {}
+
+const.RELOAD_RETRIES_NUM = 1
+const.RELOAD_SCHEMA_TIMEOUT = 3 -- 3 seconds
+const.FETCH_SHARDING_METADATA_TIMEOUT = 3 -- 3 seconds
+const.SHARDING_RELOAD_RETRIES_NUM = 1
+
+const.NEED_SCHEMA_RELOAD   = 0x0001000
+const.NEED_SHARDING_RELOAD = 0x0001001
+
+const.DEFAULT_VSHARD_CALL_TIMEOUT = 2
+
+return const
