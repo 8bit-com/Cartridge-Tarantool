@@ -16,15 +16,12 @@ local function init_spaces()
             if_not_exists = true,
         }
     )
-
     -- создадим индекс по id пользователя
     customer:create_index('customer_id', {
         parts = {'customer_id'},
         if_not_exists = true,
     })
-
     -- Создаем очередь
-
     queue.create_tube('cust_queue', 'fifo', {
         if_not_exists = true,
         temporary = false,
@@ -34,7 +31,6 @@ local function init_spaces()
             {'name', 'string'},
         },
     })
-
 end
 
 local function on_replace_function(customer)
@@ -77,7 +73,6 @@ local function init(opts)
             box.schema.func.create(name, {if_not_exists = true})
             box.schema.role.grant('public', 'execute', 'function', name, {if_not_exists = true})
         end
-
     end
 
     for name, func in pairs(exported_functions) do

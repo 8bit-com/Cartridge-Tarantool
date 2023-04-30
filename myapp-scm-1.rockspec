@@ -11,6 +11,7 @@ dependencies = {
     'cartridge == 2.7.9-1',
     'crud == 1.0.0-1',
     'metrics == 0.16.0-1',
+    'ddl == 1.3.0-1',
     'queue',
 }
 build = {

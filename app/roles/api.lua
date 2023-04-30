@@ -1,3 +1,4 @@
+
 local cartridge = require('cartridge')
 local errors = require('errors')
 local crud = require('crud')
@@ -27,6 +28,7 @@ local function http_customer_add(req)
 end
 
 local function http_customer_get(req)
+    --log.info(box.schema.customer:select())
     local customer_id = tonumber(req.tstash.customer_id or 0)
     local customer, err = crud.get('customer', customer_id)
     if err then
@@ -39,7 +41,6 @@ local function http_customer_get(req)
     end
 
     customer = crud.unflatten_rows(customer.rows, customer.metadata)
-    log.info(customer)
 
     if customer == nil then
         local resp = req:render({json = { info = "Customer not found" }})
@@ -106,7 +107,6 @@ end
 
 local function http_customer_update(req)
     local customer = req:json()
-    log.info(customer.customer_id)
     local customer_id = tonumber(customer.customer_id or 0)
     local customer, err = crud.update('customer', customer_id, {{'=', 'name', customer.name}})
     if err then
@@ -119,7 +119,6 @@ local function http_customer_update(req)
     end
 
     customer = crud.unflatten_rows(customer.rows, customer.metadata)
-    log.info(customer)
     if customer == nil then
         local resp = req:render({json = { info = "Customer not found" }})
         resp.status = 404

@@ -3,10 +3,9 @@ local errors = require('errors')
 local crud = require('crud')
 local log = require('log')
 
-local err_httpd = errors.new_class("httpd error")
-
 local function customer_pop()
     local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
+    log.info("repo_api")
     log.info(customer[3])
 
     if error then
