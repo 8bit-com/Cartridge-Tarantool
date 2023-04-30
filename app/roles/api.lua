@@ -104,6 +104,34 @@ local function http_customer_delete(req)
     return resp
 end
 
+local function http_customer_update(req)
+    local customer = req:json()
+    log.info(customer.customer_id)
+    local customer_id = tonumber(customer.customer_id or 0)
+    local customer, err = crud.update('customer', customer_id, {{'=', 'name', customer.name}})
+    if err then
+        local resp = req:render({json = {
+            info = "Internal error",
+            error = err
+        }})
+        resp.status = 500
+        return resp
+    end
+
+    customer = crud.unflatten_rows(customer.rows, customer.metadata)
+    log.info(customer)
+    if customer == nil then
+        local resp = req:render({json = { info = "Customer not found" }})
+        resp.status = 404
+        return resp
+    end
+
+    local resp = req:render({json = customer})
+    resp.status = 200
+
+    return resp
+end
+
 local function http_customer_pop(req)
     local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
 
@@ -172,6 +200,10 @@ local function init(opts)
     httpd:route(
         { path = '/storage/customers/pop', method = 'GET', public = true },
         http_customer_pop
+    )
+    httpd:route(
+        { path = '/storage/customers/update', method = 'POST', public = true },
+        http_customer_update
     )
     return true
 end
