@@ -54,7 +54,7 @@ local function http_customer_get(req)
 end
 
 local function http_customer_get_all(req)
-    local customer, err = crud.select('customer')
+    local customer, err = crud.select('customer', nil, {fullscan = true})
     if err then
         local resp = req:render({json = {
             info = "Internal error",
