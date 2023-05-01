@@ -1,281 +1,254 @@
-2023-04-29 20:01:29.868 [30197] main/103/init.lua I> Using advertise_uri "localhost:3306"
-2023-04-29 20:01:29.868 [30197] main/103/init.lua I> Membership encryption enabled
-2023-04-29 20:01:29.879 [30197] main/103/init.lua I> Probe uri was successful
-2023-04-29 20:01:29.879 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3307
-2023-04-29 20:01:29.880 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3307
-2023-04-29 20:01:29.881 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3307
-2023-04-29 20:01:29.882 [30197] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3307
-2023-04-29 20:01:29.883 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3307
-2023-04-29 20:01:29.884 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3305
-2023-04-29 20:01:29.884 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3305
-2023-04-29 20:01:29.885 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3305
-2023-04-29 20:01:29.885 [30197] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3305
-2023-04-29 20:01:29.886 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3305
-2023-04-29 20:01:29.886 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
-2023-04-29 20:01:29.887 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3301
-2023-04-29 20:01:29.887 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
-2023-04-29 20:01:29.888 [30197] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
-2023-04-29 20:01:29.888 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
-2023-04-29 20:01:29.889 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3306
-2023-04-29 20:01:29.890 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3306
-2023-04-29 20:01:29.891 [30197] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3306
-2023-04-29 20:01:29.892 [30197] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3306
-2023-04-29 20:01:29.893 [30197] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3306
-2023-04-29 20:01:29.896 [30197] main/107/http/0.0.0.0:8086 I> started
-2023-04-29 20:01:29.897 [30197] main/103/init.lua I> Listening HTTP on 0.0.0.0:8086
-2023-04-29 20:01:29.897 [30197] main/103/init.lua I> tcp_server: remove dead UNIX socket: /home/user/myapp/tmp/run/myapp.s3-master.control
-2023-04-29 20:01:29.899 [30197] main/108/console/unix/:/home/user/myapp/tmp/run/myapp.s3-master.control I> started
-2023-04-29 20:01:29.899 [30197] main/103/init.lua I> Load modules and register
-2023-04-29 20:01:30.255 [30197] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
-2023-04-29 20:01:30.284 [30197] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
-2023-04-29 20:01:30.380 [30197] main/109/remote_control/127.0.0.1:3306 I> started
-2023-04-29 20:01:30.380 [30197] main/103/init.lua I> Remote control bound to 127.0.0.1:3306
-2023-04-29 20:01:30.381 [30197] main/103/init.lua I> Instance state changed:  -> ConfigFound
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Validate roles configurations
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Validate config "ddl-manager" role
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Successfully validated config "ddl-manager" role in 0.000012 sec
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Validate config "metrics" role
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Successfully validated config "metrics" role in 0.000001 sec
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Validate config "vshard-router" role
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Successfully validated config "vshard-router" role in 0.000194 sec
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Validate config "crud-router" role
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Successfully validated config "crud-router" role in 0.000002 sec
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Roles configuration validation finished
-2023-04-29 20:01:30.402 [30197] main/103/init.lua I> Instance state changed: ConfigFound -> ConfigLoaded
-2023-04-29 20:01:30.403 [30197] main/110/lua I> Instance state changed: ConfigLoaded -> RecoveringSnapshot
-2023-04-29 20:01:30.403 [30197] main/110/lua confapplier.lua:549 W> Calling box.cfg()...
-2023-04-29 20:01:30.409 [30197] main/110/lua I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
-2023-04-29 20:01:30.409 [30197] main/110/lua I> log level 5
-2023-04-29 20:01:30.409 [30197] main/110/lua I> wal/engine cleanup is paused
-2023-04-29 20:01:30.409 [30197] main/110/lua I> mapping 268435456 bytes for memtx tuple arena...
-2023-04-29 20:01:30.409 [30197] main/110/lua I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
-2023-04-29 20:01:30.409 [30197] main/110/lua I> mapping 134217728 bytes for vinyl tuple arena...
-2023-04-29 20:01:30.409 [30197] main/110/lua I> Recovering snapshot with schema version 2.10.5
-2023-04-29 20:01:30.410 [30197] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> Cartridge 2.7.9
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> server alias s3-master
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> advertise uri localhost:3306
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> working directory /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> Cartridge options:
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> advertise_uri = localhost:3306
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> alias = s3-master
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> auth_enabled = nil
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> bucket_count = nil
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> console_sock = /home/user/myapp/tmp/run/myapp.s3-master.control
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> http_enabled = true
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> http_host = 0.0.0.0
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> http_port = 8086
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> roles = ["cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue"]
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> roles_reload_allowed = nil
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> swim_broadcast = true
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> upgrade_schema = nil
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> upload_prefix = nil
-2023-04-29 20:01:30.410 [30197] main/103/init.lua I> vshard_groups = nil
-2023-04-29 20:01:30.411 [30197] main/103/init.lua I> webui_blacklist = nil
-2023-04-29 20:01:30.411 [30197] main/103/init.lua I> webui_enabled = true
-2023-04-29 20:01:30.411 [30197] main/103/init.lua I> webui_enforce_root_redirect = true
-2023-04-29 20:01:30.411 [30197] main/103/init.lua I> webui_prefix = 
-2023-04-29 20:01:30.411 [30197] main/103/init.lua I> workdir = /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.411 [30197] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
-2023-04-29 20:01:30.419 [30197] main/103/init.lua I> Set default metrics endpoints
-2023-04-29 20:01:30.420 [30197] main/110/lua I> update replication_synchro_quorum = 1
-2023-04-29 20:01:30.420 [30197] main/110/lua I> instance uuid b00c7b28-45ff-47e3-863e-7f8b3f664522
-2023-04-29 20:01:30.454 [30197] main I> entering the event loop
-2023-04-29 20:01:30.454 [30197] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.454 [30197] main/111/lua I> Cartridge 2.7.9
-2023-04-29 20:01:30.454 [30197] main/111/lua I> server alias s3-master
-2023-04-29 20:01:30.454 [30197] main/111/lua I> advertise uri localhost:3306
-2023-04-29 20:01:30.454 [30197] main/111/lua I> working directory /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.454 [30197] main/110/lua I> instance vclock {0: 6, 1: 48}
-2023-04-29 20:01:30.454 [30197] main/110/lua I> recovery start
-2023-04-29 20:01:30.454 [30197] main/110/lua I> recovering from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.snap'
-2023-04-29 20:01:30.455 [30197] main/110/lua I> cluster uuid 3eb84ac8-9505-4ce2-95fc-c934ae00dd4d
-2023-04-29 20:01:30.472 [30197] main/110/lua I> assigned id 1 to replica b00c7b28-45ff-47e3-863e-7f8b3f664522
-2023-04-29 20:01:30.472 [30197] main/110/lua I> update replication_synchro_quorum = 1
-2023-04-29 20:01:30.472 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000035.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000035.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000036.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000036.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000037.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000037.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000038.xlog'
-2023-04-29 20:01:30.473 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000038.xlog'
-2023-04-29 20:01:30.474 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000041.xlog'
-2023-04-29 20:01:30.474 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000041.xlog'
-2023-04-29 20:01:30.474 [30197] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000054.xlog'
-2023-04-29 20:01:30.474 [30197] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000054.xlog'
-2023-04-29 20:01:30.474 [30197] main/110/lua I> Building secondary indexes in space '_queue'...
-2023-04-29 20:01:30.474 [30197] main/110/lua I> Adding 1 keys to TREE index 'tube_id' ...
-2023-04-29 20:01:30.474 [30197] main/110/lua I> Space '_queue': done
-2023-04-29 20:01:30.475 [30197] main/110/lua I> RAFT: fencing enabled
-2023-04-29 20:01:30.475 [30197] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.475 [30197] main/110/lua I> ready to accept requests
-2023-04-29 20:01:30.475 [30197] main/110/lua I> leaving orphan mode
-2023-04-29 20:01:30.475 [30197] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.475 [30197] main/112/gc I> wal/engine cleanup is resumed
-2023-04-29 20:01:30.475 [30197] main/110/lua I> set 'custom_proc_title' configuration option to "myapp@s3-master"
-2023-04-29 20:01:30.475 [30197] main/110/lua I> set 'log_level' configuration option to 5
-2023-04-29 20:01:30.475 [30197] main/113/checkpoint_daemon I> scheduled next checkpoint for Sat Apr 29 21:39:26 2023
-2023-04-29 20:01:30.490 [30197] main/110/lua I> set 'log_format' configuration option to "plain"
-2023-04-29 20:01:30.493 [30197] main/110/lua I> set 'replication_connect_quorum' configuration option to 100
-2023-04-29 20:01:30.493 [30197] main/110/lua I> set 'read_only' configuration option to true
-2023-04-29 20:01:30.494 [30197] main/110/lua I> Making sure user "admin" exists...
-2023-04-29 20:01:30.494 [30197] main/110/lua I> Remote control stopped
-2023-04-29 20:01:30.494 [30197] main/109/remote_control/127.0.0.1:3306 I> stopped
-2023-04-29 20:01:30.495 [30197] main/110/lua I> tx_binary: bound to 127.0.0.1:3306
-2023-04-29 20:01:30.497 [30197] main/110/lua I> set 'listen' configuration option to "127.0.0.1:3306"
-2023-04-29 20:01:30.497 [30197] main/110/lua I> Instance state changed: RecoveringSnapshot -> ConnectingFullmesh
-2023-04-29 20:01:30.497 [30197] main/110/lua I> connecting to 1 replicas
-2023-04-29 20:01:30.498 [30197] main/126/applier/admin@localhost:3306 I> remote master b00c7b28-45ff-47e3-863e-7f8b3f664522 at 127.0.0.1:3306 running Tarantool 2.10.6
-2023-04-29 20:01:30.498 [30197] main/110/lua I> connected to 1 replicas
-2023-04-29 20:01:30.498 [30197] main/110/lua I> synchronizing with 1 replicas
-2023-04-29 20:01:30.498 [30197] main/126/applier/admin@localhost:3306 I> leaving orphan mode
-2023-04-29 20:01:30.498 [30197] main/126/applier/admin@localhost:3306 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.498 [30197] main/110/lua I> replica set sync complete
-2023-04-29 20:01:30.498 [30197] main/110/lua I> leaving orphan mode
-2023-04-29 20:01:30.498 [30197] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.501 [30197] main/110/lua I> set 'replication' configuration option to ["admin@localhost:3306"]
-2023-04-29 20:01:30.501 [30197] main/110/lua I> Instance state changed: ConnectingFullmesh -> BoxConfigured
-2023-04-29 20:01:30.501 [30197] main/110/lua I> Tarantool options:
-2023-04-29 20:01:30.501 [30197] main/110/lua I> audit_log = nil
-2023-04-29 20:01:30.501 [30197] main/110/lua I> audit_nonblock = true
-2023-04-29 20:01:30.501 [30197] main/110/lua I> audit_format = json
-2023-04-29 20:01:30.501 [30197] main/110/lua I> audit_filter = compatibility
-2023-04-29 20:01:30.501 [30197] main/110/lua I> background = false
-2023-04-29 20:01:30.501 [30197] main/110/lua I> checkpoint_count = 2
-2023-04-29 20:01:30.501 [30197] main/110/lua I> checkpoint_interval = 3600
-2023-04-29 20:01:30.501 [30197] main/110/lua I> checkpoint_wal_threshold = 1e+18
-2023-04-29 20:01:30.501 [30197] main/110/lua I> custom_proc_title = myapp@s3-master
-2023-04-29 20:01:30.501 [30197] main/110/lua I> election_fencing_mode = nil
-2023-04-29 20:01:30.501 [30197] main/110/lua I> election_mode = off
-2023-04-29 20:01:30.501 [30197] main/110/lua I> election_timeout = 5
-2023-04-29 20:01:30.501 [30197] main/110/lua I> feedback_enabled = true
-2023-04-29 20:01:30.501 [30197] main/110/lua I> feedback_host = https://feedback.tarantool.io
-2023-04-29 20:01:30.501 [30197] main/110/lua I> feedback_interval = 3600
-2023-04-29 20:01:30.501 [30197] main/110/lua I> feedback_crashinfo = true
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_enabled = false
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_logs_size = 10485760
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_logs_max_msg_size = 4096
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_logs_log_level = 6
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_metrics_interval = 1
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_metrics_period = 180
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_requests_size = 10485760
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_requests_max_req_size = 16384
-2023-04-29 20:01:30.501 [30197] main/110/lua I> flightrec_requests_max_res_size = 16384
-2023-04-29 20:01:30.501 [30197] main/110/lua I> force_recovery = false
-2023-04-29 20:01:30.501 [30197] main/110/lua I> hot_standby = false
-2023-04-29 20:01:30.501 [30197] main/110/lua I> instance_uuid = nil
-2023-04-29 20:01:30.501 [30197] main/110/lua I> io_collect_interval = nil
-2023-04-29 20:01:30.501 [30197] main/110/lua I> iproto_threads = 1
-2023-04-29 20:01:30.501 [30197] main/110/lua I> listen = 127.0.0.1:3306
-2023-04-29 20:01:30.501 [30197] main/110/lua I> log = nil
-2023-04-29 20:01:30.501 [30197] main/110/lua I> log_format = plain
-2023-04-29 20:01:30.501 [30197] main/110/lua I> log_level = 5
-2023-04-29 20:01:30.501 [30197] main/110/lua I> log_nonblock = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_dir = /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_max_tuple_size = 1048576
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_memory = 268435456
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_allocator = small
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_min_tuple_size = 16
-2023-04-29 20:01:30.502 [30197] main/110/lua I> memtx_use_mvcc_engine = false
-2023-04-29 20:01:30.502 [30197] main/110/lua I> net_msg_max = 768
-2023-04-29 20:01:30.502 [30197] main/110/lua I> pid_file = /home/user/myapp/tmp/run/myapp.s3-master.pid
-2023-04-29 20:01:30.502 [30197] main/110/lua I> read_only = true
-2023-04-29 20:01:30.502 [30197] main/110/lua I> readahead = 16320
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replicaset_uuid = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication = table: 0x7f7d3ef0
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_anon = false
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_connect_quorum = 100
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_connect_timeout = 30
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_skip_conflict = false
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_sync_lag = 10
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_sync_timeout = 300
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_synchro_quorum = N / 2 + 1
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_synchro_timeout = 5
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_timeout = 1
-2023-04-29 20:01:30.502 [30197] main/110/lua I> replication_threads = 1
-2023-04-29 20:01:30.502 [30197] main/110/lua I> slab_alloc_factor = 1.05
-2023-04-29 20:01:30.502 [30197] main/110/lua I> slab_alloc_granularity = 8
-2023-04-29 20:01:30.502 [30197] main/110/lua I> snap_io_rate_limit = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> sql_cache_size = 5242880
-2023-04-29 20:01:30.502 [30197] main/110/lua I> strip_core = true
-2023-04-29 20:01:30.502 [30197] main/110/lua I> txn_isolation = best-effort
-2023-04-29 20:01:30.502 [30197] main/110/lua I> too_long_threshold = 0.5
-2023-04-29 20:01:30.502 [30197] main/110/lua I> username = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_bloom_fpr = 0.05
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_cache = 134217728
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_defer_deletes = false
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_dir = /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_max_tuple_size = 1048576
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_memory = 134217728
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_page_size = 8192
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_range_size = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_read_threads = 1
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_run_count_per_level = 2
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_run_size_ratio = 3.5
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_timeout = 60
-2023-04-29 20:01:30.502 [30197] main/110/lua I> vinyl_write_threads = 4
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_dir = /home/user/myapp/tmp/data/myapp.s3-master
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_dir_rescan_delay = 2
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_max_size = 268435456
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_queue_max_size = 16777216
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_cleanup_delay = 14400
-2023-04-29 20:01:30.502 [30197] main/110/lua I> wal_mode = write
-2023-04-29 20:01:30.502 [30197] main/110/lua I> work_dir = nil
-2023-04-29 20:01:30.502 [30197] main/110/lua I> worker_pool_threads = 4
-2023-04-29 20:01:30.502 [30197] main/110/lua I> txn_timeout = 3153600000
-2023-04-29 20:01:30.502 [30197] main/110/lua I> Instance state changed: BoxConfigured -> ConfiguringRoles
-2023-04-29 20:01:30.502 [30197] main/110/lua I> leaving orphan mode
-2023-04-29 20:01:30.502 [30197] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-04-29 20:01:30.502 [30197] main/110/lua I> set 'replication_connect_quorum' configuration option to 0
-2023-04-29 20:01:30.502 [30197] main/110/lua I> Stateful failover enabled with stateboard at localhost:4401
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Not enough enabled instances to start leader_autoreturn fiber
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset 3eb84ac8-9505-4ce2-95fc-c934ae00dd4d (me): new leader b00c7b28-45ff-47e3-863e-7f8b3f664522 (me), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset 2e61ac7c-076f-4997-bbfd-e789a8c3e07c: new leader 28c6e513-df25-4653-b351-bca1b8d877da ("localhost:3303"), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset facd6326-f8e2-44ea-a286-5704b4281480: new leader 3fdd0fc8-42ae-4036-87b1-1ef24063bce4 ("localhost:3304"), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset 06729fed-7182-4120-9569-07054a856579: new leader f7388db3-00a9-4c01-bd6f-6a0939c6d7d6 ("localhost:3302"), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset 39351de8-007c-4204-86c4-e270c1e7c54a: new leader a91b5b2e-6526-4dbf-b10d-4d36ab356d5e ("localhost:3305"), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> Replicaset 12ae805a-ff6c-4796-8d7b-71d2d0a4a6ce: new leader 1e5ce9e6-5028-414c-b765-1ab109423697 ("localhost:3301"), was nil
-2023-04-29 20:01:30.504 [30197] main/110/lua I> set 'read_only' configuration option to false
-2023-04-29 20:01:30.513 [30197] main/110/lua I> queue: [tube "cust_queue"] releasing all taken task (may take a while)
-2023-04-29 20:01:30.513 [30197] main/110/lua I> queue: [tube "cust_queue"] released 0 tasks
-2023-04-29 20:01:30.513 [30197] main/110/lua I> Started queue state fiber
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Start applying roles config
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Init "ddl-manager" role
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Successfully initialized "ddl-manager" role in 0.000002 sec
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Appling "ddl-manager" role config
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Successfully applied "ddl-manager" role config in 0.000033 sec
-2023-04-29 20:01:30.514 [30197] main/110/lua I> Init "metrics" role
-2023-04-29 20:01:30.596 [30197] main/110/lua I> Successfully initialized "metrics" role in 0.082262 sec
-2023-04-29 20:01:30.596 [30197] main/110/lua I> Appling "metrics" role config
-2023-04-29 20:01:30.597 [30197] main/110/lua I> Successfully applied "metrics" role config in 0.000723 sec
-2023-04-29 20:01:30.597 [30197] main/110/lua I> Init "myqueue" role
-2023-04-29 20:01:30.597 [30197] main/110/lua I> Successfully initialized "myqueue" role in 0.000518 sec
-2023-04-29 20:01:30.597 [30197] main/110/lua I> Roles configuration finished
-2023-04-29 20:01:30.597 [30197] main/110/lua I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-04-29 20:01:51.914 [30197] main/139/main I> Validate roles configurations
-2023-04-29 20:01:51.914 [30197] main/139/main I> Validate config "ddl-manager" role
-2023-04-29 20:01:51.914 [30197] main/139/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
-2023-04-29 20:01:51.914 [30197] main/139/main I> Validate config "metrics" role
-2023-04-29 20:01:51.914 [30197] main/139/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-04-29 20:01:51.914 [30197] main/139/main I> Roles configuration validation finished
-2023-04-29 20:01:51.945 [30197] main/139/main I> Backup of active config created: "/home/user/myapp/tmp/data/myapp.s3-master/config.backup"
-2023-04-29 20:01:51.951 [30197] main/139/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-04-29 20:01:51.951 [30197] main/139/main I> Stateful failover enabled with stateboard at localhost:4401
-2023-04-29 20:01:51.970 [30197] main/139/main I> Not enough enabled instances to start leader_autoreturn fiber
-2023-04-29 20:01:51.970 [30197] main/139/main I> Start applying roles config
-2023-04-29 20:01:51.970 [30197] main/139/main I> Appling "ddl-manager" role config
-2023-04-29 20:01:51.970 [30197] main/139/main I> Successfully applied "ddl-manager" role config in 0.000023 sec
-2023-04-29 20:01:51.970 [30197] main/139/main I> Appling "metrics" role config
-2023-04-29 20:01:51.971 [30197] main/139/main I> Successfully applied "metrics" role config in 0.000489 sec
-2023-04-29 20:01:51.971 [30197] main/139/main I> Roles configuration finished
-2023-04-29 20:01:51.971 [30197] main/139/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-04-29 20:02:07.279 [30197] main C> got signal 15 - Terminated
-2023-04-29 20:02:07.279 [30197] main/151/trigger_fiber1 I> Stop "ddl-manager" role
-2023-04-29 20:02:07.279 [30197] main/151/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
-2023-04-29 20:02:07.279 [30197] main/151/trigger_fiber1 I> Stop "metrics" role
-2023-04-29 20:02:07.279 [30197] main/151/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000040 sec
-2023-04-29 20:02:07.280 [30197] main/150/iproto.shutdown I> tx_binary: stopped
+2023-05-01 13:13:21.379 [6782] main/103/init.lua I> Using advertise_uri "localhost:3306"
+2023-05-01 13:13:21.379 [6782] main/103/init.lua I> Membership encryption enabled
+2023-05-01 13:13:21.385 [6782] main/103/init.lua I> Probe uri was successful
+2023-05-01 13:13:21.386 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3307
+2023-05-01 13:13:21.387 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3307
+2023-05-01 13:13:21.387 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3307
+2023-05-01 13:13:21.388 [6782] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3307
+2023-05-01 13:13:21.388 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3307
+2023-05-01 13:13:21.389 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3305
+2023-05-01 13:13:21.389 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3305
+2023-05-01 13:13:21.389 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3305
+2023-05-01 13:13:21.390 [6782] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3305
+2023-05-01 13:13:21.390 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3305
+2023-05-01 13:13:21.391 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
+2023-05-01 13:13:21.391 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3301
+2023-05-01 13:13:21.391 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
+2023-05-01 13:13:21.392 [6782] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
+2023-05-01 13:13:21.392 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
+2023-05-01 13:13:21.393 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3306
+2023-05-01 13:13:21.394 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.29.79.255:3306
+2023-05-01 13:13:21.394 [6782] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3306
+2023-05-01 13:13:21.395 [6782] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3306
+2023-05-01 13:13:21.395 [6782] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3306
+2023-05-01 13:13:21.397 [6782] main/107/http/0.0.0.0:8086 I> started
+2023-05-01 13:13:21.398 [6782] main/103/init.lua I> Listening HTTP on 0.0.0.0:8086
+2023-05-01 13:13:21.398 [6782] main/103/init.lua I> tcp_server: remove dead UNIX socket: /home/user/myapp/tmp/run/myapp.s3-master.control
+2023-05-01 13:13:21.399 [6782] main/108/console/unix/:/home/user/myapp/tmp/run/myapp.s3-master.control I> started
+2023-05-01 13:13:21.399 [6782] main/103/init.lua I> Load modules and register
+2023-05-01 13:13:21.441 [6782] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
+2023-05-01 13:13:21.447 [6782] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
+2023-05-01 13:13:21.456 [6782] main/109/remote_control/127.0.0.1:3306 I> started
+2023-05-01 13:13:21.456 [6782] main/103/init.lua I> Remote control bound to 127.0.0.1:3306
+2023-05-01 13:13:21.456 [6782] main/103/init.lua I> Instance state changed:  -> ConfigFound
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Validate roles configurations
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Validate config "ddl-manager" role
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Successfully validated config "ddl-manager" role in 0.000009 sec
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Validate config "vshard-router" role
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Successfully validated config "vshard-router" role in 0.000162 sec
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Validate config "metrics" role
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Validate config "crud-router" role
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Successfully validated config "crud-router" role in 0.000001 sec
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Roles configuration validation finished
+2023-05-01 13:13:21.463 [6782] main/103/init.lua I> Instance state changed: ConfigFound -> ConfigLoaded
+2023-05-01 13:13:21.464 [6782] main/110/lua I> Instance state changed: ConfigLoaded -> RecoveringSnapshot
+2023-05-01 13:13:21.464 [6782] main/110/lua confapplier.lua:549 W> Calling box.cfg()...
+2023-05-01 13:13:21.470 [6782] main/110/lua I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
+2023-05-01 13:13:21.470 [6782] main/110/lua I> log level 5
+2023-05-01 13:13:21.470 [6782] main/110/lua I> wal/engine cleanup is paused
+2023-05-01 13:13:21.470 [6782] main/110/lua I> mapping 268435456 bytes for memtx tuple arena...
+2023-05-01 13:13:21.470 [6782] main/110/lua I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2023-05-01 13:13:21.470 [6782] main/110/lua I> mapping 134217728 bytes for vinyl tuple arena...
+2023-05-01 13:13:21.471 [6782] main/110/lua I> Recovering snapshot with schema version 2.10.5
+2023-05-01 13:13:21.471 [6782] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> Cartridge 2.7.9
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> server alias s3-master
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> advertise uri localhost:3306
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> working directory /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> Cartridge options:
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> advertise_uri = localhost:3306
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> alias = s3-master
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> auth_enabled = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> bucket_count = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> console_sock = /home/user/myapp/tmp/run/myapp.s3-master.control
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> http_enabled = true
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> http_host = 0.0.0.0
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> http_port = 8086
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> roles = ["cartridge.roles.vshard-storage","cartridge.roles.vshard-router","cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue","cartridge.roles.crud-router","cartridge.roles.crud-storage"]
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> roles_reload_allowed = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> swim_broadcast = true
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> upgrade_schema = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> upload_prefix = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> vshard_groups = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> webui_blacklist = nil
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> webui_enabled = true
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> webui_enforce_root_redirect = true
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> webui_prefix = 
+2023-05-01 13:13:21.472 [6782] main/103/init.lua I> workdir = /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.472 [6782] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
+2023-05-01 13:13:21.473 [6782] main/103/init.lua I> Set default metrics endpoints
+2023-05-01 13:13:21.473 [6782] main/111/lua I> Cartridge 2.7.9
+2023-05-01 13:13:21.473 [6782] main/111/lua I> server alias s3-master
+2023-05-01 13:13:21.473 [6782] main/111/lua I> advertise uri localhost:3306
+2023-05-01 13:13:21.473 [6782] main/111/lua I> working directory /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.473 [6782] main/110/lua I> update replication_synchro_quorum = 1
+2023-05-01 13:13:21.473 [6782] main/110/lua I> instance uuid ab53154e-78f8-4050-9b28-8ae0471d76aa
+2023-05-01 13:13:21.483 [6782] main I> entering the event loop
+2023-05-01 13:13:21.483 [6782] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.483 [6782] main/110/lua I> instance vclock {0: 1, 1: 34}
+2023-05-01 13:13:21.484 [6782] main/110/lua I> recovery start
+2023-05-01 13:13:21.484 [6782] main/110/lua I> recovering from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.snap'
+2023-05-01 13:13:21.485 [6782] main/110/lua I> cluster uuid 2a4b8056-5294-4836-b656-1cdc0cfc25a9
+2023-05-01 13:13:21.498 [6782] main/110/lua I> assigned id 1 to replica ab53154e-78f8-4050-9b28-8ae0471d76aa
+2023-05-01 13:13:21.498 [6782] main/110/lua I> update replication_synchro_quorum = 1
+2023-05-01 13:13:21.499 [6782] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.xlog'
+2023-05-01 13:13:21.500 [6782] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000000.xlog'
+2023-05-01 13:13:21.500 [6782] main/110/lua I> recover from `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000035.xlog'
+2023-05-01 13:13:21.500 [6782] main/110/lua I> done `/home/user/myapp/tmp/data/myapp.s3-master/00000000000000000035.xlog'
+2023-05-01 13:13:21.501 [6782] main/110/lua I> Building secondary indexes in space '_queue'...
+2023-05-01 13:13:21.501 [6782] main/110/lua I> Adding 1 keys to TREE index 'tube_id' ...
+2023-05-01 13:13:21.501 [6782] main/110/lua I> Space '_queue': done
+2023-05-01 13:13:21.501 [6782] main/110/lua I> RAFT: fencing enabled
+2023-05-01 13:13:21.501 [6782] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.501 [6782] main/110/lua I> ready to accept requests
+2023-05-01 13:13:21.501 [6782] main/110/lua I> leaving orphan mode
+2023-05-01 13:13:21.501 [6782] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.501 [6782] main/112/gc I> wal/engine cleanup is resumed
+2023-05-01 13:13:21.501 [6782] main/110/lua I> set 'custom_proc_title' configuration option to "myapp@s3-master"
+2023-05-01 13:13:21.501 [6782] main/110/lua I> set 'log_level' configuration option to 5
+2023-05-01 13:13:21.501 [6782] main/113/checkpoint_daemon I> scheduled next checkpoint for Mon May  1 14:48:24 2023
+2023-05-01 13:13:21.515 [6782] main/110/lua I> set 'log_format' configuration option to "plain"
+2023-05-01 13:13:21.519 [6782] main/110/lua I> set 'replication_connect_quorum' configuration option to 100
+2023-05-01 13:13:21.519 [6782] main/110/lua I> set 'read_only' configuration option to true
+2023-05-01 13:13:21.520 [6782] main/110/lua I> Making sure user "admin" exists...
+2023-05-01 13:13:21.520 [6782] main/110/lua I> Remote control stopped
+2023-05-01 13:13:21.520 [6782] main/109/remote_control/127.0.0.1:3306 I> stopped
+2023-05-01 13:13:21.521 [6782] main/110/lua I> tx_binary: bound to 127.0.0.1:3306
+2023-05-01 13:13:21.521 [6782] main/110/lua I> set 'listen' configuration option to "127.0.0.1:3306"
+2023-05-01 13:13:21.521 [6782] main/110/lua I> Instance state changed: RecoveringSnapshot -> ConnectingFullmesh
+2023-05-01 13:13:21.521 [6782] main/110/lua I> connecting to 1 replicas
+2023-05-01 13:13:21.524 [6782] main/126/applier/admin@localhost:3306 I> remote master ab53154e-78f8-4050-9b28-8ae0471d76aa at 127.0.0.1:3306 running Tarantool 2.10.6
+2023-05-01 13:13:21.524 [6782] main/110/lua I> connected to 1 replicas
+2023-05-01 13:13:21.524 [6782] main/110/lua I> synchronizing with 1 replicas
+2023-05-01 13:13:21.524 [6782] main/126/applier/admin@localhost:3306 I> leaving orphan mode
+2023-05-01 13:13:21.524 [6782] main/126/applier/admin@localhost:3306 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.524 [6782] main/110/lua I> replica set sync complete
+2023-05-01 13:13:21.524 [6782] main/110/lua I> leaving orphan mode
+2023-05-01 13:13:21.524 [6782] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.524 [6782] main/110/lua I> set 'replication' configuration option to ["admin@localhost:3306"]
+2023-05-01 13:13:21.525 [6782] main/110/lua I> Instance state changed: ConnectingFullmesh -> BoxConfigured
+2023-05-01 13:13:21.525 [6782] main/110/lua I> Tarantool options:
+2023-05-01 13:13:21.525 [6782] main/110/lua I> audit_log = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> audit_nonblock = true
+2023-05-01 13:13:21.525 [6782] main/110/lua I> audit_format = json
+2023-05-01 13:13:21.525 [6782] main/110/lua I> audit_filter = compatibility
+2023-05-01 13:13:21.525 [6782] main/110/lua I> background = false
+2023-05-01 13:13:21.525 [6782] main/110/lua I> checkpoint_count = 2
+2023-05-01 13:13:21.525 [6782] main/110/lua I> checkpoint_interval = 3600
+2023-05-01 13:13:21.525 [6782] main/110/lua I> checkpoint_wal_threshold = 1e+18
+2023-05-01 13:13:21.525 [6782] main/110/lua I> custom_proc_title = myapp@s3-master
+2023-05-01 13:13:21.525 [6782] main/110/lua I> election_fencing_mode = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> election_mode = off
+2023-05-01 13:13:21.525 [6782] main/110/lua I> election_timeout = 5
+2023-05-01 13:13:21.525 [6782] main/110/lua I> feedback_enabled = true
+2023-05-01 13:13:21.525 [6782] main/110/lua I> feedback_host = https://feedback.tarantool.io
+2023-05-01 13:13:21.525 [6782] main/110/lua I> feedback_interval = 3600
+2023-05-01 13:13:21.525 [6782] main/110/lua I> feedback_crashinfo = true
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_enabled = false
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_logs_size = 10485760
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_logs_max_msg_size = 4096
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_logs_log_level = 6
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_metrics_interval = 1
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_metrics_period = 180
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_requests_size = 10485760
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_requests_max_req_size = 16384
+2023-05-01 13:13:21.525 [6782] main/110/lua I> flightrec_requests_max_res_size = 16384
+2023-05-01 13:13:21.525 [6782] main/110/lua I> force_recovery = false
+2023-05-01 13:13:21.525 [6782] main/110/lua I> hot_standby = false
+2023-05-01 13:13:21.525 [6782] main/110/lua I> instance_uuid = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> io_collect_interval = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> iproto_threads = 1
+2023-05-01 13:13:21.525 [6782] main/110/lua I> listen = 127.0.0.1:3306
+2023-05-01 13:13:21.525 [6782] main/110/lua I> log = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> log_format = plain
+2023-05-01 13:13:21.525 [6782] main/110/lua I> log_level = 5
+2023-05-01 13:13:21.525 [6782] main/110/lua I> log_nonblock = nil
+2023-05-01 13:13:21.525 [6782] main/110/lua I> memtx_dir = /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.525 [6782] main/110/lua I> memtx_max_tuple_size = 1048576
+2023-05-01 13:13:21.525 [6782] main/110/lua I> memtx_memory = 268435456
+2023-05-01 13:13:21.525 [6782] main/110/lua I> memtx_allocator = small
+2023-05-01 13:13:21.525 [6782] main/110/lua I> memtx_min_tuple_size = 16
+2023-05-01 13:13:21.526 [6782] main/110/lua I> memtx_use_mvcc_engine = false
+2023-05-01 13:13:21.526 [6782] main/110/lua I> net_msg_max = 768
+2023-05-01 13:13:21.526 [6782] main/110/lua I> pid_file = /home/user/myapp/tmp/run/myapp.s3-master.pid
+2023-05-01 13:13:21.526 [6782] main/110/lua I> read_only = true
+2023-05-01 13:13:21.526 [6782] main/110/lua I> readahead = 16320
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replicaset_uuid = nil
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication = table: 0x7fe56ec0
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_anon = false
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_connect_quorum = 100
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_connect_timeout = 30
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_skip_conflict = false
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_sync_lag = 10
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_sync_timeout = 300
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_synchro_quorum = N / 2 + 1
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_synchro_timeout = 5
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_timeout = 1
+2023-05-01 13:13:21.526 [6782] main/110/lua I> replication_threads = 1
+2023-05-01 13:13:21.526 [6782] main/110/lua I> slab_alloc_factor = 1.05
+2023-05-01 13:13:21.526 [6782] main/110/lua I> slab_alloc_granularity = 8
+2023-05-01 13:13:21.526 [6782] main/110/lua I> snap_io_rate_limit = nil
+2023-05-01 13:13:21.526 [6782] main/110/lua I> sql_cache_size = 5242880
+2023-05-01 13:13:21.526 [6782] main/110/lua I> strip_core = true
+2023-05-01 13:13:21.526 [6782] main/110/lua I> txn_isolation = best-effort
+2023-05-01 13:13:21.526 [6782] main/110/lua I> too_long_threshold = 0.5
+2023-05-01 13:13:21.526 [6782] main/110/lua I> username = nil
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_bloom_fpr = 0.05
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_cache = 134217728
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_defer_deletes = false
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_dir = /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_max_tuple_size = 1048576
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_memory = 134217728
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_page_size = 8192
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_range_size = nil
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_read_threads = 1
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_run_count_per_level = 2
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_run_size_ratio = 3.5
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_timeout = 60
+2023-05-01 13:13:21.526 [6782] main/110/lua I> vinyl_write_threads = 4
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_dir = /home/user/myapp/tmp/data/myapp.s3-master
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_dir_rescan_delay = 2
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_max_size = 268435456
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_queue_max_size = 16777216
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_cleanup_delay = 14400
+2023-05-01 13:13:21.526 [6782] main/110/lua I> wal_mode = write
+2023-05-01 13:13:21.526 [6782] main/110/lua I> work_dir = nil
+2023-05-01 13:13:21.526 [6782] main/110/lua I> worker_pool_threads = 4
+2023-05-01 13:13:21.526 [6782] main/110/lua I> txn_timeout = 3153600000
+2023-05-01 13:13:21.526 [6782] main/110/lua I> Instance state changed: BoxConfigured -> ConfiguringRoles
+2023-05-01 13:13:21.526 [6782] main/110/lua I> leaving orphan mode
+2023-05-01 13:13:21.526 [6782] main/110/lua systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-01 13:13:21.526 [6782] main/110/lua I> set 'replication_connect_quorum' configuration option to 0
+2023-05-01 13:13:21.526 [6782] main/110/lua I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Not enough enabled instances to start leader_autoreturn fiber
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset 3a9bf4d4-1245-4830-a28d-ac1f1a8ab18e: new leader cdcc0521-d2a4-481d-9563-c2417e8ea53b ("localhost:3304"), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset 2a4b8056-5294-4836-b656-1cdc0cfc25a9 (me): new leader ab53154e-78f8-4050-9b28-8ae0471d76aa (me), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset a3be65c0-2696-4a2e-8b93-5acc710fcc06: new leader 9426b45c-8d9e-4076-a6d6-b5833e772ebf ("localhost:3303"), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset 23dbaca1-c88a-4fd5-953c-938a7c7c03d5: new leader 8a1e23de-f0e4-43bd-8c9d-8933177a48cc ("localhost:3301"), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset 56dd6a09-9960-48a9-8167-51999c47b192: new leader e988aa79-5982-4aa0-812e-6416c12e5844 ("localhost:3302"), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> Replicaset 7b9da50b-4486-4033-b371-3a7ca6c570d6: new leader b80c2183-00eb-42f0-aeb9-f07ba66a561e ("localhost:3305"), was nil
+2023-05-01 13:13:21.529 [6782] main/110/lua I> set 'read_only' configuration option to false
+2023-05-01 13:13:21.530 [6782] main/110/lua I> queue: [tube "cust_queue"] releasing all taken task (may take a while)
+2023-05-01 13:13:21.530 [6782] main/110/lua I> queue: [tube "cust_queue"] released 0 tasks
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Started queue state fiber
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Start applying roles config
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Init "ddl-manager" role
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Successfully initialized "ddl-manager" role in 0.000002 sec
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Appling "ddl-manager" role config
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Successfully applied "ddl-manager" role config in 0.000020 sec
+2023-05-01 13:13:21.531 [6782] main/110/lua I> Init "metrics" role
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Successfully initialized "metrics" role in 0.007555 sec
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Appling "metrics" role config
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Successfully applied "metrics" role config in 0.000505 sec
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Init "myqueue" role
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Successfully initialized "myqueue" role in 0.000282 sec
+2023-05-01 13:13:21.539 [6782] main/110/lua I> Roles configuration finished
+2023-05-01 13:13:21.540 [6782] main/110/lua I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-01 13:13:23.573 [6782] main C> got signal 15 - Terminated
+2023-05-01 13:13:23.573 [6782] main/135/trigger_fiber1 I> Stop "ddl-manager" role
+2023-05-01 13:13:23.573 [6782] main/135/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
+2023-05-01 13:13:23.573 [6782] main/135/trigger_fiber1 I> Stop "metrics" role
+2023-05-01 13:13:23.573 [6782] main/135/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000041 sec
+2023-05-01 13:13:23.574 [6782] main/134/iproto.shutdown I> tx_binary: stopped

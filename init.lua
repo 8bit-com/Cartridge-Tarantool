@@ -32,11 +32,15 @@ end
 local cartridge = require('cartridge')
 local ok, err = cartridge.cfg({
     roles = {
+        'cartridge.roles.vshard-storage',
+        'cartridge.roles.vshard-router',
         'cartridge.roles.metrics',
         'app.roles.api',
         'app.roles.repo_api',
         'app.roles.storage',
         'app.roles.myqueue',
+        'cartridge.roles.crud-router',
+        'cartridge.roles.crud-storage',
     },
     cluster_cookie = 'myapp-cluster-cookie',
 })

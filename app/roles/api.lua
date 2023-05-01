@@ -28,7 +28,6 @@ local function http_customer_add(req)
 end
 
 local function http_customer_get(req)
-    --log.info(box.schema.customer:select())
     local customer_id = tonumber(req.tstash.customer_id or 0)
     local customer, err = crud.get('customer', customer_id)
     if err then

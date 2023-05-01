@@ -7,6 +7,7 @@ local function init_spaces()
             -- формат хранимых кортежей
             format = {
                 {'customer_id', 'unsigned'},
+                {'bucket_id', 'unsigned'},
                 {'name', 'string'},
             },
             -- создадим спейс, только если его не было
@@ -15,6 +16,11 @@ local function init_spaces()
     )
     -- создадим индекс по id пользователя
     customer:create_index('customer_id', {
+        parts = {{field = 'customer_id'}},
+        if_not_exists = true,
+    })
+    customer:create_index('bucket_id', {
+        parts = {{field = 'bucket_id'}},
         if_not_exists = true,
     })
 end
