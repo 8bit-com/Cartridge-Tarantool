@@ -9,13 +9,13 @@ local tnt_kafka = require('kafka')
 local err_httpd = errors.new_class("httpd error")
 
 local function http_kafka_producer()
-    local producer, err = tnt_kafka.Producer.create({ brokers = "kafka:29092" })
+    local producer, err = tnt_kafka.Producer.create({ brokers = "localhost:29092" })
     if err ~= nil then
         log.info(err)
         os.exit(1)
     end
 
-    for i = 1, 1000 do
+    for i = 1, 10 do
         local message = "test_value " .. tostring(i)
         local err = producer:produce({
             topic = "test_topic",
