@@ -1,9 +1,23 @@
 ---
 replicasets:
-  3a9bf4d4-1245-4830-a28d-ac1f1a8ab18e:
+  4a49e949-b438-4691-b5b3-52d29d22daed:
     weight: 1
     master:
-    - cdcc0521-d2a4-481d-9563-c2417e8ea53b
+    - 688c75c3-71fc-473f-9e64-cd82585e07dd
+    alias: unnamed
+    vshard_group: default
+    roles:
+      ddl-manager: true
+      failover-coordinator: true
+      storage: true
+      crud-storage: true
+      metrics: true
+      vshard-storage: true
+    all_rw: false
+  a019ce9f-5159-4ba2-b0db-8f1f1578a9ab:
+    weight: 1
+    master:
+    - 724b61f8-b009-4d1c-98db-bf6b6be37980
     alias: unnamed
     vshard_group: default
     all_rw: false
@@ -13,20 +27,20 @@ replicasets:
       crud-storage: true
       metrics: true
       vshard-storage: true
-  2a4b8056-5294-4836-b656-1cdc0cfc25a9:
+  b1e77cb5-a5ab-4a93-97bd-9f1f4e3dff30:
     weight: 0
     master:
-    - ab53154e-78f8-4050-9b28-8ae0471d76aa
+    - eecbf0b8-c583-461e-827a-ccf983fd58fc
     alias: unnamed
     roles:
       ddl-manager: true
       myqueue: true
       metrics: true
     all_rw: false
-  7b9da50b-4486-4033-b371-3a7ca6c570d6:
+  a7e7f151-82be-45ae-9e48-5adfd71891cc:
     weight: 1
     master:
-    - b80c2183-00eb-42f0-aeb9-f07ba66a561e
+    - 545f0a8f-6cf3-4bb6-b1c9-9a62bc297528
     alias: unnamed
     vshard_group: default
     roles:
@@ -36,10 +50,10 @@ replicasets:
       metrics: true
       vshard-storage: true
     all_rw: false
-  23dbaca1-c88a-4fd5-953c-938a7c7c03d5:
+  eec027f7-97ee-4e1a-a065-32dc7ea01be9:
     weight: 0
     master:
-    - 8a1e23de-f0e4-43bd-8c9d-8933177a48cc
+    - b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b
     alias: unnamed
     roles:
       ddl-manager: true
@@ -49,63 +63,49 @@ replicasets:
       metrics: true
       vshard-router: true
     all_rw: false
-  56dd6a09-9960-48a9-8167-51999c47b192:
+  f76f3cff-78cd-4bce-b965-3fea52f402f3:
     weight: 1
     master:
-    - e988aa79-5982-4aa0-812e-6416c12e5844
+    - 0ca26e4d-33d5-41b0-b6fa-37ee455508f9
     alias: unnamed
     vshard_group: default
     all_rw: false
-    roles:
-      ddl-manager: true
-      failover-coordinator: true
-      storage: true
-      crud-storage: true
-      metrics: true
-      vshard-storage: true
-  a3be65c0-2696-4a2e-8b93-5acc710fcc06:
-    weight: 1
-    master:
-    - 9426b45c-8d9e-4076-a6d6-b5833e772ebf
-    alias: unnamed
-    vshard_group: default
     roles:
       ddl-manager: true
       storage: true
       crud-storage: true
       metrics: true
       vshard-storage: true
-    all_rw: false
 servers:
-  9426b45c-8d9e-4076-a6d6-b5833e772ebf:
+  724b61f8-b009-4d1c-98db-bf6b6be37980:
     electable: true
-    replicaset_uuid: a3be65c0-2696-4a2e-8b93-5acc710fcc06
-    uri: localhost:3303
+    replicaset_uuid: a019ce9f-5159-4ba2-b0db-8f1f1578a9ab
+    uri: localhost:3305
     disabled: false
-  8a1e23de-f0e4-43bd-8c9d-8933177a48cc:
+  688c75c3-71fc-473f-9e64-cd82585e07dd:
     electable: true
-    replicaset_uuid: 23dbaca1-c88a-4fd5-953c-938a7c7c03d5
-    uri: localhost:3301
-    disabled: false
-  cdcc0521-d2a4-481d-9563-c2417e8ea53b:
-    electable: true
-    replicaset_uuid: 3a9bf4d4-1245-4830-a28d-ac1f1a8ab18e
-    uri: localhost:3304
-    disabled: false
-  e988aa79-5982-4aa0-812e-6416c12e5844:
-    electable: true
-    replicaset_uuid: 56dd6a09-9960-48a9-8167-51999c47b192
+    replicaset_uuid: 4a49e949-b438-4691-b5b3-52d29d22daed
     uri: localhost:3302
     disabled: false
-  ab53154e-78f8-4050-9b28-8ae0471d76aa:
+  b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b:
     electable: true
-    replicaset_uuid: 2a4b8056-5294-4836-b656-1cdc0cfc25a9
-    uri: localhost:3306
+    replicaset_uuid: eec027f7-97ee-4e1a-a065-32dc7ea01be9
+    uri: localhost:3301
     disabled: false
-  b80c2183-00eb-42f0-aeb9-f07ba66a561e:
+  545f0a8f-6cf3-4bb6-b1c9-9a62bc297528:
     electable: true
-    replicaset_uuid: 7b9da50b-4486-4033-b371-3a7ca6c570d6
-    uri: localhost:3305
+    replicaset_uuid: a7e7f151-82be-45ae-9e48-5adfd71891cc
+    uri: localhost:3304
+    disabled: false
+  0ca26e4d-33d5-41b0-b6fa-37ee455508f9:
+    electable: true
+    replicaset_uuid: f76f3cff-78cd-4bce-b965-3fea52f402f3
+    uri: localhost:3303
+    disabled: false
+  eecbf0b8-c583-461e-827a-ccf983fd58fc:
+    electable: true
+    replicaset_uuid: b1e77cb5-a5ab-4a93-97bd-9f1f4e3dff30
+    uri: localhost:3306
     disabled: false
 failover:
   fencing_enabled: false

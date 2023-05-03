@@ -13,6 +13,7 @@ dependencies = {
     'metrics == 0.16.0-1',
     'ddl == 1.3.0-1',
     'queue',
+    'kafka'
 }
 build = {
     type = 'none';

@@ -3,8 +3,34 @@ local cartridge = require('cartridge')
 local errors = require('errors')
 local crud = require('crud')
 local log = require('log')
+local os = require('os')
+local tnt_kafka = require('kafka')
 
 local err_httpd = errors.new_class("httpd error")
+
+local function http_kafka_producer()
+    local producer, err = tnt_kafka.Producer.create({ brokers = "kafka:29092" })
+    if err ~= nil then
+        log.info(err)
+        os.exit(1)
+    end
+
+    for i = 1, 1000 do
+        local message = "test_value " .. tostring(i)
+        local err = producer:produce({
+            topic = "test_topic",
+            key = "test_key",
+            value =  message
+        })
+        if err ~= nil then
+            log.info(string.format("got error '%s' while sending value '%s'", err, message))
+        else
+            log.info(string.format("successfully sent value '%s'", message))
+        end
+    end
+
+    producer:close()
+end
 
 local function http_customer_add(req)
     local customer = req:json()
@@ -104,6 +130,36 @@ local function http_customer_delete(req)
     return resp
 end
 
+local function http_customer_delete_all(req)
+    local customer, err = crud.select('customer', nil, {fullscan = true})
+
+    if err then
+        local resp = req:render({json = {
+            info = "Internal error",
+            error = err
+        }})
+        resp.status = 500
+        return resp
+    end
+
+    customer = crud.unflatten_rows(customer.rows, customer.metadata)
+
+    for i, v in ipairs(customer) do
+        crud.delete('customer', v.customer_id)
+    end
+
+    if customer == nil then
+        local resp = req:render({json = { info = "Customer not found" }})
+        resp.status = 404
+        return resp
+    end
+
+    local resp = req:render({json = customer})
+    resp.status = 200
+
+    return resp
+end
+
 local function http_customer_update(req)
     local customer = req:json()
     local customer_id = tonumber(customer.customer_id or 0)
@@ -162,6 +218,24 @@ local function http_customer_pop(req)
     return resp
 end
 
+local function http_queue_clean(req)
+    local _, error = cartridge.rpc_call('myqueue', 'queue_clean')
+
+    if error then
+        local resp = req:render({json = {
+            info = "Internal error",
+            error = error
+        }})
+        resp.status = 500
+        return resp
+    end
+    local mess = "Очередь пуста"
+    local resp = req:render({json = mess})
+    resp.status = 200
+
+    return resp
+end
+
 local function init(opts)
 
     if opts.is_master then
@@ -180,6 +254,10 @@ local function init(opts)
 
     -- Навешиваем функции-обработчики
     httpd:route(
+        { path = '/storage/produce', method = 'GET', public = true },
+        http_kafka_producer
+    )
+    httpd:route(
         { path = '/storage/customers/create', method = 'POST', public = true },
         http_customer_add
     )
@@ -196,12 +274,20 @@ local function init(opts)
         http_customer_delete
     )
     httpd:route(
+        { path = '/storage/customers/delete_all', method = 'GET', public = true },
+        http_customer_delete_all
+    )
+    httpd:route(
         { path = '/storage/customers/pop', method = 'GET', public = true },
         http_customer_pop
     )
     httpd:route(
         { path = '/storage/customers/update', method = 'POST', public = true },
         http_customer_update
+    )
+    httpd:route(
+        { path = '/storage/customers/queue_clean', method = 'GET', public = true },
+        http_queue_clean
     )
     return true
 end

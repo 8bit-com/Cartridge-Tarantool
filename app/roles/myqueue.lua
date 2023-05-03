@@ -11,6 +11,7 @@ local function init_spaces()
             format = {
                 {'customer_id', 'unsigned'},
                 {'name', 'string'},
+                {'data', 'string'},
             },
             -- создадим спейс, только если его не было
             if_not_exists = true,
@@ -22,19 +23,19 @@ local function init_spaces()
         if_not_exists = true,
     })
     -- Создаем очередь
-    queue.create_tube('cust_queue', 'fifo', {
+    queue.create_tube('cust_queue', 'fifottl', {
         if_not_exists = true,
         temporary = false,
-        max_size = 100,
         format = {
             {'customer_id', 'unsigned'},
             {'name', 'string'},
+            {'data', 'string'},
         },
     })
 end
 
 local function on_replace_function(customer)
-    queue.tube.cust_queue:put(customer)
+    queue.tube.cust_queue:put(customer, {ttr = 10})
 
     local http_client = require('http.client')
     local json = require('json')
@@ -50,18 +51,30 @@ end
 
 -- создаём функцию на получение данных из очереди
 local function queue_take()
-    if box.space.cust_queue:len() == 0 then
+    local stat = queue.statistics('cust_queue')
+    if stat.tasks.ready == 0 then
         return 'Очередь пуста'
     else
         local customer = queue.tube.cust_queue:take(0.01)
-        queue.tube.cust_queue:ack(customer[1])
+        --customer = queue.tube.cust_queue:ack(customer[1])
         return customer
+    end
+end
+
+-- создаём функцию очистки очереди
+local function queue_clean()
+    local stat = queue.statistics('cust_queue')
+    local count = stat.tasks.ready
+    for i = 1, count do
+        local customer = queue.tube.cust_queue:take(0.01)
+        queue.tube.cust_queue:ack(customer[1])
     end
 end
 
 local exported_functions = {
     on_replace_function = on_replace_function,
     queue_take = queue_take,
+    queue_clean = queue_clean,
 }
 
 local function init(opts)
@@ -87,4 +100,5 @@ return {
     init = init,
     on_replace_function = on_replace_function,
     queue_take = queue_take,
+    queue_clean = queue_clean,
 }

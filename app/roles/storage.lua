@@ -9,6 +9,7 @@ local function init_spaces()
                 {'customer_id', 'unsigned'},
                 {'bucket_id', 'unsigned'},
                 {'name', 'string'},
+                {'data', 'string'},
             },
             -- создадим спейс, только если его не было
             if_not_exists = true,

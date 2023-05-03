@@ -5,22 +5,33 @@ local log = require('log')
 
 local function customer_pop()
     local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
-    log.info("repo_api")
-    log.info(customer[3])
 
     if error then
         return "Internal error"
     end
 
     if customer == "Очередь пуста" then
-        return "Очередь пуста"
+        return nil
     else
         return customer[3]
     end
 end
 
+local function repo_customer_add(customer)
+    local _, err = crud.insert_object('customer', customer)
+
+    if err then
+        log.info("ERROR_ADD!!!")
+        log.info(err)
+    end
+
+    cartridge.rpc_call('myqueue', 'on_replace_function', {customer})
+
+end
+
 local exported_functions = {
     customer_pop = customer_pop,
+    repo_customer_add = repo_customer_add,
 }
 
 local function init(opts)
