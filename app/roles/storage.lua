@@ -22,7 +22,7 @@ local function init_spaces()
     })
     customer:create_index('bucket_id', {
         parts = {{field = 'bucket_id'}},
-        if_not_exists = true,
+        if_not_exists = true, unique= false,
     })
 end
 
@@ -35,7 +35,7 @@ local function init(opts)
 end
 
 return {
-    role_name = 'storage',
+    role_name = 'app.roles.storage',
     init = init,
     dependencies = {
         'cartridge.roles.crud-storage',

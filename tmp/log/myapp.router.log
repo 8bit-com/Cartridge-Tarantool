@@ -1,715 +1,518 @@
-2023-05-02 22:40:15.341 [18714] main/103/init.lua I> Using advertise_uri "localhost:3301"
-2023-05-02 22:40:15.341 [18714] main/103/init.lua I> Membership encryption enabled
-2023-05-02 22:40:15.349 [18714] main/103/init.lua I> Probe uri was successful
-2023-05-02 22:40:15.350 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3302
-2023-05-02 22:40:15.351 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3302
-2023-05-02 22:40:15.351 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3302
-2023-05-02 22:40:15.352 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3302
-2023-05-02 22:40:15.352 [18714] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3302
-2023-05-02 22:40:15.352 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3302
-2023-05-02 22:40:15.353 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
-2023-05-02 22:40:15.354 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3301
-2023-05-02 22:40:15.355 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
-2023-05-02 22:40:15.356 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3301
-2023-05-02 22:40:15.356 [18714] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
-2023-05-02 22:40:15.357 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
-2023-05-02 22:40:15.358 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3300
-2023-05-02 22:40:15.358 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3300
-2023-05-02 22:40:15.359 [18714] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3300
-2023-05-02 22:40:15.360 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3300
-2023-05-02 22:40:15.361 [18714] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3300
-2023-05-02 22:40:15.361 [18714] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3300
-2023-05-02 22:40:15.364 [18714] main/107/http/0.0.0.0:8081 I> started
-2023-05-02 22:40:15.365 [18714] main/103/init.lua I> Listening HTTP on 0.0.0.0:8081
-2023-05-02 22:40:15.366 [18714] main/108/console/unix/:/home/user/Cartridge-Tarantool/tmp/run/myapp.router.control I> started
-2023-05-02 22:40:15.366 [18714] main/103/init.lua I> Load modules and register
-2023-05-02 22:40:15.410 [18714] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
-2023-05-02 22:40:15.416 [18714] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
-2023-05-02 22:40:15.428 [18714] main/109/remote_control/127.0.0.1:3301 I> started
-2023-05-02 22:40:15.428 [18714] main/103/init.lua I> Remote control bound to 127.0.0.1:3301
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> Remote control ready to accept connections
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> Instance state changed:  -> Unconfigured
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> Cartridge 2.7.9
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> server alias router
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> advertise uri localhost:3301
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> Cartridge options:
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> advertise_uri = localhost:3301
-2023-05-02 22:40:15.429 [18714] main/103/init.lua I> alias = router
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> auth_enabled = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> bucket_count = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> console_sock = /home/user/Cartridge-Tarantool/tmp/run/myapp.router.control
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> http_enabled = true
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> http_host = 0.0.0.0
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> http_port = 8081
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> roles = ["cartridge.roles.vshard-storage","cartridge.roles.vshard-router","cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue","cartridge.roles.crud-router","cartridge.roles.crud-storage"]
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> roles_reload_allowed = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> swim_broadcast = true
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> upgrade_schema = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> upload_prefix = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> vshard_groups = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> webui_blacklist = nil
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> webui_enabled = true
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> webui_enforce_root_redirect = true
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> webui_prefix = 
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> workdir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:15.430 [18714] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
-2023-05-02 22:40:15.430 [18714] main/103/init.lua I> Set default metrics endpoints
-2023-05-02 22:40:15.430 [18714] main I> entering the event loop
-2023-05-02 22:40:15.430 [18714] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:23.459 [18714] main/110/http/127.0.0.1:57650 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:23.460 [18714] main/110/http/127.0.0.1:57650 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:23.468 [18714] main/110/http/127.0.0.1:57650 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:23.468 [18714] main/127/remote_control/127.0.0.1:57656 I> Validate roles configurations
-2023-05-02 22:40:23.468 [18714] main/127/remote_control/127.0.0.1:57656 I> Validate config "ddl-manager" role
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Successfully validated config "ddl-manager" role in 0.000007 sec
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Validate config "vshard-router" role
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Successfully validated config "vshard-router" role in 0.000017 sec
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Validate config "metrics" role
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Validate config "crud-router" role
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:23.469 [18714] main/127/remote_control/127.0.0.1:57656 I> Roles configuration validation finished
-2023-05-02 22:40:23.475 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:23.475 [18714] main/110/http/127.0.0.1:57650 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:23.476 [18714] main/128/remote_control/127.0.0.1:57656 I> Instance state changed: Unconfigured -> BootstrappingBox
-2023-05-02 22:40:23.476 [18714] main/128/remote_control/127.0.0.1:57656 confapplier.lua:549 W> Calling box.cfg()...
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> log level 5
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> wal/engine cleanup is paused
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> mapping 268435456 bytes for memtx tuple arena...
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
-2023-05-02 22:40:23.477 [18714] main/128/remote_control/127.0.0.1:57656 I> mapping 134217728 bytes for vinyl tuple arena...
-2023-05-02 22:40:23.478 [18714] main/128/remote_control/127.0.0.1:57656 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:23.479 [18714] main/128/remote_control/127.0.0.1:57656 I> update replication_synchro_quorum = 1
-2023-05-02 22:40:23.479 [18714] main/128/remote_control/127.0.0.1:57656 I> instance uuid b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b
-2023-05-02 22:40:23.479 [18714] main/129/remote_control/127.0.0.1:57656 I> Cartridge 2.7.9
-2023-05-02 22:40:23.479 [18714] main/129/remote_control/127.0.0.1:57656 I> server alias router
-2023-05-02 22:40:23.479 [18714] main/129/remote_control/127.0.0.1:57656 I> advertise uri localhost:3301
-2023-05-02 22:40:23.479 [18714] main/129/remote_control/127.0.0.1:57656 I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:23.479 [18714] main/128/remote_control/127.0.0.1:57656 I> initializing an empty data directory
-2023-05-02 22:40:23.491 [18714] main/128/remote_control/127.0.0.1:57656 I> assigned id 1 to replica b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b
-2023-05-02 22:40:23.491 [18714] main/128/remote_control/127.0.0.1:57656 I> update replication_synchro_quorum = 1
-2023-05-02 22:40:23.491 [18714] main/128/remote_control/127.0.0.1:57656 I> cluster uuid eec027f7-97ee-4e1a-a065-32dc7ea01be9
-2023-05-02 22:40:23.492 [18714] snapshot/101/main I> saving snapshot `/home/user/Cartridge-Tarantool/tmp/data/myapp.router/00000000000000000000.snap.inprogress'
-2023-05-02 22:40:23.495 [18714] snapshot/101/main I> done
-2023-05-02 22:40:23.496 [18714] main/128/remote_control/127.0.0.1:57656 I> RAFT: fencing enabled
-2023-05-02 22:40:23.496 [18714] main/128/remote_control/127.0.0.1:57656 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:23.496 [18714] main/128/remote_control/127.0.0.1:57656 I> ready to accept requests
-2023-05-02 22:40:23.496 [18714] main/130/gc I> wal/engine cleanup is resumed
-2023-05-02 22:40:23.496 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'custom_proc_title' configuration option to "myapp@router"
-2023-05-02 22:40:23.496 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'log_level' configuration option to 5
-2023-05-02 22:40:23.496 [18714] main/131/checkpoint_daemon I> scheduled next checkpoint for Tue May  2 23:47:38 2023
-2023-05-02 22:40:23.505 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'log_format' configuration option to "plain"
-2023-05-02 22:40:23.505 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'instance_uuid' configuration option to "b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b"
-2023-05-02 22:40:23.507 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'replication_connect_quorum' configuration option to 0
-2023-05-02 22:40:23.507 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'replicaset_uuid' configuration option to "eec027f7-97ee-4e1a-a065-32dc7ea01be9"
-2023-05-02 22:40:23.513 [18714] main/128/remote_control/127.0.0.1:57656 I> Started queue state fiber
-2023-05-02 22:40:23.513 [18714] main/128/remote_control/127.0.0.1:57656 I> Making sure user "admin" exists...
-2023-05-02 22:40:23.513 [18714] main/128/remote_control/127.0.0.1:57656 I> Granting replication permissions to "admin"...
-2023-05-02 22:40:23.513 [18714] main/128/remote_control/127.0.0.1:57656 I> Setting password for user "admin" ...
-2023-05-02 22:40:23.513 [18714] main/128/remote_control/127.0.0.1:57656 I> Remote control stopped
-2023-05-02 22:40:23.513 [18714] main/109/remote_control/127.0.0.1:3301 I> stopped
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> tx_binary: bound to 127.0.0.1:3301
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'listen' configuration option to "127.0.0.1:3301"
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> connecting to 1 replicas
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 C> failed to connect to 1 out of 1 replicas
-2023-05-02 22:40:23.514 [18714] main/145/queue_state_fiber I> Queue state changed: ENDING
-2023-05-02 22:40:23.514 [18714] main/145/queue_state_fiber I> Queue state changed: WAITING
-2023-05-02 22:40:23.514 [18714] main/144/queue_expiration_fiber I> Queue expiration fiber was stopped
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> leaving orphan mode
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> set 'replication' configuration option to ["admin@localhost:3301"]
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> Tarantool options:
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> audit_log = nil
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> audit_nonblock = true
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> audit_format = json
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> audit_filter = compatibility
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> background = false
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> checkpoint_count = 2
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> checkpoint_interval = 3600
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> checkpoint_wal_threshold = 1e+18
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> custom_proc_title = myapp@router
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> election_fencing_mode = nil
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> election_mode = off
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> election_timeout = 5
-2023-05-02 22:40:23.514 [18714] main/128/remote_control/127.0.0.1:57656 I> feedback_enabled = true
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> feedback_host = https://feedback.tarantool.io
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> feedback_interval = 3600
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> feedback_crashinfo = true
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_enabled = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_logs_size = 10485760
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_logs_max_msg_size = 4096
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_logs_log_level = 6
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_metrics_interval = 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_metrics_period = 180
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_requests_size = 10485760
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_requests_max_req_size = 16384
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> flightrec_requests_max_res_size = 16384
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> force_recovery = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> hot_standby = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> instance_uuid = b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> io_collect_interval = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> iproto_threads = 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> listen = 127.0.0.1:3301
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> log = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> log_format = plain
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> log_level = 5
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> log_nonblock = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_max_tuple_size = 1048576
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_memory = 268435456
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_allocator = small
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_min_tuple_size = 16
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> memtx_use_mvcc_engine = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> net_msg_max = 768
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> pid_file = /home/user/Cartridge-Tarantool/tmp/run/myapp.router.pid
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> read_only = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> readahead = 16320
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replicaset_uuid = eec027f7-97ee-4e1a-a065-32dc7ea01be9
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication = table: 0x7f80a2d8
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_anon = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_connect_quorum = 0
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_connect_timeout = 30
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_skip_conflict = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_sync_lag = 10
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_sync_timeout = 300
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_synchro_quorum = N / 2 + 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_synchro_timeout = 5
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_timeout = 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> replication_threads = 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> slab_alloc_factor = 1.05
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> slab_alloc_granularity = 8
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> snap_io_rate_limit = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> sql_cache_size = 5242880
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> strip_core = true
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> txn_isolation = best-effort
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> too_long_threshold = 0.5
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> username = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_bloom_fpr = 0.05
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_cache = 134217728
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_defer_deletes = false
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_max_tuple_size = 1048576
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_memory = 134217728
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_page_size = 8192
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_range_size = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_read_threads = 1
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_run_count_per_level = 2
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_run_size_ratio = 3.5
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_timeout = 60
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> vinyl_write_threads = 4
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_dir_rescan_delay = 2
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_max_size = 268435456
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_queue_max_size = 16777216
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_cleanup_delay = 14400
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> wal_mode = write
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> work_dir = nil
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> worker_pool_threads = 4
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> txn_timeout = 3153600000
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> Instance state changed: BoxConfigured -> ConfiguringRoles
-2023-05-02 22:40:23.515 [18714] main/128/remote_control/127.0.0.1:57656 I> Failover disabled
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Replicaset eec027f7-97ee-4e1a-a065-32dc7ea01be9 (me): new leader b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b (me), was nil
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Start applying roles config
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "ddl-manager" role
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "ddl-manager" role in 0.000002 sec
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Appling "ddl-manager" role config
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully applied "ddl-manager" role config in 0.000014 sec
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "vshard-router" role
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "vshard-router" role in 0.000006 sec
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Appling "vshard-router" role config
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Reconfiguring vshard-router/default ...
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Starting router configuration
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Calling box.cfg()...
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> {"read_only":false}
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Box has been configured
-2023-05-02 22:40:23.516 [18714] main/145/queue_state_fiber I> Queue state changed: STARTUP
-2023-05-02 22:40:23.516 [18714] main/148/vshard.failover._static_router I> failover_f has been started
-2023-05-02 22:40:23.516 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:23.516 [18714] main/149/vshard.discovery._static_router I> discovery_f has been started
-2023-05-02 22:40:23.516 [18714] main/149/vshard.discovery._static_router I> Discovery enters idle mode because configuration does not have replicasets. Retries will happen with 10 seconds interval
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully applied "vshard-router" role config in 0.000635 sec
-2023-05-02 22:40:23.516 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "metrics" role
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "metrics" role in 0.005145 sec
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Appling "metrics" role config
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully applied "metrics" role config in 0.000319 sec
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "crud-router" role
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "crud-router" role in 0.000006 sec
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Appling "crud-router" role config
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully applied "crud-router" role config in 0.000010 sec
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "api" role
-2023-05-02 22:40:23.522 [18714] main/147/applier/admin@localhost:3301 I> remote master b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b at 127.0.0.1:3301 running Tarantool 2.10.6
-2023-05-02 22:40:23.522 [18714] main/145/queue_state_fiber I> Queue state changed: RUNNING
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "api" role in 0.000369 sec
-2023-05-02 22:40:23.522 [18714] main/128/remote_control/127.0.0.1:57656 I> Init "repo_api" role
-2023-05-02 22:40:23.523 [18714] main/128/remote_control/127.0.0.1:57656 I> Successfully initialized "repo_api" role in 0.000138 sec
-2023-05-02 22:40:23.523 [18714] main/128/remote_control/127.0.0.1:57656 I> Roles configuration finished
-2023-05-02 22:40:23.523 [18714] main/128/remote_control/127.0.0.1:57656 I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:23.523 [18714] main/118/remote_control/127.0.0.1:57656 I> Peer closed when read packet size
-2023-05-02 22:40:23.523 [18714] main/118/remote_control/127.0.0.1:57656 utils.c:489 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
-2023-05-02 22:40:23.523 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:23.523 [18714] main/110/http/127.0.0.1:57650 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:23.523 [18714] main/147/applier/admin@localhost:3301 I> leaving orphan mode
-2023-05-02 22:40:23.523 [18714] main/147/applier/admin@localhost:3301 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:33.015 [18714] main/120/http/127.0.0.1:57658 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:33.016 [18714] main/120/http/127.0.0.1:57658 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:33.024 [18714] main/120/http/127.0.0.1:57658 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:33.024 [18714] main/157/main I> Validate roles configurations
-2023-05-02 22:40:33.024 [18714] main/157/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:33.024 [18714] main/157/main I> Successfully validated config "ddl-manager" role in 0.000007 sec
-2023-05-02 22:40:33.024 [18714] main/157/main I> Validate config "vshard-router" role
-2023-05-02 22:40:33.024 [18714] main/157/main I> Successfully validated config "vshard-router" role in 0.000023 sec
-2023-05-02 22:40:33.024 [18714] main/157/main I> Validate config "metrics" role
-2023-05-02 22:40:33.024 [18714] main/157/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:33.024 [18714] main/157/main I> Validate config "crud-router" role
-2023-05-02 22:40:33.024 [18714] main/157/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:33.024 [18714] main/157/main I> Roles configuration validation finished
-2023-05-02 22:40:33.031 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:33.031 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:33.031 [18714] main/120/http/127.0.0.1:57658 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:33.033 [18714] main/157/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:33.034 [18714] main/157/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:33.034 [18714] main/157/main I> Failover disabled
-2023-05-02 22:40:33.035 [18714] main/157/main I> Replicaset 4a49e949-b438-4691-b5b3-52d29d22daed: new leader 688c75c3-71fc-473f-9e64-cd82585e07dd ("localhost:3302"), was nil
-2023-05-02 22:40:33.035 [18714] main/157/main I> Start applying roles config
-2023-05-02 22:40:33.035 [18714] main/157/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:33.035 [18714] main/157/main I> Successfully applied "ddl-manager" role config in 0.000011 sec
-2023-05-02 22:40:33.035 [18714] main/157/main I> Appling "vshard-router" role config
-2023-05-02 22:40:33.035 [18714] main/157/main I> Reconfiguring vshard-router/default ...
-2023-05-02 22:40:33.035 [18714] main/157/main I> Starting router configuration
-2023-05-02 22:40:33.035 [18714] main/157/main I> Calling box.cfg()...
-2023-05-02 22:40:33.035 [18714] main/157/main I> {"read_only":false}
-2023-05-02 22:40:33.035 [18714] main/157/main I> Box has been configured
-2023-05-02 22:40:33.039 [18714] main/158/localhost:3302 (net.box) I> connected to localhost:3302
-2023-05-02 22:40:33.039 [18714] main/159/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:40:33.039 [18714] main/157/main I> Successfully applied "vshard-router" role config in 0.004196 sec
-2023-05-02 22:40:33.039 [18714] main/157/main I> Appling "metrics" role config
-2023-05-02 22:40:33.039 [18714] main/157/main I> Successfully applied "metrics" role config in 0.000119 sec
-2023-05-02 22:40:33.039 [18714] main/157/main I> Appling "crud-router" role config
-2023-05-02 22:40:33.039 [18714] main/157/main I> Successfully applied "crud-router" role config in 0.000005 sec
-2023-05-02 22:40:33.039 [18714] main/157/main I> Roles configuration finished
-2023-05-02 22:40:33.039 [18714] main/157/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:33.073 [18714] main/158/localhost:3302 (net.box) I> disconnected from localhost:3302
-2023-05-02 22:40:33.073 [18714] main/158/localhost:3302 (net.box) net_box.lua:342 W> localhost:3302: Peer closed
-2023-05-02 22:40:33.089 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:33.089 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:33.089 [18714] main/120/http/127.0.0.1:57658 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:33.517 [18714] main/149/vshard.discovery._static_router replicaset.lua:426 E> Exception during calling 'vshard.storage.buckets_discovery' on 'localhost:3302(admin@localhost:3302)': Connection is not established, state is "initial"
-2023-05-02 22:40:33.517 [18714] main/149/vshard.discovery._static_router init.lua:303 W> Error during discovery 4a49e949-b438-4691-b5b3-52d29d22daed, retry will be done later: {"code":77,"base_type":"ClientError","type":"ClientError","message":"Connection is not established, state is \"initial\"","trace":[{"file":".\/src\/box\/lua\/net_box.c","line":2113}]}
-2023-05-02 22:40:33.517 [18714] main/149/vshard.discovery._static_router I> Start aggressive discovery, 30000 buckets are unknown. Discovery works with 1 seconds interval
-2023-05-02 22:40:33.518 [18714] main/162/localhost:3302 (net.box) I> connected to localhost:3302
-2023-05-02 22:40:33.523 [18714] main/148/vshard.failover._static_router I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302))
-2023-05-02 22:40:33.523 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:33.576 [18714] main/158/localhost:3302 (net.box) I> connected to localhost:3302
-2023-05-02 22:40:34.525 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:36.351 [18714] main/110/http/127.0.0.1:57650 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:36.352 [18714] main/110/http/127.0.0.1:57650 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:36.360 [18714] main/110/http/127.0.0.1:57650 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:36.360 [18714] main/165/main I> Validate roles configurations
-2023-05-02 22:40:36.360 [18714] main/165/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:36.360 [18714] main/165/main I> Successfully validated config "ddl-manager" role in 0.000007 sec
-2023-05-02 22:40:36.360 [18714] main/165/main I> Validate config "vshard-router" role
-2023-05-02 22:40:36.360 [18714] main/165/main I> Successfully validated config "vshard-router" role in 0.000062 sec
-2023-05-02 22:40:36.360 [18714] main/165/main I> Validate config "metrics" role
-2023-05-02 22:40:36.360 [18714] main/165/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:36.360 [18714] main/165/main I> Validate config "crud-router" role
-2023-05-02 22:40:36.360 [18714] main/165/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:36.360 [18714] main/165/main I> Roles configuration validation finished
-2023-05-02 22:40:36.368 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:36.368 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:36.368 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:36.368 [18714] main/110/http/127.0.0.1:57650 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:36.374 [18714] main/165/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:36.375 [18714] main/165/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:36.375 [18714] main/165/main I> Failover disabled
-2023-05-02 22:40:36.375 [18714] main/165/main I> Replicaset f76f3cff-78cd-4bce-b965-3fea52f402f3: new leader 0ca26e4d-33d5-41b0-b6fa-37ee455508f9 ("localhost:3303"), was nil
-2023-05-02 22:40:36.375 [18714] main/165/main I> Start applying roles config
-2023-05-02 22:40:36.375 [18714] main/165/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:36.375 [18714] main/165/main I> Successfully applied "ddl-manager" role config in 0.000010 sec
-2023-05-02 22:40:36.375 [18714] main/165/main I> Appling "vshard-router" role config
-2023-05-02 22:40:36.376 [18714] main/165/main I> Reconfiguring vshard-router/default ...
-2023-05-02 22:40:36.376 [18714] main/165/main I> Starting router configuration
-2023-05-02 22:40:36.376 [18714] main/165/main I> Calling box.cfg()...
-2023-05-02 22:40:36.376 [18714] main/165/main I> {"read_only":false}
-2023-05-02 22:40:36.376 [18714] main/165/main I> Box has been configured
-2023-05-02 22:40:36.378 [18714] main/166/localhost:3303 (net.box) I> connected to localhost:3303
-2023-05-02 22:40:36.378 [18714] main/167/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:40:36.378 [18714] main/165/main I> Successfully applied "vshard-router" role config in 0.002534 sec
-2023-05-02 22:40:36.378 [18714] main/165/main I> Appling "metrics" role config
-2023-05-02 22:40:36.378 [18714] main/165/main I> Successfully applied "metrics" role config in 0.000114 sec
-2023-05-02 22:40:36.378 [18714] main/165/main I> Appling "crud-router" role config
-2023-05-02 22:40:36.378 [18714] main/165/main I> Successfully applied "crud-router" role config in 0.000006 sec
-2023-05-02 22:40:36.378 [18714] main/165/main I> Roles configuration finished
-2023-05-02 22:40:36.378 [18714] main/165/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:36.427 [18714] main/166/localhost:3303 (net.box) I> disconnected from localhost:3303
-2023-05-02 22:40:36.427 [18714] main/166/localhost:3303 (net.box) net_box.lua:342 W> localhost:3303: Peer closed
-2023-05-02 22:40:36.441 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:36.441 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:36.441 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:36.441 [18714] main/110/http/127.0.0.1:57650 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:36.528 [18714] main/148/vshard.failover._static_router I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302))
-2023-05-02 22:40:36.528 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:36.551 [18714] main/149/vshard.discovery._static_router replicaset.lua:426 E> Exception during calling 'vshard.storage.buckets_discovery' on 'localhost:3303(admin@localhost:3303)': Connection is not established, state is "initial"
-2023-05-02 22:40:36.551 [18714] main/149/vshard.discovery._static_router init.lua:303 W> Error during discovery f76f3cff-78cd-4bce-b965-3fea52f402f3, retry will be done later: {"code":77,"base_type":"ClientError","type":"ClientError","message":"Connection is not established, state is \"initial\"","trace":[{"file":".\/src\/box\/lua\/net_box.c","line":2113}]}
-2023-05-02 22:40:36.553 [18714] main/170/localhost:3303 (net.box) I> connected to localhost:3303
-2023-05-02 22:40:36.913 [18714] main/166/localhost:3303 (net.box) I> connected to localhost:3303
-2023-05-02 22:40:37.529 [18714] main/148/vshard.failover._static_router I> New replica localhost:3303(admin@localhost:3303) for replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303))
-2023-05-02 22:40:37.529 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:37.529 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:38.530 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:39.428 [18714] main/120/http/127.0.0.1:57658 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:39.428 [18714] main/120/http/127.0.0.1:57658 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:39.437 [18714] main/120/http/127.0.0.1:57658 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:39.437 [18714] main/173/main I> Validate roles configurations
-2023-05-02 22:40:39.437 [18714] main/173/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:39.437 [18714] main/173/main I> Successfully validated config "ddl-manager" role in 0.000014 sec
-2023-05-02 22:40:39.437 [18714] main/173/main I> Validate config "vshard-router" role
-2023-05-02 22:40:39.437 [18714] main/173/main I> Successfully validated config "vshard-router" role in 0.000049 sec
-2023-05-02 22:40:39.437 [18714] main/173/main I> Validate config "metrics" role
-2023-05-02 22:40:39.437 [18714] main/173/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:39.437 [18714] main/173/main I> Validate config "crud-router" role
-2023-05-02 22:40:39.437 [18714] main/173/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:39.437 [18714] main/173/main I> Roles configuration validation finished
-2023-05-02 22:40:39.447 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:39.447 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:39.447 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:39.447 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:40:39.447 [18714] main/120/http/127.0.0.1:57658 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:39.455 [18714] main/173/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:39.457 [18714] main/173/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:39.457 [18714] main/173/main I> Failover disabled
-2023-05-02 22:40:39.457 [18714] main/173/main I> Replicaset a7e7f151-82be-45ae-9e48-5adfd71891cc: new leader 545f0a8f-6cf3-4bb6-b1c9-9a62bc297528 ("localhost:3304"), was nil
-2023-05-02 22:40:39.458 [18714] main/173/main I> Start applying roles config
-2023-05-02 22:40:39.458 [18714] main/173/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:39.458 [18714] main/173/main I> Successfully applied "ddl-manager" role config in 0.000009 sec
-2023-05-02 22:40:39.458 [18714] main/173/main I> Appling "vshard-router" role config
-2023-05-02 22:40:39.458 [18714] main/173/main I> Reconfiguring vshard-router/default ...
-2023-05-02 22:40:39.458 [18714] main/173/main I> Starting router configuration
-2023-05-02 22:40:39.458 [18714] main/173/main I> Calling box.cfg()...
-2023-05-02 22:40:39.458 [18714] main/173/main I> {"read_only":false}
-2023-05-02 22:40:39.458 [18714] main/173/main I> Box has been configured
-2023-05-02 22:40:39.468 [18714] main/174/localhost:3304 (net.box) I> connected to localhost:3304
-2023-05-02 22:40:39.468 [18714] main/175/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:40:39.468 [18714] main/173/main I> Successfully applied "vshard-router" role config in 0.010311 sec
-2023-05-02 22:40:39.468 [18714] main/173/main I> Appling "metrics" role config
-2023-05-02 22:40:39.468 [18714] main/173/main I> Successfully applied "metrics" role config in 0.000455 sec
-2023-05-02 22:40:39.468 [18714] main/173/main I> Appling "crud-router" role config
-2023-05-02 22:40:39.468 [18714] main/173/main I> Successfully applied "crud-router" role config in 0.000005 sec
-2023-05-02 22:40:39.468 [18714] main/173/main I> Roles configuration finished
-2023-05-02 22:40:39.468 [18714] main/173/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:39.489 [18714] main/174/localhost:3304 (net.box) I> disconnected from localhost:3304
-2023-05-02 22:40:39.489 [18714] main/174/localhost:3304 (net.box) net_box.lua:342 W> localhost:3304: Peer closed
-2023-05-02 22:40:39.508 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:39.508 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:39.508 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:39.508 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:40:39.508 [18714] main/120/http/127.0.0.1:57658 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:39.530 [18714] main/148/vshard.failover._static_router I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302))
-2023-05-02 22:40:39.530 [18714] main/148/vshard.failover._static_router I> New replica localhost:3303(admin@localhost:3303) for replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303))
-2023-05-02 22:40:39.530 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:39.610 [18714] main/149/vshard.discovery._static_router replicaset.lua:426 E> Exception during calling 'vshard.storage.buckets_discovery' on 'localhost:3304(admin@localhost:3304)': Connection is not established, state is "initial"
-2023-05-02 22:40:39.610 [18714] main/149/vshard.discovery._static_router init.lua:303 W> Error during discovery a7e7f151-82be-45ae-9e48-5adfd71891cc, retry will be done later: {"code":77,"base_type":"ClientError","type":"ClientError","message":"Connection is not established, state is \"initial\"","trace":[{"file":".\/src\/box\/lua\/net_box.c","line":2113}]}
-2023-05-02 22:40:39.612 [18714] main/178/localhost:3304 (net.box) I> connected to localhost:3304
-2023-05-02 22:40:39.993 [18714] main/174/localhost:3304 (net.box) I> connected to localhost:3304
-2023-05-02 22:40:40.531 [18714] main/148/vshard.failover._static_router I> New replica localhost:3304(admin@localhost:3304) for replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304))
-2023-05-02 22:40:40.531 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:40.531 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:41.533 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:42.522 [18714] main/110/http/127.0.0.1:57650 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:42.523 [18714] main/110/http/127.0.0.1:57650 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:42.532 [18714] main/110/http/127.0.0.1:57650 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:42.533 [18714] main/181/main I> Validate roles configurations
-2023-05-02 22:40:42.533 [18714] main/181/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:42.533 [18714] main/181/main I> Successfully validated config "ddl-manager" role in 0.000009 sec
-2023-05-02 22:40:42.533 [18714] main/181/main I> Validate config "vshard-router" role
-2023-05-02 22:40:42.533 [18714] main/181/main I> Successfully validated config "vshard-router" role in 0.000036 sec
-2023-05-02 22:40:42.533 [18714] main/181/main I> Validate config "metrics" role
-2023-05-02 22:40:42.533 [18714] main/181/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:42.533 [18714] main/181/main I> Validate config "crud-router" role
-2023-05-02 22:40:42.533 [18714] main/181/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:42.533 [18714] main/181/main I> Roles configuration validation finished
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
-2023-05-02 22:40:42.544 [18714] main/110/http/127.0.0.1:57650 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:42.555 [18714] main/181/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:42.557 [18714] main/181/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:42.558 [18714] main/181/main I> Failover disabled
-2023-05-02 22:40:42.558 [18714] main/181/main I> Replicaset a019ce9f-5159-4ba2-b0db-8f1f1578a9ab: new leader 724b61f8-b009-4d1c-98db-bf6b6be37980 ("localhost:3305"), was nil
-2023-05-02 22:40:42.558 [18714] main/181/main I> Start applying roles config
-2023-05-02 22:40:42.558 [18714] main/181/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:42.558 [18714] main/181/main I> Successfully applied "ddl-manager" role config in 0.000009 sec
-2023-05-02 22:40:42.558 [18714] main/181/main I> Appling "vshard-router" role config
-2023-05-02 22:40:42.558 [18714] main/181/main I> Reconfiguring vshard-router/default ...
-2023-05-02 22:40:42.558 [18714] main/181/main I> Starting router configuration
-2023-05-02 22:40:42.558 [18714] main/181/main I> Calling box.cfg()...
-2023-05-02 22:40:42.558 [18714] main/181/main I> {"read_only":false}
-2023-05-02 22:40:42.558 [18714] main/181/main I> Box has been configured
-2023-05-02 22:40:42.566 [18714] main/182/localhost:3305 (net.box) I> connected to localhost:3305
-2023-05-02 22:40:42.566 [18714] main/183/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:40:42.566 [18714] main/181/main I> Successfully applied "vshard-router" role config in 0.008634 sec
-2023-05-02 22:40:42.566 [18714] main/181/main I> Appling "metrics" role config
-2023-05-02 22:40:42.567 [18714] main/181/main I> Successfully applied "metrics" role config in 0.000238 sec
-2023-05-02 22:40:42.567 [18714] main/181/main I> Appling "crud-router" role config
-2023-05-02 22:40:42.567 [18714] main/181/main I> Successfully applied "crud-router" role config in 0.000010 sec
-2023-05-02 22:40:42.567 [18714] main/181/main I> Roles configuration finished
-2023-05-02 22:40:42.567 [18714] main/181/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:42.587 [18714] main/182/localhost:3305 (net.box) I> disconnected from localhost:3305
-2023-05-02 22:40:42.587 [18714] main/182/localhost:3305 (net.box) net_box.lua:342 W> localhost:3305: Peer closed
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
-2023-05-02 22:40:42.616 [18714] main/110/http/127.0.0.1:57650 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:42.698 [18714] main/149/vshard.discovery._static_router replicaset.lua:426 E> Exception during calling 'vshard.storage.buckets_discovery' on 'localhost:3305(admin@localhost:3305)': Connection is not established, state is "initial"
-2023-05-02 22:40:42.698 [18714] main/149/vshard.discovery._static_router init.lua:303 W> Error during discovery a019ce9f-5159-4ba2-b0db-8f1f1578a9ab, retry will be done later: {"code":77,"base_type":"ClientError","type":"ClientError","message":"Connection is not established, state is \"initial\"","trace":[{"file":".\/src\/box\/lua\/net_box.c","line":2113}]}
-2023-05-02 22:40:42.700 [18714] main/186/localhost:3305 (net.box) I> connected to localhost:3305
-2023-05-02 22:40:43.089 [18714] main/182/localhost:3305 (net.box) I> connected to localhost:3305
-2023-05-02 22:40:43.534 [18714] main/148/vshard.failover._static_router I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302))
-2023-05-02 22:40:43.534 [18714] main/148/vshard.failover._static_router I> New replica localhost:3305(admin@localhost:3305) for replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305))
-2023-05-02 22:40:43.534 [18714] main/148/vshard.failover._static_router I> New replica localhost:3304(admin@localhost:3304) for replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304))
-2023-05-02 22:40:43.534 [18714] main/148/vshard.failover._static_router I> New replica localhost:3303(admin@localhost:3303) for replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303))
-2023-05-02 22:40:43.534 [18714] main/148/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
-2023-05-02 22:40:44.535 [18714] main/148/vshard.failover._static_router I> All replicas are ok
-2023-05-02 22:40:46.285 [18714] main/120/http/127.0.0.1:57658 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:46.286 [18714] main/120/http/127.0.0.1:57658 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:46.294 [18714] main/120/http/127.0.0.1:57658 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:46.295 [18714] main/189/main I> Validate roles configurations
-2023-05-02 22:40:46.295 [18714] main/189/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:46.295 [18714] main/189/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
-2023-05-02 22:40:46.295 [18714] main/189/main I> Validate config "vshard-router" role
-2023-05-02 22:40:46.295 [18714] main/189/main I> Successfully validated config "vshard-router" role in 0.000045 sec
-2023-05-02 22:40:46.295 [18714] main/189/main I> Validate config "metrics" role
-2023-05-02 22:40:46.295 [18714] main/189/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:46.295 [18714] main/189/main I> Validate config "crud-router" role
-2023-05-02 22:40:46.295 [18714] main/189/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:46.295 [18714] main/189/main I> Roles configuration validation finished
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
-2023-05-02 22:40:46.307 [18714] main/120/http/127.0.0.1:57658 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:46.321 [18714] main/189/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:46.324 [18714] main/189/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:46.324 [18714] main/189/main I> Failover disabled
-2023-05-02 22:40:46.324 [18714] main/189/main I> Replicaset b1e77cb5-a5ab-4a93-97bd-9f1f4e3dff30: new leader eecbf0b8-c583-461e-827a-ccf983fd58fc ("localhost:3306"), was nil
-2023-05-02 22:40:46.324 [18714] main/189/main I> Start applying roles config
-2023-05-02 22:40:46.324 [18714] main/189/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:46.324 [18714] main/189/main I> Successfully applied "ddl-manager" role config in 0.000009 sec
-2023-05-02 22:40:46.325 [18714] main/189/main I> Appling "vshard-router" role config
-2023-05-02 22:40:46.325 [18714] main/189/main I> Successfully applied "vshard-router" role config in 0.000309 sec
-2023-05-02 22:40:46.325 [18714] main/189/main I> Appling "metrics" role config
-2023-05-02 22:40:46.325 [18714] main/189/main I> Successfully applied "metrics" role config in 0.000100 sec
-2023-05-02 22:40:46.325 [18714] main/189/main I> Appling "crud-router" role config
-2023-05-02 22:40:46.325 [18714] main/189/main I> Successfully applied "crud-router" role config in 0.000005 sec
-2023-05-02 22:40:46.325 [18714] main/189/main I> Roles configuration finished
-2023-05-02 22:40:46.325 [18714] main/189/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
-2023-05-02 22:40:46.372 [18714] main/120/http/127.0.0.1:57658 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:49.355 [18714] main/110/http/127.0.0.1:57650 I> Bootstrapping vshard-router/default ...
-2023-05-02 22:40:49.411 [18714] main/110/http/127.0.0.1:57650 I> Buckets from 1 to 7500 are bootstrapped on "4a49e949-b438-4691-b5b3-52d29d22daed"
-2023-05-02 22:40:49.461 [18714] main/110/http/127.0.0.1:57650 I> Buckets from 7501 to 15000 are bootstrapped on "a019ce9f-5159-4ba2-b0db-8f1f1578a9ab"
-2023-05-02 22:40:49.509 [18714] main/110/http/127.0.0.1:57650 I> Buckets from 15001 to 22500 are bootstrapped on "a7e7f151-82be-45ae-9e48-5adfd71891cc"
-2023-05-02 22:40:49.559 [18714] main/110/http/127.0.0.1:57650 I> Buckets from 22501 to 30000 are bootstrapped on "f76f3cff-78cd-4bce-b965-3fea52f402f3"
-2023-05-02 22:40:49.559 [18714] main/110/http/127.0.0.1:57650 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:49.559 [18714] main/110/http/127.0.0.1:57650 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:49.568 [18714] main/110/http/127.0.0.1:57650 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:49.568 [18714] main/200/main I> Validate roles configurations
-2023-05-02 22:40:49.568 [18714] main/200/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:49.568 [18714] main/200/main I> Successfully validated config "ddl-manager" role in 0.000007 sec
-2023-05-02 22:40:49.568 [18714] main/200/main I> Validate config "vshard-router" role
-2023-05-02 22:40:49.569 [18714] main/200/main I> Successfully validated config "vshard-router" role in 0.000038 sec
-2023-05-02 22:40:49.569 [18714] main/200/main I> Validate config "metrics" role
-2023-05-02 22:40:49.569 [18714] main/200/main I> Successfully validated config "metrics" role in 0.000002 sec
-2023-05-02 22:40:49.569 [18714] main/200/main I> Validate config "crud-router" role
-2023-05-02 22:40:49.569 [18714] main/200/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:49.569 [18714] main/200/main I> Roles configuration validation finished
-2023-05-02 22:40:49.580 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
-2023-05-02 22:40:49.581 [18714] main/110/http/127.0.0.1:57650 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:49.595 [18714] main/200/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:49.599 [18714] main/200/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:49.599 [18714] main/200/main I> Failover disabled
-2023-05-02 22:40:49.599 [18714] main/200/main I> Start applying roles config
-2023-05-02 22:40:49.599 [18714] main/200/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:49.599 [18714] main/200/main I> Successfully applied "ddl-manager" role config in 0.000010 sec
-2023-05-02 22:40:49.599 [18714] main/200/main I> Appling "vshard-router" role config
-2023-05-02 22:40:49.600 [18714] main/200/main I> Successfully applied "vshard-router" role config in 0.000260 sec
-2023-05-02 22:40:49.600 [18714] main/200/main I> Appling "metrics" role config
-2023-05-02 22:40:49.600 [18714] main/200/main I> Successfully applied "metrics" role config in 0.000127 sec
-2023-05-02 22:40:49.600 [18714] main/200/main I> Appling "crud-router" role config
-2023-05-02 22:40:49.600 [18714] main/200/main I> Successfully applied "crud-router" role config in 0.000004 sec
-2023-05-02 22:40:49.600 [18714] main/200/main I> Roles configuration finished
-2023-05-02 22:40:49.600 [18714] main/200/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
-2023-05-02 22:40:49.601 [18714] main/110/http/127.0.0.1:57650 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:50.032 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 0, became 1000
-2023-05-02 22:40:50.032 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 0, became 1000
-2023-05-02 22:40:50.032 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 0, became 1000
-2023-05-02 22:40:50.032 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 0, became 1000
-2023-05-02 22:40:51.079 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 1000, became 2000
-2023-05-02 22:40:51.079 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 1000, became 2000
-2023-05-02 22:40:51.079 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 1000, became 2000
-2023-05-02 22:40:51.079 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 1000, became 2000
-2023-05-02 22:40:52.124 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 2000, became 3000
-2023-05-02 22:40:52.124 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 2000, became 3000
-2023-05-02 22:40:52.124 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 2000, became 3000
-2023-05-02 22:40:52.124 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 2000, became 3000
-2023-05-02 22:40:53.169 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 3000, became 4000
-2023-05-02 22:40:53.169 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 3000, became 4000
-2023-05-02 22:40:53.169 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 3000, became 4000
-2023-05-02 22:40:53.169 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 3000, became 4000
-2023-05-02 22:40:53.298 [18714] main/120/http/127.0.0.1:57658 twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:40:53.299 [18714] main/120/http/127.0.0.1:57658 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:40:53.308 [18714] main/120/http/127.0.0.1:57658 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:40:53.308 [18714] main/201/main I> Validate roles configurations
-2023-05-02 22:40:53.308 [18714] main/201/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:53.308 [18714] main/201/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
-2023-05-02 22:40:53.308 [18714] main/201/main I> Validate config "vshard-router" role
-2023-05-02 22:40:53.308 [18714] main/201/main I> Successfully validated config "vshard-router" role in 0.000034 sec
-2023-05-02 22:40:53.308 [18714] main/201/main I> Validate config "metrics" role
-2023-05-02 22:40:53.308 [18714] main/201/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:53.308 [18714] main/201/main I> Validate config "crud-router" role
-2023-05-02 22:40:53.308 [18714] main/201/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:53.308 [18714] main/201/main I> Roles configuration validation finished
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
-2023-05-02 22:40:53.320 [18714] main/120/http/127.0.0.1:57658 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:40:53.335 [18714] main/201/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:40:53.340 [18714] main/201/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:53.340 [18714] main/201/main I> Stateful failover enabled with stateboard at tcp://localhost:4401
-2023-05-02 22:40:53.342 [18714] main/201/main failover.lua:838 W> Failed to get first appointments: NetboxCallError: "localhost:4401": User not found or supplied credentials are invalid
-stack traceback:
-	builtin/box/net_box.lua:806: in function '_request'
-	builtin/box/net_box.lua:847: in function <builtin/box/net_box.lua:842>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:427: in function 'netbox_call'
-	...l/.rocks/share/tarantool/cartridge/stateboard-client.lua:255: in function '_get_appointments_stateful_mode'
-	...-Tarantool/.rocks/share/tarantool/cartridge/failover.lua:836: in function <...-Tarantool/.rocks/share/tarantool/cartridge/failover.lua:703>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	...rantool/.rocks/share/tarantool/cartridge/confapplier.lua:310: in function <...rantool/.rocks/share/tarantool/cartridge/confapplier.lua:275>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function <...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:139>
-	[C]: at 0x7f6681ce6de0
-2023-05-02 22:40:53.342 [18714] main/201/main I> Not enough enabled instances to start leader_autoreturn fiber
-2023-05-02 22:40:53.342 [18714] main/201/main I> Start applying roles config
-2023-05-02 22:40:53.342 [18714] main/201/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:53.342 [18714] main/201/main I> Successfully applied "ddl-manager" role config in 0.000015 sec
-2023-05-02 22:40:53.342 [18714] main/201/main I> Appling "vshard-router" role config
-2023-05-02 22:40:53.342 [18714] main/201/main I> Successfully applied "vshard-router" role config in 0.000221 sec
-2023-05-02 22:40:53.342 [18714] main/201/main I> Appling "metrics" role config
-2023-05-02 22:40:53.342 [18714] main/201/main I> Successfully applied "metrics" role config in 0.000115 sec
-2023-05-02 22:40:53.342 [18714] main/201/main I> Appling "crud-router" role config
-2023-05-02 22:40:53.342 [18714] main/201/main I> Successfully applied "crud-router" role config in 0.000004 sec
-2023-05-02 22:40:53.342 [18714] main/201/main I> Roles configuration finished
-2023-05-02 22:40:53.342 [18714] main/201/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
-2023-05-02 22:40:53.356 [18714] main/120/http/127.0.0.1:57658 twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:40:54.216 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 4000, became 5000
-2023-05-02 22:40:54.216 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 4000, became 5000
-2023-05-02 22:40:54.216 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 4000, became 5000
-2023-05-02 22:40:54.216 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 4000, became 5000
-2023-05-02 22:40:55.260 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 5000, became 6000
-2023-05-02 22:40:55.260 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 5000, became 6000
-2023-05-02 22:40:55.260 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 5000, became 6000
-2023-05-02 22:40:55.260 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 5000, became 6000
-2023-05-02 22:40:56.305 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 6000, became 7000
-2023-05-02 22:40:56.305 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 6000, became 7000
-2023-05-02 22:40:56.305 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 6000, became 7000
-2023-05-02 22:40:56.305 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 6000, became 7000
-2023-05-02 22:40:57.350 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="4a49e949-b438-4691-b5b3-52d29d22daed", master=localhost:3302(admin@localhost:3302)) buckets: was 7000, became 7500
-2023-05-02 22:40:57.350 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a019ce9f-5159-4ba2-b0db-8f1f1578a9ab", master=localhost:3305(admin@localhost:3305)) buckets: was 7000, became 7500
-2023-05-02 22:40:57.350 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="a7e7f151-82be-45ae-9e48-5adfd71891cc", master=localhost:3304(admin@localhost:3304)) buckets: was 7000, became 7500
-2023-05-02 22:40:57.350 [18714] main/149/vshard.discovery._static_router I> Updated replicaset(uuid="f76f3cff-78cd-4bce-b965-3fea52f402f3", master=localhost:3303(admin@localhost:3303)) buckets: was 7000, became 7500
-2023-05-02 22:40:57.350 [18714] main/149/vshard.discovery._static_router I> Discovery enters idle mode, all buckets are known. Discovery works with 10 seconds interval now
-2023-05-02 22:41:12.634 [18714] main/226/console/unix/: twophase.lua:576 W> Updating config clusterwide...
-2023-05-02 22:41:12.634 [18714] main/226/console/unix/: twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
-2023-05-02 22:41:12.642 [18714] main/226/console/unix/: twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
-2023-05-02 22:41:12.643 [18714] main/224/main I> Validate roles configurations
-2023-05-02 22:41:12.643 [18714] main/224/main I> Validate config "ddl-manager" role
-2023-05-02 22:41:12.643 [18714] main/224/main I> Successfully validated config "ddl-manager" role in 0.000009 sec
-2023-05-02 22:41:12.643 [18714] main/224/main I> Validate config "vshard-router" role
-2023-05-02 22:41:12.643 [18714] main/224/main I> Successfully validated config "vshard-router" role in 0.000043 sec
-2023-05-02 22:41:12.643 [18714] main/224/main I> Validate config "metrics" role
-2023-05-02 22:41:12.643 [18714] main/224/main I> Successfully validated config "metrics" role in 0.000002 sec
-2023-05-02 22:41:12.643 [18714] main/224/main I> Validate config "crud-router" role
-2023-05-02 22:41:12.643 [18714] main/224/main I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:41:12.643 [18714] main/224/main I> Roles configuration validation finished
-2023-05-02 22:41:12.654 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
-2023-05-02 22:41:12.655 [18714] main/226/console/unix/: twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
-2023-05-02 22:41:12.670 [18714] main/224/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
-2023-05-02 22:41:12.675 [18714] main/224/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:41:12.675 [18714] main/224/main I> Stateful failover enabled with stateboard at localhost:4401
-2023-05-02 22:41:12.677 [18714] main/224/main I> Not enough enabled instances to start leader_autoreturn fiber
-2023-05-02 22:41:12.677 [18714] main/224/main I> Start applying roles config
-2023-05-02 22:41:12.677 [18714] main/224/main I> Appling "ddl-manager" role config
-2023-05-02 22:41:12.677 [18714] main/224/main I> Successfully applied "ddl-manager" role config in 0.000010 sec
-2023-05-02 22:41:12.677 [18714] main/224/main I> Appling "vshard-router" role config
-2023-05-02 22:41:12.678 [18714] main/224/main I> Successfully applied "vshard-router" role config in 0.000193 sec
-2023-05-02 22:41:12.678 [18714] main/224/main I> Appling "metrics" role config
-2023-05-02 22:41:12.678 [18714] main/224/main I> Successfully applied "metrics" role config in 0.000209 sec
-2023-05-02 22:41:12.678 [18714] main/224/main I> Appling "crud-router" role config
-2023-05-02 22:41:12.678 [18714] main/224/main I> Successfully applied "crud-router" role config in 0.000010 sec
-2023-05-02 22:41:12.678 [18714] main/224/main I> Roles configuration finished
-2023-05-02 22:41:12.678 [18714] main/224/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:41:12.679 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
-2023-05-02 22:41:12.680 [18714] main/226/console/unix/: twophase.lua:652 W> Clusterwide config updated successfully
-2023-05-02 22:41:22.596 [18714] main C> got signal 15 - Terminated
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Stop "ddl-manager" role
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Stop "vshard-router" role
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Starting router configuration
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Calling box.cfg()...
-2023-05-02 22:41:22.596 [18714] main/232/trigger_fiber1 I> Box has been configured
-2023-05-02 22:41:22.596 [18714] main/234/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:41:22.597 [18714] main/232/trigger_fiber1 I> Successfully stopped "vshard-router" role in 0.000800 sec
-2023-05-02 22:41:22.597 [18714] main/232/trigger_fiber1 I> Stop "metrics" role
-2023-05-02 22:41:22.597 [18714] main/232/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000057 sec
-2023-05-02 22:41:22.597 [18714] main/232/trigger_fiber1 I> Stop "crud-router" role
-2023-05-02 22:41:22.597 [18714] main/232/trigger_fiber1 I> Successfully stopped "crud-router" role in 0.000002 sec
-2023-05-02 22:41:22.598 [18714] main/231/iproto.shutdown I> tx_binary: stopped
-2023-05-02 22:41:22.611 [18714] main/233/localhost:3301 (net.box) net_box.lua:342 W> localhost:3301: unexpected EOF when reading from socket, called on fd 13, aka 127.0.0.1:57844, peer of 127.0.0.1:3301: Broken pipe
+2023-05-04 16:58:42.494 [27318] main/103/init.lua I> Using advertise_uri "localhost:3301"
+2023-05-04 16:58:42.494 [27318] main/103/init.lua I> Membership encryption enabled
+2023-05-04 16:58:42.500 [27318] main/103/init.lua I> Probe uri was successful
+2023-05-04 16:58:42.502 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3302
+2023-05-04 16:58:42.502 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3302
+2023-05-04 16:58:42.503 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3302
+2023-05-04 16:58:42.503 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3302
+2023-05-04 16:58:42.504 [27318] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3302
+2023-05-04 16:58:42.505 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3302
+2023-05-04 16:58:42.506 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
+2023-05-04 16:58:42.507 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3301
+2023-05-04 16:58:42.508 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
+2023-05-04 16:58:42.508 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3301
+2023-05-04 16:58:42.509 [27318] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
+2023-05-04 16:58:42.510 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
+2023-05-04 16:58:42.511 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3300
+2023-05-04 16:58:42.512 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3300
+2023-05-04 16:58:42.512 [27318] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3300
+2023-05-04 16:58:42.513 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3300
+2023-05-04 16:58:42.514 [27318] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3300
+2023-05-04 16:58:42.514 [27318] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3300
+2023-05-04 16:58:42.516 [27318] main/107/http/0.0.0.0:8081 I> started
+2023-05-04 16:58:42.517 [27318] main/103/init.lua I> Listening HTTP on 0.0.0.0:8081
+2023-05-04 16:58:42.517 [27318] main/108/console/unix/:/home/user/Cartridge-Tarantool/tmp/run/myapp.router.control I> started
+2023-05-04 16:58:42.517 [27318] main/103/init.lua I> Load modules and register
+2023-05-04 16:58:42.563 [27318] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
+2023-05-04 16:58:42.568 [27318] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
+2023-05-04 16:58:42.582 [27318] main/109/remote_control/127.0.0.1:3301 I> started
+2023-05-04 16:58:42.582 [27318] main/103/init.lua I> Remote control bound to 127.0.0.1:3301
+2023-05-04 16:58:42.583 [27318] main/103/init.lua I> Remote control ready to accept connections
+2023-05-04 16:58:42.583 [27318] main/103/init.lua I> Instance state changed:  -> Unconfigured
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> Cartridge 2.7.9
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> server alias router
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> advertise uri localhost:3301
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> Cartridge options:
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> advertise_uri = localhost:3301
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> alias = router
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> auth_enabled = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> bucket_count = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> console_sock = /home/user/Cartridge-Tarantool/tmp/run/myapp.router.control
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> http_enabled = true
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> http_host = 0.0.0.0
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> http_port = 8081
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> roles = ["cartridge.roles.crud-router","cartridge.roles.crud-storage","cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue"]
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> roles_reload_allowed = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> swim_broadcast = true
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> upgrade_schema = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> upload_prefix = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> vshard_groups = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> webui_blacklist = nil
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> webui_enabled = true
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> webui_enforce_root_redirect = true
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> webui_prefix = 
+2023-05-04 16:58:42.584 [27318] main/103/init.lua I> workdir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:42.584 [27318] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
+2023-05-04 16:58:42.585 [27318] main/103/init.lua I> Set default metrics endpoints
+2023-05-04 16:58:42.585 [27318] main I> entering the event loop
+2023-05-04 16:58:42.585 [27318] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Validate roles configurations
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Validate config "ddl-manager" role
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Successfully validated config "ddl-manager" role in 0.000011 sec
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Validate config "vshard-router" role
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Successfully validated config "vshard-router" role in 0.000155 sec
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Validate config "crud-router" role
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Successfully validated config "crud-router" role in 0.000002 sec
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Validate config "metrics" role
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:58:46.163 [27318] main/115/remote_control/127.0.0.1:62997 I> Roles configuration validation finished
+2023-05-04 16:58:46.177 [27318] main/116/remote_control/127.0.0.1:62997 I> Instance state changed: Unconfigured -> BootstrappingBox
+2023-05-04 16:58:46.177 [27318] main/116/remote_control/127.0.0.1:62997 confapplier.lua:549 W> Calling box.cfg()...
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> log level 5
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> wal/engine cleanup is paused
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> mapping 268435456 bytes for memtx tuple arena...
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2023-05-04 16:58:46.178 [27318] main/116/remote_control/127.0.0.1:62997 I> mapping 134217728 bytes for vinyl tuple arena...
+2023-05-04 16:58:46.179 [27318] main/116/remote_control/127.0.0.1:62997 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.183 [27318] main/116/remote_control/127.0.0.1:62997 I> update replication_synchro_quorum = 1
+2023-05-04 16:58:46.183 [27318] main/116/remote_control/127.0.0.1:62997 I> instance uuid 06511852-f3a5-4e6d-ba0b-78097cf9b49c
+2023-05-04 16:58:46.183 [27318] main/117/remote_control/127.0.0.1:62997 I> Cartridge 2.7.9
+2023-05-04 16:58:46.183 [27318] main/117/remote_control/127.0.0.1:62997 I> server alias router
+2023-05-04 16:58:46.183 [27318] main/117/remote_control/127.0.0.1:62997 I> advertise uri localhost:3301
+2023-05-04 16:58:46.183 [27318] main/117/remote_control/127.0.0.1:62997 I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:46.183 [27318] main/116/remote_control/127.0.0.1:62997 I> initializing an empty data directory
+2023-05-04 16:58:46.195 [27318] main/116/remote_control/127.0.0.1:62997 I> assigned id 1 to replica 06511852-f3a5-4e6d-ba0b-78097cf9b49c
+2023-05-04 16:58:46.195 [27318] main/116/remote_control/127.0.0.1:62997 I> update replication_synchro_quorum = 1
+2023-05-04 16:58:46.195 [27318] main/116/remote_control/127.0.0.1:62997 I> cluster uuid ae954f0d-f188-439d-bec4-f2af942e605a
+2023-05-04 16:58:46.196 [27318] snapshot/101/main I> saving snapshot `/home/user/Cartridge-Tarantool/tmp/data/myapp.router/00000000000000000000.snap.inprogress'
+2023-05-04 16:58:46.200 [27318] snapshot/101/main I> done
+2023-05-04 16:58:46.201 [27318] main/116/remote_control/127.0.0.1:62997 I> RAFT: fencing enabled
+2023-05-04 16:58:46.201 [27318] main/116/remote_control/127.0.0.1:62997 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.202 [27318] main/116/remote_control/127.0.0.1:62997 I> ready to accept requests
+2023-05-04 16:58:46.202 [27318] main/118/gc I> wal/engine cleanup is resumed
+2023-05-04 16:58:46.202 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'custom_proc_title' configuration option to "myapp@router"
+2023-05-04 16:58:46.202 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'log_level' configuration option to 5
+2023-05-04 16:58:46.202 [27318] main/119/checkpoint_daemon I> scheduled next checkpoint for Thu May  4 18:31:12 2023
+2023-05-04 16:58:46.212 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'log_format' configuration option to "plain"
+2023-05-04 16:58:46.212 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'instance_uuid' configuration option to "06511852-f3a5-4e6d-ba0b-78097cf9b49c"
+2023-05-04 16:58:46.215 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'replication_connect_quorum' configuration option to 0
+2023-05-04 16:58:46.215 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'replicaset_uuid' configuration option to "ae954f0d-f188-439d-bec4-f2af942e605a"
+2023-05-04 16:58:46.225 [27318] main/116/remote_control/127.0.0.1:62997 I> Started queue state fiber
+2023-05-04 16:58:46.225 [27318] main/116/remote_control/127.0.0.1:62997 I> Making sure user "admin" exists...
+2023-05-04 16:58:46.225 [27318] main/116/remote_control/127.0.0.1:62997 I> Granting replication permissions to "admin"...
+2023-05-04 16:58:46.225 [27318] main/116/remote_control/127.0.0.1:62997 I> Setting password for user "admin" ...
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> Remote control stopped
+2023-05-04 16:58:46.226 [27318] main/109/remote_control/127.0.0.1:3301 I> stopped
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> tx_binary: bound to 127.0.0.1:3301
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'listen' configuration option to "127.0.0.1:3301"
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> connecting to 1 replicas
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 C> failed to connect to 1 out of 1 replicas
+2023-05-04 16:58:46.226 [27318] main/133/queue_state_fiber I> Queue state changed: ENDING
+2023-05-04 16:58:46.226 [27318] main/133/queue_state_fiber I> Queue state changed: WAITING
+2023-05-04 16:58:46.226 [27318] main/132/queue_expiration_fiber I> Queue expiration fiber was stopped
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 I> leaving orphan mode
+2023-05-04 16:58:46.226 [27318] main/116/remote_control/127.0.0.1:62997 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> set 'replication' configuration option to ["admin@localhost:3301"]
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> Tarantool options:
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> audit_log = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> audit_nonblock = true
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> audit_format = json
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> audit_filter = compatibility
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> background = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> checkpoint_count = 2
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> checkpoint_interval = 3600
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> checkpoint_wal_threshold = 1e+18
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> custom_proc_title = myapp@router
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> election_fencing_mode = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> election_mode = off
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> election_timeout = 5
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> feedback_enabled = true
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> feedback_host = https://feedback.tarantool.io
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> feedback_interval = 3600
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> feedback_crashinfo = true
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_enabled = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_logs_size = 10485760
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_logs_max_msg_size = 4096
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_logs_log_level = 6
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_metrics_interval = 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_metrics_period = 180
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_requests_size = 10485760
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_requests_max_req_size = 16384
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> flightrec_requests_max_res_size = 16384
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> force_recovery = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> hot_standby = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> instance_uuid = 06511852-f3a5-4e6d-ba0b-78097cf9b49c
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> io_collect_interval = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> iproto_threads = 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> listen = 127.0.0.1:3301
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> log = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> log_format = plain
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> log_level = 5
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> log_nonblock = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_max_tuple_size = 1048576
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_memory = 268435456
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_allocator = small
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_min_tuple_size = 16
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> memtx_use_mvcc_engine = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> net_msg_max = 768
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> pid_file = /home/user/Cartridge-Tarantool/tmp/run/myapp.router.pid
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> read_only = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> readahead = 16320
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replicaset_uuid = ae954f0d-f188-439d-bec4-f2af942e605a
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication = table: 0x7f66b8d8
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_anon = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_connect_quorum = 0
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_connect_timeout = 30
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_skip_conflict = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_sync_lag = 10
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_sync_timeout = 300
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_synchro_quorum = N / 2 + 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_synchro_timeout = 5
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_timeout = 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> replication_threads = 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> slab_alloc_factor = 1.05
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> slab_alloc_granularity = 8
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> snap_io_rate_limit = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> sql_cache_size = 5242880
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> strip_core = true
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> txn_isolation = best-effort
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> too_long_threshold = 0.5
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> username = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_bloom_fpr = 0.05
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_cache = 134217728
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_defer_deletes = false
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_max_tuple_size = 1048576
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_memory = 134217728
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_page_size = 8192
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_range_size = nil
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_read_threads = 1
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_run_count_per_level = 2
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_run_size_ratio = 3.5
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_timeout = 60
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> vinyl_write_threads = 4
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.router
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_dir_rescan_delay = 2
+2023-05-04 16:58:46.227 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_max_size = 268435456
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_queue_max_size = 16777216
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_cleanup_delay = 14400
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> wal_mode = write
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> work_dir = nil
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> worker_pool_threads = 4
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> txn_timeout = 3153600000
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Instance state changed: BoxConfigured -> ConfiguringRoles
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Failover disabled
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Replicaset b9796ada-4da2-4b07-82ae-4638a6bb3fe4: new leader 6a0939be-03df-4add-bb58-51e26fcf8686 ("localhost:3302"), was nil
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Replicaset 51d29780-eb8a-45e1-8c0a-61448eafb5c9: new leader b75d1c4c-7a2c-4198-b83c-fa75664326d7 ("localhost:3304"), was nil
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Replicaset 423373ad-c217-43ba-a5d9-3694d0d786b1: new leader 358669e6-ad17-491d-b96b-c3a5899d0fce ("localhost:3306"), was nil
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Replicaset ae954f0d-f188-439d-bec4-f2af942e605a (me): new leader 06511852-f3a5-4e6d-ba0b-78097cf9b49c (me), was nil
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Start applying roles config
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "ddl-manager" role
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "ddl-manager" role in 0.000002 sec
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Appling "ddl-manager" role config
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully applied "ddl-manager" role config in 0.000010 sec
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Appling "failover-coordinator" role config
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully applied "failover-coordinator" role config in 0.000007 sec
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "vshard-router" role
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "vshard-router" role in 0.000011 sec
+2023-05-04 16:58:46.228 [27318] main/116/remote_control/127.0.0.1:62997 I> Appling "vshard-router" role config
+2023-05-04 16:58:46.229 [27318] main/116/remote_control/127.0.0.1:62997 I> Reconfiguring vshard-router/default ...
+2023-05-04 16:58:46.229 [27318] main/116/remote_control/127.0.0.1:62997 I> Starting router configuration
+2023-05-04 16:58:46.229 [27318] main/116/remote_control/127.0.0.1:62997 I> Calling box.cfg()...
+2023-05-04 16:58:46.229 [27318] main/116/remote_control/127.0.0.1:62997 I> {"read_only":false}
+2023-05-04 16:58:46.229 [27318] main/116/remote_control/127.0.0.1:62997 I> Box has been configured
+2023-05-04 16:58:46.229 [27318] main/133/queue_state_fiber I> Queue state changed: STARTUP
+2023-05-04 16:58:46.230 [27318] main/133/queue_state_fiber I> Queue state changed: RUNNING
+2023-05-04 16:58:46.230 [27318] main/135/applier/admin@localhost:3301 I> remote master 06511852-f3a5-4e6d-ba0b-78097cf9b49c at 127.0.0.1:3301 running Tarantool 2.10.6
+2023-05-04 16:58:46.231 [27318] main/135/applier/admin@localhost:3301 I> leaving orphan mode
+2023-05-04 16:58:46.231 [27318] main/135/applier/admin@localhost:3301 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.231 [27318] main/139/localhost:3304 (net.box) I> connected to localhost:3304
+2023-05-04 16:58:46.231 [27318] main/138/localhost:3305 (net.box) I> connected to localhost:3305
+2023-05-04 16:58:46.232 [27318] main/137/localhost:3303 (net.box) I> connected to localhost:3303
+2023-05-04 16:58:46.237 [27318] main/136/localhost:3302 (net.box) I> connected to localhost:3302
+2023-05-04 16:58:46.237 [27318] main/142/vshard.failover._static_router I> failover_f has been started
+2023-05-04 16:58:46.237 [27318] main/142/vshard.failover._static_router I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302))
+2023-05-04 16:58:46.237 [27318] main/142/vshard.failover._static_router I> New replica localhost:3304(admin@localhost:3304) for replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304))
+2023-05-04 16:58:46.237 [27318] main/142/vshard.failover._static_router I> All replicas are ok
+2023-05-04 16:58:46.237 [27318] main/142/vshard.failover._static_router I> Failovering step is finished. Schedule next after 1.000000 seconds
+2023-05-04 16:58:46.237 [27318] main/144/vshard.discovery._static_router I> discovery_f has been started
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully applied "vshard-router" role config in 0.008991 sec
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "crud-router" role
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "crud-router" role in 0.000009 sec
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Appling "crud-router" role config
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully applied "crud-router" role config in 0.000014 sec
+2023-05-04 16:58:46.237 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "metrics" role
+2023-05-04 16:58:46.243 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "metrics" role in 0.005895 sec
+2023-05-04 16:58:46.243 [27318] main/116/remote_control/127.0.0.1:62997 I> Appling "metrics" role config
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully applied "metrics" role config in 0.000378 sec
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "app.roles.api" role
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "app.roles.api" role in 0.000444 sec
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Init "app.roles.repo_api" role
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Successfully initialized "app.roles.repo_api" role in 0.000047 sec
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Roles configuration finished
+2023-05-04 16:58:46.244 [27318] main/116/remote_control/127.0.0.1:62997 I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:46.245 [27318] main/110/remote_control/127.0.0.1:62997 I> Peer closed when read packet size
+2023-05-04 16:58:46.245 [27318] main/110/remote_control/127.0.0.1:62997 utils.c:489 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
+2023-05-04 16:58:46.259 [27318] main/144/vshard.discovery._static_router init.lua:333 W> Error during discovery b9796ada-4da2-4b07-82ae-4638a6bb3fe4, retry will be done later: {"code":32,"base_type":"LuajitError","type":"LuajitError","message":"{\"reason\":\"storage is not configured\",\"code\":33,\"type\":\"ShardingError\",\"message\":\"Storage is disabled: storage is not configured\",\"name\":\"STORAGE_IS_DISABLED\"}","trace":[{"file":".\/src\/lua\/utils.c","line":489}]}
+2023-05-04 16:58:46.260 [27318] main/144/vshard.discovery._static_router I> Start aggressive discovery, 30000 buckets are unknown. Discovery works with 1 seconds interval
+2023-05-04 16:58:47.219 [27318] main/137/localhost:3303 (net.box) I> disconnected from localhost:3303
+2023-05-04 16:58:47.219 [27318] main/137/localhost:3303 (net.box) net_box.lua:342 W> localhost:3303: Peer closed
+2023-05-04 16:58:47.231 [27318] main/138/localhost:3305 (net.box) I> disconnected from localhost:3305
+2023-05-04 16:58:47.231 [27318] main/138/localhost:3305 (net.box) net_box.lua:342 W> localhost:3305: Peer closed
+2023-05-04 16:58:47.238 [27318] main/142/vshard.failover._static_router I> All replicas are ok
+2023-05-04 16:58:47.261 [27318] main/123/main I> Validate roles configurations
+2023-05-04 16:58:47.261 [27318] main/123/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:47.261 [27318] main/123/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
+2023-05-04 16:58:47.261 [27318] main/123/main I> Validate config "vshard-router" role
+2023-05-04 16:58:47.261 [27318] main/123/main I> Successfully validated config "vshard-router" role in 0.000075 sec
+2023-05-04 16:58:47.261 [27318] main/123/main I> Validate config "crud-router" role
+2023-05-04 16:58:47.261 [27318] main/123/main I> Successfully validated config "crud-router" role in 0.000001 sec
+2023-05-04 16:58:47.261 [27318] main/123/main I> Validate config "metrics" role
+2023-05-04 16:58:47.261 [27318] main/123/main I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:58:47.261 [27318] main/123/main I> Roles configuration validation finished
+2023-05-04 16:58:47.275 [27318] main/123/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
+2023-05-04 16:58:47.279 [27318] main/123/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:47.280 [27318] main/123/main I> Failover disabled
+2023-05-04 16:58:47.280 [27318] main/123/main I> Start applying roles config
+2023-05-04 16:58:47.280 [27318] main/123/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:47.280 [27318] main/123/main I> Successfully applied "ddl-manager" role config in 0.000010 sec
+2023-05-04 16:58:47.280 [27318] main/123/main I> Appling "failover-coordinator" role config
+2023-05-04 16:58:47.280 [27318] main/123/main I> Successfully applied "failover-coordinator" role config in 0.000007 sec
+2023-05-04 16:58:47.280 [27318] main/123/main I> Appling "vshard-router" role config
+2023-05-04 16:58:47.280 [27318] main/123/main I> Successfully applied "vshard-router" role config in 0.000395 sec
+2023-05-04 16:58:47.280 [27318] main/123/main I> Appling "crud-router" role config
+2023-05-04 16:58:47.280 [27318] main/123/main I> Successfully applied "crud-router" role config in 0.000008 sec
+2023-05-04 16:58:47.280 [27318] main/123/main I> Appling "metrics" role config
+2023-05-04 16:58:47.281 [27318] main/123/main I> Successfully applied "metrics" role config in 0.000255 sec
+2023-05-04 16:58:47.281 [27318] main/123/main I> Roles configuration finished
+2023-05-04 16:58:47.281 [27318] main/123/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:47.721 [27318] main/137/localhost:3303 (net.box) I> connected to localhost:3303
+2023-05-04 16:58:47.731 [27318] main/138/localhost:3305 (net.box) I> connected to localhost:3305
+2023-05-04 16:58:47.738 [27318] main/123/main I> Bootstrapping vshard-router/default ...
+2023-05-04 16:58:47.847 [27318] main/123/main I> Buckets from 1 to 15000 are bootstrapped on "b9796ada-4da2-4b07-82ae-4638a6bb3fe4"
+2023-05-04 16:58:47.990 [27318] main/123/main I> Buckets from 15001 to 30000 are bootstrapped on "51d29780-eb8a-45e1-8c0a-61448eafb5c9"
+2023-05-04 16:58:47.991 [27318] main/123/main twophase.lua:576 W> Updating config clusterwide...
+2023-05-04 16:58:47.991 [27318] main/123/main twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
+2023-05-04 16:58:48.005 [27318] main/123/main twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
+2023-05-04 16:58:48.005 [27318] main/146/main I> Validate roles configurations
+2023-05-04 16:58:48.006 [27318] main/146/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:48.006 [27318] main/146/main I> Successfully validated config "ddl-manager" role in 0.000020 sec
+2023-05-04 16:58:48.006 [27318] main/146/main I> Validate config "vshard-router" role
+2023-05-04 16:58:48.006 [27318] main/146/main I> Successfully validated config "vshard-router" role in 0.000064 sec
+2023-05-04 16:58:48.006 [27318] main/146/main I> Validate config "crud-router" role
+2023-05-04 16:58:48.006 [27318] main/146/main I> Successfully validated config "crud-router" role in 0.000002 sec
+2023-05-04 16:58:48.006 [27318] main/146/main I> Validate config "metrics" role
+2023-05-04 16:58:48.006 [27318] main/146/main I> Successfully validated config "metrics" role in 0.000002 sec
+2023-05-04 16:58:48.006 [27318] main/146/main I> Roles configuration validation finished
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
+2023-05-04 16:58:48.021 [27318] main/123/main twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
+2023-05-04 16:58:48.036 [27318] main/146/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
+2023-05-04 16:58:48.042 [27318] main/146/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:48.042 [27318] main/146/main I> Failover disabled
+2023-05-04 16:58:48.042 [27318] main/146/main I> Start applying roles config
+2023-05-04 16:58:48.042 [27318] main/146/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:48.042 [27318] main/146/main I> Successfully applied "ddl-manager" role config in 0.000014 sec
+2023-05-04 16:58:48.042 [27318] main/146/main I> Appling "failover-coordinator" role config
+2023-05-04 16:58:48.042 [27318] main/146/main I> Successfully applied "failover-coordinator" role config in 0.000010 sec
+2023-05-04 16:58:48.042 [27318] main/146/main I> Appling "vshard-router" role config
+2023-05-04 16:58:48.043 [27318] main/146/main I> Successfully applied "vshard-router" role config in 0.000375 sec
+2023-05-04 16:58:48.043 [27318] main/146/main I> Appling "crud-router" role config
+2023-05-04 16:58:48.043 [27318] main/146/main I> Successfully applied "crud-router" role config in 0.000006 sec
+2023-05-04 16:58:48.043 [27318] main/146/main I> Appling "metrics" role config
+2023-05-04 16:58:48.043 [27318] main/146/main I> Successfully applied "metrics" role config in 0.000210 sec
+2023-05-04 16:58:48.043 [27318] main/146/main I> Roles configuration finished
+2023-05-04 16:58:48.043 [27318] main/146/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:48.051 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
+2023-05-04 16:58:48.051 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
+2023-05-04 16:58:48.052 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
+2023-05-04 16:58:48.052 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
+2023-05-04 16:58:48.052 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
+2023-05-04 16:58:48.052 [27318] main/123/main twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
+2023-05-04 16:58:48.052 [27318] main/123/main twophase.lua:652 W> Clusterwide config updated successfully
+2023-05-04 16:58:48.303 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 0, became 1000
+2023-05-04 16:58:48.303 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 0, became 1000
+2023-05-04 16:58:49.326 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 1000, became 2000
+2023-05-04 16:58:49.326 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 1000, became 2000
+2023-05-04 16:58:50.350 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 2000, became 3000
+2023-05-04 16:58:50.350 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 2000, became 3000
+2023-05-04 16:58:51.372 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 3000, became 4000
+2023-05-04 16:58:51.372 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 3000, became 4000
+2023-05-04 16:58:51.913 [27318] main/172/main I> Validate roles configurations
+2023-05-04 16:58:51.913 [27318] main/172/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:51.913 [27318] main/172/main I> Successfully validated config "ddl-manager" role in 0.000011 sec
+2023-05-04 16:58:51.913 [27318] main/172/main I> Validate config "vshard-router" role
+2023-05-04 16:58:51.913 [27318] main/172/main I> Successfully validated config "vshard-router" role in 0.000055 sec
+2023-05-04 16:58:51.913 [27318] main/172/main I> Validate config "crud-router" role
+2023-05-04 16:58:51.913 [27318] main/172/main I> Successfully validated config "crud-router" role in 0.000002 sec
+2023-05-04 16:58:51.913 [27318] main/172/main I> Validate config "metrics" role
+2023-05-04 16:58:51.913 [27318] main/172/main I> Successfully validated config "metrics" role in 0.000009 sec
+2023-05-04 16:58:51.913 [27318] main/172/main I> Roles configuration validation finished
+2023-05-04 16:58:51.938 [27318] main/172/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
+2023-05-04 16:58:51.945 [27318] main/172/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:51.945 [27318] main/172/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:58:51.947 [27318] main/172/main I> Not enough enabled instances to start leader_autoreturn fiber
+2023-05-04 16:58:51.947 [27318] main/172/main I> Start applying roles config
+2023-05-04 16:58:51.947 [27318] main/172/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:51.947 [27318] main/172/main I> Successfully applied "ddl-manager" role config in 0.000011 sec
+2023-05-04 16:58:51.947 [27318] main/172/main I> Appling "failover-coordinator" role config
+2023-05-04 16:58:51.947 [27318] main/172/main I> Starting failover coordinator with external storage (stateboard) at localhost:4401
+2023-05-04 16:58:51.947 [27318] main/172/main I> Successfully applied "failover-coordinator" role config in 0.000042 sec
+2023-05-04 16:58:51.947 [27318] main/172/main I> Appling "vshard-router" role config
+2023-05-04 16:58:51.948 [27318] main/172/main I> Successfully applied "vshard-router" role config in 0.000297 sec
+2023-05-04 16:58:51.948 [27318] main/172/main I> Appling "crud-router" role config
+2023-05-04 16:58:51.948 [27318] main/172/main I> Successfully applied "crud-router" role config in 0.000005 sec
+2023-05-04 16:58:51.948 [27318] main/172/main I> Appling "metrics" role config
+2023-05-04 16:58:51.948 [27318] main/172/main I> Successfully applied "metrics" role config in 0.000199 sec
+2023-05-04 16:58:51.948 [27318] main/172/main I> Roles configuration finished
+2023-05-04 16:58:51.948 [27318] main/172/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:51.950 [27318] main/176/failover-take-control I> Lock acquired
+2023-05-04 16:58:51.951 [27318] main/179/failover-coordinate I> Replicaset b9796ada-4da2-4b07-82ae-4638a6bb3fe4: appoint 6a0939be-03df-4add-bb58-51e26fcf8686 ("localhost:3302")
+2023-05-04 16:58:51.951 [27318] main/179/failover-coordinate I> Replicaset 51d29780-eb8a-45e1-8c0a-61448eafb5c9: appoint b75d1c4c-7a2c-4198-b83c-fa75664326d7 ("localhost:3304")
+2023-05-04 16:58:51.951 [27318] main/179/failover-coordinate I> Replicaset 423373ad-c217-43ba-a5d9-3694d0d786b1: appoint 358669e6-ad17-491d-b96b-c3a5899d0fce ("localhost:3306")
+2023-05-04 16:58:51.951 [27318] main/179/failover-coordinate I> Replicaset ae954f0d-f188-439d-bec4-f2af942e605a: appoint 06511852-f3a5-4e6d-ba0b-78097cf9b49c ("localhost:3301")
+2023-05-04 16:58:52.395 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 4000, became 5000
+2023-05-04 16:58:52.395 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 4000, became 5000
+2023-05-04 16:58:53.419 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 5000, became 6000
+2023-05-04 16:58:53.419 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 5000, became 6000
+2023-05-04 16:58:54.442 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 6000, became 7000
+2023-05-04 16:58:54.442 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 6000, became 7000
+2023-05-04 16:58:55.466 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 7000, became 8000
+2023-05-04 16:58:55.466 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 7000, became 8000
+2023-05-04 16:58:56.489 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 8000, became 9000
+2023-05-04 16:58:56.489 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 8000, became 9000
+2023-05-04 16:58:57.512 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 9000, became 10000
+2023-05-04 16:58:57.512 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 9000, became 10000
+2023-05-04 16:58:58.535 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 10000, became 11000
+2023-05-04 16:58:58.536 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 10000, became 11000
+2023-05-04 16:58:59.558 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 11000, became 12000
+2023-05-04 16:58:59.558 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 11000, became 12000
+2023-05-04 16:59:00.581 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 12000, became 13000
+2023-05-04 16:59:00.581 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 12000, became 13000
+2023-05-04 16:59:01.604 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 13000, became 14000
+2023-05-04 16:59:01.604 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 13000, became 14000
+2023-05-04 16:59:02.627 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="b9796ada-4da2-4b07-82ae-4638a6bb3fe4", master=localhost:3302(admin@localhost:3302)) buckets: was 14000, became 15000
+2023-05-04 16:59:02.627 [27318] main/144/vshard.discovery._static_router I> Updated replicaset(uuid="51d29780-eb8a-45e1-8c0a-61448eafb5c9", master=localhost:3304(admin@localhost:3304)) buckets: was 14000, became 15000
+2023-05-04 16:59:02.627 [27318] main/144/vshard.discovery._static_router I> Discovery enters idle mode, all buckets are known. Discovery works with 10 seconds interval now
+2023-05-04 16:59:07.332 [27318] main/180/http/127.0.0.1:63056 twophase.lua:576 W> Updating config clusterwide...
+2023-05-04 16:59:07.333 [27318] main/180/http/127.0.0.1:63056 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
+2023-05-04 16:59:07.342 [27318] main/180/http/127.0.0.1:63056 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
+2023-05-04 16:59:07.343 [27318] main/182/main I> Validate roles configurations
+2023-05-04 16:59:07.343 [27318] main/182/main I> Validate config "ddl-manager" role
+2023-05-04 16:59:07.343 [27318] main/182/main I> Successfully validated config "ddl-manager" role in 0.000007 sec
+2023-05-04 16:59:07.343 [27318] main/182/main I> Validate config "vshard-router" role
+2023-05-04 16:59:07.343 [27318] main/182/main I> Successfully validated config "vshard-router" role in 0.000029 sec
+2023-05-04 16:59:07.343 [27318] main/182/main I> Validate config "crud-router" role
+2023-05-04 16:59:07.343 [27318] main/182/main I> Successfully validated config "crud-router" role in 0.000001 sec
+2023-05-04 16:59:07.343 [27318] main/182/main I> Validate config "metrics" role
+2023-05-04 16:59:07.343 [27318] main/182/main I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:59:07.343 [27318] main/182/main I> Roles configuration validation finished
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
+2023-05-04 16:59:07.356 [27318] main/180/http/127.0.0.1:63056 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
+2023-05-04 16:59:07.373 [27318] main/182/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
+2023-05-04 16:59:07.378 [27318] main/182/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:59:07.378 [27318] main/182/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:59:07.416 [27318] main/182/main I> Not enough enabled instances to start leader_autoreturn fiber
+2023-05-04 16:59:07.416 [27318] main/182/main I> Start applying roles config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Appling "ddl-manager" role config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Successfully applied "ddl-manager" role config in 0.000014 sec
+2023-05-04 16:59:07.417 [27318] main/182/main I> Appling "failover-coordinator" role config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Successfully applied "failover-coordinator" role config in 0.000037 sec
+2023-05-04 16:59:07.417 [27318] main/182/main I> Appling "vshard-router" role config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Successfully applied "vshard-router" role config in 0.000537 sec
+2023-05-04 16:59:07.417 [27318] main/182/main I> Appling "crud-router" role config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Successfully applied "crud-router" role config in 0.000013 sec
+2023-05-04 16:59:07.417 [27318] main/182/main I> Appling "metrics" role config
+2023-05-04 16:59:07.417 [27318] main/182/main I> Successfully applied "metrics" role config in 0.000149 sec
+2023-05-04 16:59:07.417 [27318] main/182/main I> Roles configuration finished
+2023-05-04 16:59:07.418 [27318] main/182/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
+2023-05-04 16:59:07.418 [27318] main/180/http/127.0.0.1:63056 twophase.lua:652 W> Clusterwide config updated successfully
+2023-05-04 16:59:26.843 [27318] main/180/http/127.0.0.1:63056 twophase.lua:576 W> Updating config clusterwide...
+2023-05-04 16:59:26.844 [27318] main/180/http/127.0.0.1:63056 twophase.lua:452 W> (2PC) patch_clusterwide upload phase...
+2023-05-04 16:59:26.853 [27318] main/180/http/127.0.0.1:63056 twophase.lua:465 W> (2PC) patch_clusterwide prepare phase...
+2023-05-04 16:59:26.853 [27318] main/186/main I> Validate roles configurations
+2023-05-04 16:59:26.853 [27318] main/186/main I> Validate config "ddl-manager" role
+2023-05-04 16:59:26.853 [27318] main/186/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
+2023-05-04 16:59:26.853 [27318] main/186/main I> Validate config "vshard-router" role
+2023-05-04 16:59:26.853 [27318] main/186/main I> Successfully validated config "vshard-router" role in 0.000024 sec
+2023-05-04 16:59:26.853 [27318] main/186/main I> Validate config "crud-router" role
+2023-05-04 16:59:26.853 [27318] main/186/main I> Successfully validated config "crud-router" role in 0.000001 sec
+2023-05-04 16:59:26.853 [27318] main/186/main I> Validate config "metrics" role
+2023-05-04 16:59:26.853 [27318] main/186/main I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:59:26.853 [27318] main/186/main I> Roles configuration validation finished
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3301
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3302
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3303
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3304
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3305
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:474 W> Prepared for patch_clusterwide at localhost:3306
+2023-05-04 16:59:26.867 [27318] main/180/http/127.0.0.1:63056 twophase.lua:498 W> (2PC) patch_clusterwide commit phase...
+2023-05-04 16:59:26.887 [27318] main/186/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.router/config.backup"
+2023-05-04 16:59:26.889 [27318] main/186/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:59:26.890 [27318] main/186/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:59:26.911 [27318] main/186/main I> Not enough enabled instances to start leader_autoreturn fiber
+2023-05-04 16:59:26.911 [27318] main/186/main I> Start applying roles config
+2023-05-04 16:59:26.911 [27318] main/186/main I> Appling "ddl-manager" role config
+2023-05-04 16:59:26.911 [27318] main/186/main I> Successfully applied "ddl-manager" role config in 0.000011 sec
+2023-05-04 16:59:26.911 [27318] main/186/main I> Appling "failover-coordinator" role config
+2023-05-04 16:59:26.911 [27318] main/186/main I> Successfully applied "failover-coordinator" role config in 0.000075 sec
+2023-05-04 16:59:26.911 [27318] main/186/main I> Appling "vshard-router" role config
+2023-05-04 16:59:26.911 [27318] main/186/main I> Successfully applied "vshard-router" role config in 0.000288 sec
+2023-05-04 16:59:26.911 [27318] main/186/main I> Appling "crud-router" role config
+2023-05-04 16:59:26.911 [27318] main/186/main I> Successfully applied "crud-router" role config in 0.000005 sec
+2023-05-04 16:59:26.911 [27318] main/186/main I> Appling "metrics" role config
+2023-05-04 16:59:26.912 [27318] main/186/main I> Successfully applied "metrics" role config in 0.000307 sec
+2023-05-04 16:59:26.912 [27318] main/186/main I> Roles configuration finished
+2023-05-04 16:59:26.912 [27318] main/186/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3301
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3302
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3303
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3304
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3305
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:507 W> Committed patch_clusterwide at localhost:3306
+2023-05-04 16:59:26.912 [27318] main/180/http/127.0.0.1:63056 twophase.lua:652 W> Clusterwide config updated successfully
+2023-05-04 17:01:55.811 [27318] main C> got signal 15 - Terminated
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Stop "ddl-manager" role
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Stop "failover-coordinator" role
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Successfully stopped "failover-coordinator" role in 0.000027 sec
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Stop "vshard-router" role
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Starting router configuration
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Calling box.cfg()...
+2023-05-04 17:01:55.811 [27318] main/193/trigger_fiber1 I> Box has been configured
+2023-05-04 17:01:55.811 [27318] main/195/lua I> Old replicaset and replica objects are outdated.
+2023-05-04 17:01:55.812 [27318] main/193/trigger_fiber1 I> Successfully stopped "vshard-router" role in 0.000992 sec
+2023-05-04 17:01:55.812 [27318] main/193/trigger_fiber1 I> Stop "crud-router" role
+2023-05-04 17:01:55.812 [27318] main/193/trigger_fiber1 I> Successfully stopped "crud-router" role in 0.000002 sec
+2023-05-04 17:01:55.813 [27318] main/193/trigger_fiber1 I> Stop "metrics" role
+2023-05-04 17:01:55.813 [27318] main/193/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000188 sec
+2023-05-04 17:01:55.814 [27318] main/176/failover-take-control I> Lock released
+2023-05-04 17:01:55.815 [27318] main/192/iproto.shutdown I> tx_binary: stopped
+2023-05-04 17:01:55.816 [27318] main/194/localhost:3301 (net.box) net_box.lua:342 W> localhost:3301: unexpected EOF when reading from socket, called on fd 13, aka 127.0.0.1:63120, peer of 127.0.0.1:3301: Broken pipe
+2023-05-04 17:01:55.823 [27318] main/138/localhost:3305 (net.box) I> disconnected from localhost:3305
+2023-05-04 17:01:55.823 [27318] main/137/localhost:3303 (net.box) I> disconnected from localhost:3303
+2023-05-04 17:01:55.824 [27318] main/139/localhost:3304 (net.box) I> disconnected from localhost:3304
+2023-05-04 17:01:55.824 [27318] main/139/localhost:3304 (net.box) net_box.lua:342 W> localhost:3304: Peer closed
+2023-05-04 17:01:55.824 [27318] main/136/localhost:3302 (net.box) I> disconnected from localhost:3302
+2023-05-04 17:01:55.824 [27318] main/136/localhost:3302 (net.box) net_box.lua:342 W> localhost:3302: Peer closed

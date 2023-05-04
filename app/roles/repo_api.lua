@@ -4,7 +4,7 @@ local crud = require('crud')
 local log = require('log')
 
 local function customer_pop()
-    local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
+    local customer, error = cartridge.rpc_call('app.roles.myqueue', 'queue_take')
 
     if error then
         return "Internal error"
@@ -25,7 +25,7 @@ local function repo_customer_add(customer)
         log.info(err)
     end
 
-    cartridge.rpc_call('myqueue', 'on_replace_function', {customer})
+    cartridge.rpc_call('app.roles.myqueue', 'on_replace_function', {customer})
 
 end
 
@@ -51,7 +51,7 @@ local function init(opts)
 end
 
 return {
-    role_name = 'repo_api',
+    role_name = 'app.roles.repo_api',
     init = init,
     dependencies = {'cartridge.roles.crud-router'},
 }

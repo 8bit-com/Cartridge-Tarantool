@@ -9,13 +9,19 @@ local tnt_kafka = require('kafka')
 local err_httpd = errors.new_class("httpd error")
 
 local function http_kafka_producer()
-    local producer, err = tnt_kafka.Producer.create({ brokers = "localhost:29092" })
+    log.info("OK")
+    local cluster_config = cartridge.config_get_deepcopy()
+    local hello_section = cluster_config['hello']
+    local var = hello_section['name2']
+    log.warn(hello_section)
+    log.warn(var)
+    local producer, err = tnt_kafka.Producer.create({ brokers = var })
     if err ~= nil then
         log.info(err)
         os.exit(1)
     end
 
-    for i = 1, 10 do
+    for i = 100, 110 do
         local message = "test_value " .. tostring(i)
         local err = producer:produce({
             topic = "test_topic",
@@ -45,7 +51,7 @@ local function http_customer_add(req)
         return resp
     end
 
-    cartridge.rpc_call('myqueue', 'on_replace_function', {customer})
+    cartridge.rpc_call('app.roles.myqueue', 'on_replace_function', {customer})
 
     local resp = req:render({json = { info = "Successfully created" }})
     resp.status = 201
@@ -187,7 +193,7 @@ local function http_customer_update(req)
 end
 
 local function http_customer_pop(req)
-    local customer, error = cartridge.rpc_call('myqueue', 'queue_take')
+    local customer, error = cartridge.rpc_call('app.roles.myqueue', 'queue_take')
 
     if error then
         local resp = req:render({json = {
@@ -219,7 +225,7 @@ local function http_customer_pop(req)
 end
 
 local function http_queue_clean(req)
-    local _, error = cartridge.rpc_call('myqueue', 'queue_clean')
+    local _, error = cartridge.rpc_call('app.roles.myqueue', 'queue_clean')
 
     if error then
         local resp = req:render({json = {
@@ -293,7 +299,7 @@ local function init(opts)
 end
 
 return {
-    role_name = 'api',
+    role_name = 'app.roles.api',
     init = init,
     dependencies = {'cartridge.roles.crud-router'},
 }

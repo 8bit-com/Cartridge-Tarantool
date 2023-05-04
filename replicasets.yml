@@ -4,7 +4,6 @@ router:
   roles:
   - failover-coordinator
   - crud-router
-  - vshard-router
   - app.roles.api
   - app.roles.repo_api
   all_rw: false
@@ -14,7 +13,6 @@ s-1:
   - s1-replica
   roles:
   - crud-storage
-  - vshard-storage
   - app.roles.storage
   weight: 1
   all_rw: false
@@ -25,7 +23,6 @@ s-2:
   - s2-replica
   roles:
   - crud-storage
-  - vshard-storage
   - app.roles.storage
   weight: 1
   all_rw: false

@@ -37,16 +37,16 @@ end
 local function on_replace_function(customer)
     queue.tube.cust_queue:put(customer, {ttr = 10})
 
-    local http_client = require('http.client')
-    local json = require('json')
-    local data = 'mail'
-    local body = json.encode(data)
-    local headers = {
-        ['Content-Type'] = 'application/json',
-        ['isImportant'] = 'false'
-    }
-    local response = http_client.request('POST', 'http://localhost:8383/camel/mail', body, { headers = headers })
-    log.info(response)
+    --local http_client = require('http.client')
+    --local json = require('json')
+    --local data = 'mail'
+    --local body = json.encode(data)
+    --local headers = {
+    --    ['Content-Type'] = 'application/json',
+    --    ['isImportant'] = 'false'
+    --}
+    --local response = http_client.request('POST', 'http://localhost:8383/camel/mail', body, { headers = headers })
+    --log.info(response)
 end
 
 -- создаём функцию на получение данных из очереди
@@ -96,7 +96,7 @@ local function init(opts)
 end
 
 return {
-    role_name = 'myqueue',
+    role_name = 'app.roles.myqueue',
     init = init,
     on_replace_function = on_replace_function,
     queue_take = queue_take,

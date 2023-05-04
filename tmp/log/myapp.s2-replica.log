@@ -1,372 +1,380 @@
-2023-05-02 22:40:15.346 [18719] main/103/init.lua I> Using advertise_uri "localhost:3305"
-2023-05-02 22:40:15.346 [18719] main/103/init.lua I> Membership encryption enabled
-2023-05-02 22:40:15.353 [18719] main/103/init.lua I> Probe uri was successful
-2023-05-02 22:40:15.354 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3306
-2023-05-02 22:40:15.355 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3306
-2023-05-02 22:40:15.355 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3306
-2023-05-02 22:40:15.356 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3306
-2023-05-02 22:40:15.357 [18719] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3306
-2023-05-02 22:40:15.358 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3306
-2023-05-02 22:40:15.359 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3304
-2023-05-02 22:40:15.359 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3304
-2023-05-02 22:40:15.360 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3304
-2023-05-02 22:40:15.361 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3304
-2023-05-02 22:40:15.361 [18719] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3304
-2023-05-02 22:40:15.363 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3304
-2023-05-02 22:40:15.364 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
-2023-05-02 22:40:15.365 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3301
-2023-05-02 22:40:15.365 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
-2023-05-02 22:40:15.366 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3301
-2023-05-02 22:40:15.367 [18719] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
-2023-05-02 22:40:15.368 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
-2023-05-02 22:40:15.369 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3305
-2023-05-02 22:40:15.370 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.25.255.255:3305
-2023-05-02 22:40:15.371 [18719] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3305
-2023-05-02 22:40:15.371 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.24.111.255:3305
-2023-05-02 22:40:15.372 [18719] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3305
-2023-05-02 22:40:15.372 [18719] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3305
-2023-05-02 22:40:15.373 [18719] main/107/http/0.0.0.0:8085 I> started
-2023-05-02 22:40:15.374 [18719] main/103/init.lua I> Listening HTTP on 0.0.0.0:8085
-2023-05-02 22:40:15.375 [18719] main/108/console/unix/:/home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.control I> started
-2023-05-02 22:40:15.375 [18719] main/103/init.lua I> Load modules and register
-2023-05-02 22:40:15.415 [18719] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
-2023-05-02 22:40:15.420 [18719] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
-2023-05-02 22:40:15.430 [18719] main/109/remote_control/127.0.0.1:3305 I> started
-2023-05-02 22:40:15.430 [18719] main/103/init.lua I> Remote control bound to 127.0.0.1:3305
-2023-05-02 22:40:15.431 [18719] main/103/init.lua I> Remote control ready to accept connections
-2023-05-02 22:40:15.431 [18719] main/103/init.lua I> Instance state changed:  -> Unconfigured
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> Cartridge 2.7.9
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> server alias s2-replica
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> advertise uri localhost:3305
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> Cartridge options:
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> advertise_uri = localhost:3305
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> alias = s2-replica
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> auth_enabled = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> bucket_count = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> console_sock = /home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.control
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> http_enabled = true
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> http_host = 0.0.0.0
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> http_port = 8085
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> roles = ["cartridge.roles.vshard-storage","cartridge.roles.vshard-router","cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue","cartridge.roles.crud-router","cartridge.roles.crud-storage"]
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> roles_reload_allowed = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> swim_broadcast = true
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> upgrade_schema = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> upload_prefix = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> vshard_groups = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> webui_blacklist = nil
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> webui_enabled = true
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> webui_enforce_root_redirect = true
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> webui_prefix = 
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> workdir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:15.432 [18719] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
-2023-05-02 22:40:15.432 [18719] main/103/init.lua I> Set default metrics endpoints
-2023-05-02 22:40:15.432 [18719] main I> entering the event loop
-2023-05-02 22:40:15.433 [18719] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Validate roles configurations
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Validate config "ddl-manager" role
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Successfully validated config "ddl-manager" role in 0.000011 sec
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Validate config "vshard-router" role
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Successfully validated config "vshard-router" role in 0.000109 sec
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Validate config "metrics" role
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Successfully validated config "metrics" role in 0.000002 sec
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Validate config "crud-router" role
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Successfully validated config "crud-router" role in 0.000001 sec
-2023-05-02 22:40:42.533 [18719] main/144/remote_control/127.0.0.1:57654 I> Roles configuration validation finished
-2023-05-02 22:40:42.549 [18719] main/145/remote_control/127.0.0.1:57654 I> Instance state changed: Unconfigured -> BootstrappingBox
-2023-05-02 22:40:42.549 [18719] main/145/remote_control/127.0.0.1:57654 confapplier.lua:549 W> Calling box.cfg()...
-2023-05-02 22:40:42.550 [18719] main/145/remote_control/127.0.0.1:57654 I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
-2023-05-02 22:40:42.550 [18719] main/145/remote_control/127.0.0.1:57654 I> log level 5
-2023-05-02 22:40:42.550 [18719] main/145/remote_control/127.0.0.1:57654 I> wal/engine cleanup is paused
-2023-05-02 22:40:42.551 [18719] main/145/remote_control/127.0.0.1:57654 I> mapping 268435456 bytes for memtx tuple arena...
-2023-05-02 22:40:42.551 [18719] main/145/remote_control/127.0.0.1:57654 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
-2023-05-02 22:40:42.551 [18719] main/145/remote_control/127.0.0.1:57654 I> mapping 134217728 bytes for vinyl tuple arena...
-2023-05-02 22:40:42.552 [18719] main/145/remote_control/127.0.0.1:57654 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:42.552 [18719] main/145/remote_control/127.0.0.1:57654 I> update replication_synchro_quorum = 1
-2023-05-02 22:40:42.552 [18719] main/145/remote_control/127.0.0.1:57654 I> instance uuid 724b61f8-b009-4d1c-98db-bf6b6be37980
-2023-05-02 22:40:42.552 [18719] main/146/remote_control/127.0.0.1:57654 I> Cartridge 2.7.9
-2023-05-02 22:40:42.552 [18719] main/146/remote_control/127.0.0.1:57654 I> server alias s2-replica
-2023-05-02 22:40:42.552 [18719] main/146/remote_control/127.0.0.1:57654 I> advertise uri localhost:3305
-2023-05-02 22:40:42.552 [18719] main/146/remote_control/127.0.0.1:57654 I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:42.552 [18719] main/145/remote_control/127.0.0.1:57654 I> initializing an empty data directory
-2023-05-02 22:40:42.565 [18719] main/145/remote_control/127.0.0.1:57654 I> assigned id 1 to replica 724b61f8-b009-4d1c-98db-bf6b6be37980
-2023-05-02 22:40:42.565 [18719] main/145/remote_control/127.0.0.1:57654 I> update replication_synchro_quorum = 1
-2023-05-02 22:40:42.565 [18719] main/145/remote_control/127.0.0.1:57654 I> cluster uuid a019ce9f-5159-4ba2-b0db-8f1f1578a9ab
-2023-05-02 22:40:42.566 [18719] snapshot/101/main I> saving snapshot `/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/00000000000000000000.snap.inprogress'
-2023-05-02 22:40:42.571 [18719] snapshot/101/main I> done
-2023-05-02 22:40:42.571 [18719] main/145/remote_control/127.0.0.1:57654 I> RAFT: fencing enabled
-2023-05-02 22:40:42.571 [18719] main/145/remote_control/127.0.0.1:57654 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:42.571 [18719] main/145/remote_control/127.0.0.1:57654 I> ready to accept requests
-2023-05-02 22:40:42.571 [18719] main/147/gc I> wal/engine cleanup is resumed
-2023-05-02 22:40:42.572 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'custom_proc_title' configuration option to "myapp@s2-replica"
-2023-05-02 22:40:42.572 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'log_level' configuration option to 5
-2023-05-02 22:40:42.572 [18719] main/148/checkpoint_daemon I> scheduled next checkpoint for Tue May  2 23:41:52 2023
-2023-05-02 22:40:42.576 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'log_format' configuration option to "plain"
-2023-05-02 22:40:42.577 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'instance_uuid' configuration option to "724b61f8-b009-4d1c-98db-bf6b6be37980"
-2023-05-02 22:40:42.579 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'replication_connect_quorum' configuration option to 0
-2023-05-02 22:40:42.579 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'replicaset_uuid' configuration option to "a019ce9f-5159-4ba2-b0db-8f1f1578a9ab"
-2023-05-02 22:40:42.586 [18719] main/145/remote_control/127.0.0.1:57654 I> Started queue state fiber
-2023-05-02 22:40:42.586 [18719] main/145/remote_control/127.0.0.1:57654 I> Making sure user "admin" exists...
-2023-05-02 22:40:42.586 [18719] main/145/remote_control/127.0.0.1:57654 I> Granting replication permissions to "admin"...
-2023-05-02 22:40:42.586 [18719] main/145/remote_control/127.0.0.1:57654 I> Setting password for user "admin" ...
-2023-05-02 22:40:42.586 [18719] main/145/remote_control/127.0.0.1:57654 I> Remote control stopped
-2023-05-02 22:40:42.586 [18719] main/109/remote_control/127.0.0.1:3305 I> stopped
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> tx_binary: bound to 127.0.0.1:3305
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'listen' configuration option to "127.0.0.1:3305"
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> dropping fd 26, aka 127.0.0.1:3305, peer 127.0.0.1:57682
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> dropping fd 27, aka 127.0.0.1:3305, peer 127.0.0.1:57683
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> connecting to 1 replicas
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 C> failed to connect to 1 out of 1 replicas
-2023-05-02 22:40:42.587 [18719] main/153/remote_control/127.0.0.1:57682 I> Peer closed when read packet size
-2023-05-02 22:40:42.587 [18719] main/154/remote_control/127.0.0.1:57683 I> Peer closed when read packet size
-2023-05-02 22:40:42.587 [18719] main/165/queue_state_fiber I> Queue state changed: ENDING
-2023-05-02 22:40:42.587 [18719] main/165/queue_state_fiber I> Queue state changed: WAITING
-2023-05-02 22:40:42.587 [18719] main/164/queue_expiration_fiber I> Queue expiration fiber was stopped
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> leaving orphan mode
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> set 'replication' configuration option to ["admin@localhost:3305"]
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> Tarantool options:
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> audit_log = nil
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> audit_nonblock = true
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> audit_format = json
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> audit_filter = compatibility
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> background = false
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> checkpoint_count = 2
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> checkpoint_interval = 3600
-2023-05-02 22:40:42.587 [18719] main/145/remote_control/127.0.0.1:57654 I> checkpoint_wal_threshold = 1e+18
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> custom_proc_title = myapp@s2-replica
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> election_fencing_mode = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> election_mode = off
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> election_timeout = 5
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> feedback_enabled = true
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> feedback_host = https://feedback.tarantool.io
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> feedback_interval = 3600
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> feedback_crashinfo = true
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_enabled = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_logs_size = 10485760
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_logs_max_msg_size = 4096
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_logs_log_level = 6
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_metrics_interval = 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_metrics_period = 180
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_requests_size = 10485760
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_requests_max_req_size = 16384
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> flightrec_requests_max_res_size = 16384
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> force_recovery = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> hot_standby = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> instance_uuid = 724b61f8-b009-4d1c-98db-bf6b6be37980
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> io_collect_interval = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> iproto_threads = 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> listen = 127.0.0.1:3305
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> log = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> log_format = plain
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> log_level = 5
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> log_nonblock = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_max_tuple_size = 1048576
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_memory = 268435456
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_allocator = small
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_min_tuple_size = 16
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> memtx_use_mvcc_engine = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> net_msg_max = 768
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> pid_file = /home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.pid
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> read_only = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> readahead = 16320
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replicaset_uuid = a019ce9f-5159-4ba2-b0db-8f1f1578a9ab
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication = table: 0x7fde5800
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_anon = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_connect_quorum = 0
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_connect_timeout = 30
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_skip_conflict = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_sync_lag = 10
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_sync_timeout = 300
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_synchro_quorum = N / 2 + 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_synchro_timeout = 5
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_timeout = 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> replication_threads = 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> slab_alloc_factor = 1.05
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> slab_alloc_granularity = 8
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> snap_io_rate_limit = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> sql_cache_size = 5242880
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> strip_core = true
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> txn_isolation = best-effort
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> too_long_threshold = 0.5
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> username = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_bloom_fpr = 0.05
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_cache = 134217728
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_defer_deletes = false
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_max_tuple_size = 1048576
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_memory = 134217728
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_page_size = 8192
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_range_size = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_read_threads = 1
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_run_count_per_level = 2
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_run_size_ratio = 3.5
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_timeout = 60
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> vinyl_write_threads = 4
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_dir_rescan_delay = 2
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_max_size = 268435456
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_queue_max_size = 16777216
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_cleanup_delay = 14400
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> wal_mode = write
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> work_dir = nil
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> worker_pool_threads = 4
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> txn_timeout = 3153600000
-2023-05-02 22:40:42.588 [18719] main/145/remote_control/127.0.0.1:57654 I> Instance state changed: BoxConfigured -> ConfiguringRoles
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Failover disabled
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Replicaset 4a49e949-b438-4691-b5b3-52d29d22daed: new leader 688c75c3-71fc-473f-9e64-cd82585e07dd ("localhost:3302"), was nil
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Replicaset a019ce9f-5159-4ba2-b0db-8f1f1578a9ab (me): new leader 724b61f8-b009-4d1c-98db-bf6b6be37980 (me), was nil
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Replicaset eec027f7-97ee-4e1a-a065-32dc7ea01be9: new leader b19d36f7-68f9-4ceb-8dae-edaa8ba8df2b ("localhost:3301"), was nil
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Replicaset a7e7f151-82be-45ae-9e48-5adfd71891cc: new leader 545f0a8f-6cf3-4bb6-b1c9-9a62bc297528 ("localhost:3304"), was nil
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Replicaset f76f3cff-78cd-4bce-b965-3fea52f402f3: new leader 0ca26e4d-33d5-41b0-b6fa-37ee455508f9 ("localhost:3303"), was nil
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Start applying roles config
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Init "ddl-manager" role
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully initialized "ddl-manager" role in 0.000001 sec
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Appling "ddl-manager" role config
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully applied "ddl-manager" role config in 0.000014 sec
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Init "vshard-storage" role
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully initialized "vshard-storage" role in 0.000005 sec
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Appling "vshard-storage" role config
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Reconfiguring vshard.storage...
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Starting configuration of replica 724b61f8-b009-4d1c-98db-bf6b6be37980
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> I am master
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Taking on replicaset master role...
-2023-05-02 22:40:42.589 [18719] main/145/remote_control/127.0.0.1:57654 I> Box has been configured
-2023-05-02 22:40:42.590 [18719] main/145/remote_control/127.0.0.1:57654 I> Initializing schema {0.1.15.0}
-2023-05-02 22:40:42.590 [18719] main/165/queue_state_fiber I> Queue state changed: STARTUP
-2023-05-02 22:40:42.590 [18719] main/165/queue_state_fiber I> Queue state changed: RUNNING
-2023-05-02 22:40:42.590 [18719] main/167/applier/admin@localhost:3305 I> remote master 724b61f8-b009-4d1c-98db-bf6b6be37980 at 127.0.0.1:3305 running Tarantool 2.10.6
-2023-05-02 22:40:42.590 [18719] main/167/applier/admin@localhost:3305 I> leaving orphan mode
-2023-05-02 22:40:42.590 [18719] main/167/applier/admin@localhost:3305 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
-2023-05-02 22:40:42.605 [18719] main/145/remote_control/127.0.0.1:57654 I> Upgrade vshard schema to {0.1.16.0}
-2023-05-02 22:40:42.605 [18719] main/145/remote_control/127.0.0.1:57654 I> Insert 'vshard_version' into _schema
-2023-05-02 22:40:42.605 [18719] main/145/remote_control/127.0.0.1:57654 I> Create function vshard.storage._call()
-2023-05-02 22:40:42.605 [18719] main/145/remote_control/127.0.0.1:57654 I> Successful vshard schema upgrade to {0.1.16.0}
-2023-05-02 22:40:42.605 [18719] main/145/remote_control/127.0.0.1:57654 I> Upgrade vshard.storage.bucket_recv to accept args as msgpack
-2023-05-02 22:40:42.606 [18719] main/169/vshard.gc I> gc_bucket_f has been started
-2023-05-02 22:40:42.606 [18719] main/170/vshard.recovery I> recovery_f has been started
-2023-05-02 22:40:42.606 [18719] main/145/remote_control/127.0.0.1:57654 I> Took on replicaset master role
-2023-05-02 22:40:42.609 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully applied "vshard-storage" role config in 0.019694 sec
-2023-05-02 22:40:42.609 [18719] main/145/remote_control/127.0.0.1:57654 I> Init "metrics" role
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully initialized "metrics" role in 0.005660 sec
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Appling "metrics" role config
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully applied "metrics" role config in 0.000415 sec
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Init "crud-storage" role
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully initialized "crud-storage" role in 0.000079 sec
-2023-05-02 22:40:42.615 [18719] main/145/remote_control/127.0.0.1:57654 I> Init "storage" role
-2023-05-02 22:40:42.616 [18719] main/145/remote_control/127.0.0.1:57654 I> Successfully initialized "storage" role in 0.000349 sec
-2023-05-02 22:40:42.616 [18719] main/145/remote_control/127.0.0.1:57654 I> Roles configuration finished
-2023-05-02 22:40:42.616 [18719] main/145/remote_control/127.0.0.1:57654 I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:42.616 [18719] main/110/remote_control/127.0.0.1:57654 I> Peer closed when read packet size
-2023-05-02 22:40:42.616 [18719] main/110/remote_control/127.0.0.1:57654 utils.c:489 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
-2023-05-02 22:40:46.295 [18719] main/152/main I> Validate roles configurations
-2023-05-02 22:40:46.295 [18719] main/152/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:46.295 [18719] main/152/main I> Successfully validated config "ddl-manager" role in 0.000009 sec
-2023-05-02 22:40:46.295 [18719] main/152/main I> Validate config "metrics" role
-2023-05-02 22:40:46.295 [18719] main/152/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:46.295 [18719] main/152/main I> Roles configuration validation finished
-2023-05-02 22:40:46.312 [18719] main/152/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
-2023-05-02 22:40:46.315 [18719] main/152/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:46.315 [18719] main/152/main I> Failover disabled
-2023-05-02 22:40:46.315 [18719] main/152/main I> Replicaset b1e77cb5-a5ab-4a93-97bd-9f1f4e3dff30: new leader eecbf0b8-c583-461e-827a-ccf983fd58fc ("localhost:3306"), was nil
-2023-05-02 22:40:46.315 [18719] main/152/main I> Start applying roles config
-2023-05-02 22:40:46.316 [18719] main/152/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:46.316 [18719] main/152/main I> Successfully applied "ddl-manager" role config in 0.000011 sec
-2023-05-02 22:40:46.316 [18719] main/152/main I> Appling "vshard-storage" role config
-2023-05-02 22:40:46.316 [18719] main/152/main I> Successfully applied "vshard-storage" role config in 0.000271 sec
-2023-05-02 22:40:46.316 [18719] main/152/main I> Appling "metrics" role config
-2023-05-02 22:40:46.316 [18719] main/152/main I> Successfully applied "metrics" role config in 0.000295 sec
-2023-05-02 22:40:46.316 [18719] main/152/main I> Roles configuration finished
-2023-05-02 22:40:46.316 [18719] main/152/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:49.568 [18719] main/152/main I> Validate roles configurations
-2023-05-02 22:40:49.569 [18719] main/152/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:49.569 [18719] main/152/main I> Successfully validated config "ddl-manager" role in 0.000008 sec
-2023-05-02 22:40:49.569 [18719] main/152/main I> Validate config "metrics" role
-2023-05-02 22:40:49.569 [18719] main/152/main I> Successfully validated config "metrics" role in 0.000001 sec
-2023-05-02 22:40:49.569 [18719] main/152/main I> Roles configuration validation finished
-2023-05-02 22:40:49.596 [18719] main/152/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
-2023-05-02 22:40:49.600 [18719] main/152/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:49.600 [18719] main/152/main I> Failover disabled
-2023-05-02 22:40:49.600 [18719] main/152/main I> Start applying roles config
-2023-05-02 22:40:49.600 [18719] main/152/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:49.600 [18719] main/152/main I> Successfully applied "ddl-manager" role config in 0.000009 sec
-2023-05-02 22:40:49.600 [18719] main/152/main I> Appling "vshard-storage" role config
-2023-05-02 22:40:49.601 [18719] main/152/main I> Successfully applied "vshard-storage" role config in 0.000353 sec
-2023-05-02 22:40:49.601 [18719] main/152/main I> Appling "metrics" role config
-2023-05-02 22:40:49.601 [18719] main/152/main I> Successfully applied "metrics" role config in 0.000368 sec
-2023-05-02 22:40:49.601 [18719] main/152/main I> Roles configuration finished
-2023-05-02 22:40:49.601 [18719] main/152/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:40:53.308 [18719] main/152/main I> Validate roles configurations
-2023-05-02 22:40:53.309 [18719] main/152/main I> Validate config "ddl-manager" role
-2023-05-02 22:40:53.309 [18719] main/152/main I> Successfully validated config "ddl-manager" role in 0.000012 sec
-2023-05-02 22:40:53.309 [18719] main/152/main I> Validate config "metrics" role
-2023-05-02 22:40:53.309 [18719] main/152/main I> Successfully validated config "metrics" role in 0.000002 sec
-2023-05-02 22:40:53.309 [18719] main/152/main I> Roles configuration validation finished
-2023-05-02 22:40:53.336 [18719] main/152/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
-2023-05-02 22:40:53.341 [18719] main/152/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:40:53.341 [18719] main/152/main I> Stateful failover enabled with stateboard at tcp://localhost:4401
-2023-05-02 22:40:53.355 [18719] main/152/main failover.lua:838 W> Failed to get first appointments: NetboxCallError: "localhost:4401": User not found or supplied credentials are invalid
-stack traceback:
-	builtin/box/net_box.lua:806: in function '_request'
-	builtin/box/net_box.lua:847: in function <builtin/box/net_box.lua:842>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:427: in function 'netbox_call'
-	...l/.rocks/share/tarantool/cartridge/stateboard-client.lua:255: in function '_get_appointments_stateful_mode'
-	...-Tarantool/.rocks/share/tarantool/cartridge/failover.lua:836: in function <...-Tarantool/.rocks/share/tarantool/cartridge/failover.lua:703>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	...rantool/.rocks/share/tarantool/cartridge/confapplier.lua:310: in function <...rantool/.rocks/share/tarantool/cartridge/confapplier.lua:275>
-	[C]: in function 'xpcall'
-	...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:145: in function <...er/Cartridge-Tarantool/.rocks/share/tarantool/errors.lua:139>
-	[C]: at 0x7fd436289de0
-2023-05-02 22:40:53.355 [18719] main/152/main I> Not enough enabled instances to start leader_autoreturn fiber
-2023-05-02 22:40:53.355 [18719] main/152/main I> Start applying roles config
-2023-05-02 22:40:53.355 [18719] main/152/main I> Appling "ddl-manager" role config
-2023-05-02 22:40:53.355 [18719] main/152/main I> Successfully applied "ddl-manager" role config in 0.000009 sec
-2023-05-02 22:40:53.355 [18719] main/152/main I> Appling "vshard-storage" role config
-2023-05-02 22:40:53.355 [18719] main/152/main I> Successfully applied "vshard-storage" role config in 0.000292 sec
-2023-05-02 22:40:53.355 [18719] main/152/main I> Appling "metrics" role config
-2023-05-02 22:40:53.356 [18719] main/152/main I> Successfully applied "metrics" role config in 0.000373 sec
-2023-05-02 22:40:53.356 [18719] main/152/main I> Roles configuration finished
-2023-05-02 22:40:53.356 [18719] main/152/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:41:12.643 [18719] main/182/main I> Validate roles configurations
-2023-05-02 22:41:12.643 [18719] main/182/main I> Validate config "ddl-manager" role
-2023-05-02 22:41:12.643 [18719] main/182/main I> Successfully validated config "ddl-manager" role in 0.000011 sec
-2023-05-02 22:41:12.643 [18719] main/182/main I> Validate config "metrics" role
-2023-05-02 22:41:12.643 [18719] main/182/main I> Successfully validated config "metrics" role in 0.000002 sec
-2023-05-02 22:41:12.643 [18719] main/182/main I> Roles configuration validation finished
-2023-05-02 22:41:12.671 [18719] main/182/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
-2023-05-02 22:41:12.676 [18719] main/182/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2023-05-02 22:41:12.676 [18719] main/182/main I> Stateful failover enabled with stateboard at localhost:4401
-2023-05-02 22:41:12.679 [18719] main/182/main I> Not enough enabled instances to start leader_autoreturn fiber
-2023-05-02 22:41:12.679 [18719] main/182/main I> Start applying roles config
-2023-05-02 22:41:12.679 [18719] main/182/main I> Appling "ddl-manager" role config
-2023-05-02 22:41:12.679 [18719] main/182/main I> Successfully applied "ddl-manager" role config in 0.000016 sec
-2023-05-02 22:41:12.679 [18719] main/182/main I> Appling "vshard-storage" role config
-2023-05-02 22:41:12.679 [18719] main/182/main I> Successfully applied "vshard-storage" role config in 0.000256 sec
-2023-05-02 22:41:12.679 [18719] main/182/main I> Appling "metrics" role config
-2023-05-02 22:41:12.679 [18719] main/182/main I> Successfully applied "metrics" role config in 0.000360 sec
-2023-05-02 22:41:12.679 [18719] main/182/main I> Roles configuration finished
-2023-05-02 22:41:12.679 [18719] main/182/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2023-05-02 22:41:22.597 [18719] main C> got signal 15 - Terminated
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Stop "ddl-manager" role
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Stop "vshard-storage" role
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Starting reconfiguration of replica 724b61f8-b009-4d1c-98db-bf6b6be37980
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Resigning from the replicaset master role...
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Box has been configured
-2023-05-02 22:41:22.597 [18719] main/202/lua I> Old replicaset and replica objects are outdated.
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> GC stopped
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Recovery stopped
-2023-05-02 22:41:22.597 [18719] main/201/trigger_fiber1 I> Resigned from the replicaset master role
-2023-05-02 22:41:22.616 [18719] main/201/trigger_fiber1 I> Successfully stopped "vshard-storage" role in 0.019110 sec
-2023-05-02 22:41:22.616 [18719] main/201/trigger_fiber1 I> Stop "metrics" role
-2023-05-02 22:41:22.616 [18719] main/201/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000008 sec
-2023-05-02 22:41:22.616 [18719] main/201/trigger_fiber1 I> Stop "crud-storage" role
-2023-05-02 22:41:22.616 [18719] main/201/trigger_fiber1 I> Successfully stopped "crud-storage" role in 0.000001 sec
-2023-05-02 22:41:22.627 [18719] main/200/iproto.shutdown I> tx_binary: stopped
+2023-05-04 16:58:42.490 [27313] main/103/init.lua I> Using advertise_uri "localhost:3305"
+2023-05-04 16:58:42.491 [27313] main/103/init.lua I> Membership encryption enabled
+2023-05-04 16:58:42.500 [27313] main/103/init.lua I> Probe uri was successful
+2023-05-04 16:58:42.501 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3306
+2023-05-04 16:58:42.502 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3306
+2023-05-04 16:58:42.503 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3306
+2023-05-04 16:58:42.504 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3306
+2023-05-04 16:58:42.504 [27313] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3306
+2023-05-04 16:58:42.505 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3306
+2023-05-04 16:58:42.506 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3304
+2023-05-04 16:58:42.507 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3304
+2023-05-04 16:58:42.508 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3304
+2023-05-04 16:58:42.509 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3304
+2023-05-04 16:58:42.510 [27313] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3304
+2023-05-04 16:58:42.511 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3304
+2023-05-04 16:58:42.512 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3301
+2023-05-04 16:58:42.513 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3301
+2023-05-04 16:58:42.513 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3301
+2023-05-04 16:58:42.514 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3301
+2023-05-04 16:58:42.515 [27313] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
+2023-05-04 16:58:42.515 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3301
+2023-05-04 16:58:42.516 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.1.255:3305
+2023-05-04 16:58:42.517 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.28.63.255:3305
+2023-05-04 16:58:42.517 [27313] main/103/init.lua I> Membership BROADCAST sent to 192.168.56.255:3305
+2023-05-04 16:58:42.518 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.29.175.255:3305
+2023-05-04 16:58:42.519 [27313] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3305
+2023-05-04 16:58:42.519 [27313] main/103/init.lua I> Membership BROADCAST sent to 172.30.15.255:3305
+2023-05-04 16:58:42.520 [27313] main/107/http/0.0.0.0:8085 I> started
+2023-05-04 16:58:42.521 [27313] main/103/init.lua I> Listening HTTP on 0.0.0.0:8085
+2023-05-04 16:58:42.522 [27313] main/108/console/unix/:/home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.control I> started
+2023-05-04 16:58:42.522 [27313] main/103/init.lua I> Load modules and register
+2023-05-04 16:58:42.562 [27313] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
+2023-05-04 16:58:42.568 [27313] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
+2023-05-04 16:58:42.583 [27313] main/109/remote_control/127.0.0.1:3305 I> started
+2023-05-04 16:58:42.583 [27313] main/103/init.lua I> Remote control bound to 127.0.0.1:3305
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> Remote control ready to accept connections
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> Instance state changed:  -> Unconfigured
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> Cartridge 2.7.9
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> server alias s2-replica
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> advertise uri localhost:3305
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> Cartridge options:
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> advertise_uri = localhost:3305
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> alias = s2-replica
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> auth_backend_name = cartridge.auth-backend
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> auth_enabled = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> bucket_count = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> console_sock = /home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.control
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> http_enabled = true
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> http_host = 0.0.0.0
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> http_port = 8085
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> roles = ["cartridge.roles.crud-router","cartridge.roles.crud-storage","cartridge.roles.metrics","app.roles.api","app.roles.repo_api","app.roles.storage","app.roles.myqueue"]
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> roles_reload_allowed = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> swim_broadcast = true
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> upgrade_schema = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> upload_prefix = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> vshard_groups = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> webui_blacklist = nil
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> webui_enabled = true
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> webui_enforce_root_redirect = true
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> webui_prefix = 
+2023-05-04 16:58:42.584 [27313] main/103/init.lua I> workdir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:42.584 [27313] main/103/init.lua cartridge.lua:910 W> In the next releases validation of instances labels will be more strict. Make sure you don't use invalid labels. For details, see https://github.com/tarantool/cartridge/pull/1980
+2023-05-04 16:58:42.585 [27313] main/103/init.lua I> Set default metrics endpoints
+2023-05-04 16:58:42.585 [27313] main I> entering the event loop
+2023-05-04 16:58:42.585 [27313] main systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Validate roles configurations
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Validate config "ddl-manager" role
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Successfully validated config "ddl-manager" role in 0.000008 sec
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Validate config "vshard-router" role
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Successfully validated config "vshard-router" role in 0.000045 sec
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Validate config "crud-router" role
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Successfully validated config "crud-router" role in 0.000001 sec
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Validate config "metrics" role
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:58:46.163 [27313] main/114/remote_control/127.0.0.1:63001 I> Roles configuration validation finished
+2023-05-04 16:58:46.180 [27313] main/115/remote_control/127.0.0.1:63001 I> Instance state changed: Unconfigured -> BootstrappingBox
+2023-05-04 16:58:46.180 [27313] main/115/remote_control/127.0.0.1:63001 confapplier.lua:549 W> Calling box.cfg()...
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> Tarantool 2.10.6-0-g3990f976b Linux-x86_64-RelWithDebInfo
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> log level 5
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> wal/engine cleanup is paused
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> mapping 268435456 bytes for memtx tuple arena...
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2023-05-04 16:58:46.181 [27313] main/115/remote_control/127.0.0.1:63001 I> mapping 134217728 bytes for vinyl tuple arena...
+2023-05-04 16:58:46.182 [27313] main/115/remote_control/127.0.0.1:63001 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:46.183 [27313] main/115/remote_control/127.0.0.1:63001 I> update replication_synchro_quorum = 1
+2023-05-04 16:58:46.183 [27313] main/115/remote_control/127.0.0.1:63001 I> instance uuid 6f45a305-958b-4e30-9e30-679c3ab515fb
+2023-05-04 16:58:46.183 [27313] main/116/remote_control/127.0.0.1:63001 I> Cartridge 2.7.9
+2023-05-04 16:58:46.183 [27313] main/116/remote_control/127.0.0.1:63001 I> server alias s2-replica
+2023-05-04 16:58:46.183 [27313] main/116/remote_control/127.0.0.1:63001 I> advertise uri localhost:3305
+2023-05-04 16:58:46.183 [27313] main/116/remote_control/127.0.0.1:63001 I> working directory /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:46.183 [27313] main/115/remote_control/127.0.0.1:63001 I> connecting to 1 replicas
+2023-05-04 16:58:46.198 [27313] main/123/applier/admin@localhost:3304 I> remote master 00000000-0000-0000-0000-000000000000 at 127.0.0.1:3304 running Tarantool 1.10.0
+2023-05-04 16:58:46.198 [27313] main/123/applier/admin@localhost:3304 I> can't connect to master
+2023-05-04 16:58:46.198 [27313] main/123/applier/admin@localhost:3304 coio.c:326 E> SocketError: unexpected EOF when reading from socket, called on fd 26, aka 127.0.0.1:63003, peer of 127.0.0.1:3304: Broken pipe
+2023-05-04 16:58:46.198 [27313] main/123/applier/admin@localhost:3304 I> will retry every 1.00 second
+2023-05-04 16:58:47.200 [27313] main/123/applier/admin@localhost:3304 I> remote master b75d1c4c-7a2c-4198-b83c-fa75664326d7 at 127.0.0.1:3304 running Tarantool 2.10.6
+2023-05-04 16:58:47.200 [27313] main/115/remote_control/127.0.0.1:63001 I> connected to 1 replicas
+2023-05-04 16:58:47.200 [27313] main/123/applier/admin@localhost:3304 I> authenticated
+2023-05-04 16:58:47.200 [27313] main/115/remote_control/127.0.0.1:63001 I> bootstrapping replica from b75d1c4c-7a2c-4198-b83c-fa75664326d7 at 127.0.0.1:3304
+2023-05-04 16:58:47.201 [27313] main/123/applier/admin@localhost:3304 I> cluster uuid 51d29780-eb8a-45e1-8c0a-61448eafb5c9
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> assigned id 1 to replica b75d1c4c-7a2c-4198-b83c-fa75664326d7
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> update replication_synchro_quorum = 1
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> initial data received
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> assigned id 2 to replica 6f45a305-958b-4e30-9e30-679c3ab515fb
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> update replication_synchro_quorum = 2
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> RAFT: fencing paused
+2023-05-04 16:58:47.216 [27313] main/123/applier/admin@localhost:3304 I> final data received
+2023-05-04 16:58:47.217 [27313] snapshot/101/main I> saving snapshot `/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/00000000000000000068.snap.inprogress'
+2023-05-04 16:58:47.220 [27313] snapshot/101/main I> done
+2023-05-04 16:58:47.220 [27313] main/115/remote_control/127.0.0.1:63001 I> RAFT: fencing enabled
+2023-05-04 16:58:47.220 [27313] main/115/remote_control/127.0.0.1:63001 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.220 [27313] main/115/remote_control/127.0.0.1:63001 I> ready to accept requests
+2023-05-04 16:58:47.221 [27313] main/115/remote_control/127.0.0.1:63001 I> synchronizing with 1 replicas
+2023-05-04 16:58:47.221 [27313] main/123/applier/admin@localhost:3304 I> subscribed
+2023-05-04 16:58:47.221 [27313] main/123/applier/admin@localhost:3304 I> remote vclock {1: 68} local vclock {1: 68}
+2023-05-04 16:58:47.221 [27313] main/123/applier/admin@localhost:3304 I> RAFT: message {term: 1, state: follower} from 1
+2023-05-04 16:58:47.221 [27313] main/123/applier/admin@localhost:3304 I> leaving orphan mode
+2023-05-04 16:58:47.221 [27313] main/123/applier/admin@localhost:3304 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.221 [27313] main/115/remote_control/127.0.0.1:63001 I> replica set sync complete
+2023-05-04 16:58:47.221 [27313] main/115/remote_control/127.0.0.1:63001 I> leaving orphan mode
+2023-05-04 16:58:47.221 [27313] main/115/remote_control/127.0.0.1:63001 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.221 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'custom_proc_title' configuration option to "myapp@s2-replica"
+2023-05-04 16:58:47.222 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'log_level' configuration option to 5
+2023-05-04 16:58:47.222 [27313] main/118/checkpoint_daemon I> scheduled next checkpoint for Thu May  4 18:35:53 2023
+2023-05-04 16:58:47.226 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'log_format' configuration option to "plain"
+2023-05-04 16:58:47.226 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'instance_uuid' configuration option to "6f45a305-958b-4e30-9e30-679c3ab515fb"
+2023-05-04 16:58:47.228 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'replication_connect_quorum' configuration option to 100
+2023-05-04 16:58:47.228 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'read_only' configuration option to true
+2023-05-04 16:58:47.228 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'replication' configuration option to ["admin@localhost:3304"]
+2023-05-04 16:58:47.228 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'replicaset_uuid' configuration option to "51d29780-eb8a-45e1-8c0a-61448eafb5c9"
+2023-05-04 16:58:47.229 [27313] main/115/remote_control/127.0.0.1:63001 I> Making sure user "admin" exists...
+2023-05-04 16:58:47.229 [27313] main/115/remote_control/127.0.0.1:63001 I> Granting replication permissions to "admin"...
+2023-05-04 16:58:47.229 [27313] main/115/remote_control/127.0.0.1:63001 I> Remote control stopped
+2023-05-04 16:58:47.229 [27313] main/109/remote_control/127.0.0.1:3305 I> stopped
+2023-05-04 16:58:47.229 [27313] main/115/remote_control/127.0.0.1:63001 I> tx_binary: bound to 127.0.0.1:3305
+2023-05-04 16:58:47.229 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'listen' configuration option to "127.0.0.1:3305"
+2023-05-04 16:58:47.230 [27313] main/115/remote_control/127.0.0.1:63001 I> dropping fd 26, aka 127.0.0.1:3305, peer 127.0.0.1:63010
+2023-05-04 16:58:47.230 [27313] main/115/remote_control/127.0.0.1:63001 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
+2023-05-04 16:58:47.230 [27313] main/115/remote_control/127.0.0.1:63001 I> connecting to 2 replicas
+2023-05-04 16:58:47.230 [27313] main/125/remote_control/127.0.0.1:63010 I> Peer closed when read packet size
+2023-05-04 16:58:47.231 [27313] main/134/applier/admin@localhost:3304 I> remote master b75d1c4c-7a2c-4198-b83c-fa75664326d7 at 127.0.0.1:3304 running Tarantool 2.10.6
+2023-05-04 16:58:47.232 [27313] main/135/applier/admin@localhost:3305 I> remote master 6f45a305-958b-4e30-9e30-679c3ab515fb at 127.0.0.1:3305 running Tarantool 2.10.6
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 I> connected to 2 replicas
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 I> synchronizing with 2 replicas
+2023-05-04 16:58:47.232 [27313] main/135/applier/admin@localhost:3305 I> leaving orphan mode
+2023-05-04 16:58:47.232 [27313] main/135/applier/admin@localhost:3305 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 I> replica set sync complete
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 I> leaving orphan mode
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.232 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'replication' configuration option to ["admin@localhost:3304","admin@localhost:3305"]
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> Tarantool options:
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> audit_log = nil
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> audit_nonblock = true
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> audit_format = json
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> audit_filter = compatibility
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> background = false
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> checkpoint_count = 2
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> checkpoint_interval = 3600
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> checkpoint_wal_threshold = 1e+18
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> custom_proc_title = myapp@s2-replica
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> election_fencing_mode = nil
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> election_mode = off
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> election_timeout = 5
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> feedback_enabled = true
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> feedback_host = https://feedback.tarantool.io
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> feedback_interval = 3600
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> feedback_crashinfo = true
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_enabled = false
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_logs_size = 10485760
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_logs_max_msg_size = 4096
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_logs_log_level = 6
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_metrics_interval = 1
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_metrics_period = 180
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_requests_size = 10485760
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_requests_max_req_size = 16384
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> flightrec_requests_max_res_size = 16384
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> force_recovery = false
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> hot_standby = false
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> instance_uuid = 6f45a305-958b-4e30-9e30-679c3ab515fb
+2023-05-04 16:58:47.237 [27313] main/115/remote_control/127.0.0.1:63001 I> io_collect_interval = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> iproto_threads = 1
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> listen = 127.0.0.1:3305
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> log = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> log_format = plain
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> log_level = 5
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> log_nonblock = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_max_tuple_size = 1048576
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_memory = 268435456
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_allocator = small
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_min_tuple_size = 16
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> memtx_use_mvcc_engine = false
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> net_msg_max = 768
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> pid_file = /home/user/Cartridge-Tarantool/tmp/run/myapp.s2-replica.pid
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> read_only = true
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> readahead = 16320
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replicaset_uuid = 51d29780-eb8a-45e1-8c0a-61448eafb5c9
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication = table: 0x7f5d1af0
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_anon = false
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_connect_quorum = 100
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_connect_timeout = 30
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_skip_conflict = false
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_sync_lag = 10
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_sync_timeout = 300
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_synchro_quorum = N / 2 + 1
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_synchro_timeout = 5
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_timeout = 1
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> replication_threads = 1
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> slab_alloc_factor = 1.05
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> slab_alloc_granularity = 8
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> snap_io_rate_limit = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> sql_cache_size = 5242880
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> strip_core = true
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> txn_isolation = best-effort
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> too_long_threshold = 0.5
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> username = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_bloom_fpr = 0.05
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_cache = 134217728
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_defer_deletes = false
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_max_tuple_size = 1048576
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_memory = 134217728
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_page_size = 8192
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_range_size = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_read_threads = 1
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_run_count_per_level = 2
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_run_size_ratio = 3.5
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_timeout = 60
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> vinyl_write_threads = 4
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_dir = /home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_dir_rescan_delay = 2
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_max_size = 268435456
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_queue_max_size = 16777216
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_cleanup_delay = 14400
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> wal_mode = write
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> work_dir = nil
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> worker_pool_threads = 4
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> txn_timeout = 3153600000
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> Instance state changed: BoxConfigured -> ConfiguringRoles
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> leaving orphan mode
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 systemd.c:134 !> systemd: failed to send message: Transport endpoint is not connected
+2023-05-04 16:58:47.238 [27313] main/115/remote_control/127.0.0.1:63001 I> set 'replication_connect_quorum' configuration option to 0
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Failover disabled
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Replicaset b9796ada-4da2-4b07-82ae-4638a6bb3fe4: new leader 6a0939be-03df-4add-bb58-51e26fcf8686 ("localhost:3302"), was nil
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Replicaset 51d29780-eb8a-45e1-8c0a-61448eafb5c9 (me): new leader b75d1c4c-7a2c-4198-b83c-fa75664326d7 ("localhost:3304"), was nil
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Replicaset 423373ad-c217-43ba-a5d9-3694d0d786b1: new leader 358669e6-ad17-491d-b96b-c3a5899d0fce ("localhost:3306"), was nil
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Replicaset ae954f0d-f188-439d-bec4-f2af942e605a: new leader 06511852-f3a5-4e6d-ba0b-78097cf9b49c ("localhost:3301"), was nil
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Start applying roles config
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Init "ddl-manager" role
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully initialized "ddl-manager" role in 0.000001 sec
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Appling "ddl-manager" role config
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully applied "ddl-manager" role config in 0.000001 sec
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Init "vshard-storage" role
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully initialized "vshard-storage" role in 0.000005 sec
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Appling "vshard-storage" role config
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Reconfiguring vshard.storage...
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Starting configuration of replica 6f45a305-958b-4e30-9e30-679c3ab515fb
+2023-05-04 16:58:47.239 [27313] main/115/remote_control/127.0.0.1:63001 I> Box has been configured
+2023-05-04 16:58:47.242 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully applied "vshard-storage" role config in 0.003277 sec
+2023-05-04 16:58:47.242 [27313] main/115/remote_control/127.0.0.1:63001 I> Init "crud-storage" role
+2023-05-04 16:58:47.242 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully initialized "crud-storage" role in 0.000007 sec
+2023-05-04 16:58:47.242 [27313] main/115/remote_control/127.0.0.1:63001 I> Init "metrics" role
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully initialized "metrics" role in 0.004690 sec
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Appling "metrics" role config
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully applied "metrics" role config in 0.000209 sec
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Init "app.roles.storage" role
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Successfully initialized "app.roles.storage" role in 0.000001 sec
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Roles configuration finished
+2023-05-04 16:58:47.247 [27313] main/115/remote_control/127.0.0.1:63001 I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:47.248 [27313] main/110/remote_control/127.0.0.1:63001 I> Peer closed when read packet size
+2023-05-04 16:58:47.248 [27313] main/110/remote_control/127.0.0.1:63001 utils.c:489 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
+2023-05-04 16:58:47.248 [27313] main/122/main I> subscribed replica b75d1c4c-7a2c-4198-b83c-fa75664326d7 at fd 28, aka 127.0.0.1:3305, peer of 127.0.0.1:63021
+2023-05-04 16:58:47.248 [27313] main/122/main I> remote vclock {1: 68} local vclock {1: 68}
+2023-05-04 16:58:47.248 [27313] main/117/gc I> wal/engine cleanup is resumed
+2023-05-04 16:58:47.261 [27313] main/136/main I> Validate roles configurations
+2023-05-04 16:58:47.261 [27313] main/136/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:47.261 [27313] main/136/main I> Successfully validated config "ddl-manager" role in 0.000012 sec
+2023-05-04 16:58:47.261 [27313] main/136/main I> Validate config "metrics" role
+2023-05-04 16:58:47.261 [27313] main/136/main I> Successfully validated config "metrics" role in 0.000002 sec
+2023-05-04 16:58:47.261 [27313] main/136/main I> Roles configuration validation finished
+2023-05-04 16:58:47.277 [27313] main/136/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
+2023-05-04 16:58:47.282 [27313] main/136/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:47.282 [27313] main/136/main I> Failover disabled
+2023-05-04 16:58:47.282 [27313] main/136/main I> Start applying roles config
+2023-05-04 16:58:47.282 [27313] main/136/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:47.282 [27313] main/136/main I> Successfully applied "ddl-manager" role config in 0.000001 sec
+2023-05-04 16:58:47.282 [27313] main/136/main I> Appling "vshard-storage" role config
+2023-05-04 16:58:47.283 [27313] main/136/main I> Successfully applied "vshard-storage" role config in 0.000440 sec
+2023-05-04 16:58:47.283 [27313] main/136/main I> Appling "metrics" role config
+2023-05-04 16:58:47.283 [27313] main/136/main I> Successfully applied "metrics" role config in 0.000390 sec
+2023-05-04 16:58:47.283 [27313] main/136/main I> Roles configuration finished
+2023-05-04 16:58:47.283 [27313] main/136/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:47.887 [27313] relay/127.0.0.1:63021/101/main I> recover from `/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/00000000000000000068.xlog'
+2023-05-04 16:58:48.012 [27313] main/138/main I> Validate roles configurations
+2023-05-04 16:58:48.012 [27313] main/138/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:48.012 [27313] main/138/main I> Successfully validated config "ddl-manager" role in 0.000014 sec
+2023-05-04 16:58:48.012 [27313] main/138/main I> Validate config "metrics" role
+2023-05-04 16:58:48.013 [27313] main/138/main I> Successfully validated config "metrics" role in 0.000003 sec
+2023-05-04 16:58:48.013 [27313] main/138/main I> Roles configuration validation finished
+2023-05-04 16:58:48.048 [27313] main/138/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
+2023-05-04 16:58:48.050 [27313] main/138/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:48.050 [27313] main/138/main I> Failover disabled
+2023-05-04 16:58:48.050 [27313] main/138/main I> Start applying roles config
+2023-05-04 16:58:48.050 [27313] main/138/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:48.050 [27313] main/138/main I> Successfully applied "ddl-manager" role config in 0.000001 sec
+2023-05-04 16:58:48.051 [27313] main/138/main I> Appling "vshard-storage" role config
+2023-05-04 16:58:48.051 [27313] main/138/main I> Successfully applied "vshard-storage" role config in 0.000433 sec
+2023-05-04 16:58:48.051 [27313] main/138/main I> Appling "metrics" role config
+2023-05-04 16:58:48.051 [27313] main/138/main I> Successfully applied "metrics" role config in 0.000257 sec
+2023-05-04 16:58:48.051 [27313] main/138/main I> Roles configuration finished
+2023-05-04 16:58:48.051 [27313] main/138/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:58:51.913 [27313] main/136/main I> Validate roles configurations
+2023-05-04 16:58:51.913 [27313] main/136/main I> Validate config "ddl-manager" role
+2023-05-04 16:58:51.913 [27313] main/136/main I> Successfully validated config "ddl-manager" role in 0.000012 sec
+2023-05-04 16:58:51.913 [27313] main/136/main I> Validate config "metrics" role
+2023-05-04 16:58:51.913 [27313] main/136/main I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:58:51.913 [27313] main/136/main I> Roles configuration validation finished
+2023-05-04 16:58:51.941 [27313] main/136/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
+2023-05-04 16:58:51.946 [27313] main/136/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:58:51.947 [27313] main/136/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:58:51.948 [27313] main/136/main I> Start applying roles config
+2023-05-04 16:58:51.948 [27313] main/136/main I> Appling "ddl-manager" role config
+2023-05-04 16:58:51.948 [27313] main/136/main I> Successfully applied "ddl-manager" role config in 0.000001 sec
+2023-05-04 16:58:51.948 [27313] main/136/main I> Appling "vshard-storage" role config
+2023-05-04 16:58:51.949 [27313] main/136/main I> Successfully applied "vshard-storage" role config in 0.000205 sec
+2023-05-04 16:58:51.949 [27313] main/136/main I> Appling "metrics" role config
+2023-05-04 16:58:51.949 [27313] main/136/main I> Successfully applied "metrics" role config in 0.000503 sec
+2023-05-04 16:58:51.949 [27313] main/136/main I> Roles configuration finished
+2023-05-04 16:58:51.949 [27313] main/136/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:59:07.343 [27313] main/139/main I> Validate roles configurations
+2023-05-04 16:59:07.343 [27313] main/139/main I> Validate config "ddl-manager" role
+2023-05-04 16:59:07.343 [27313] main/139/main I> Successfully validated config "ddl-manager" role in 0.000011 sec
+2023-05-04 16:59:07.343 [27313] main/139/main I> Validate config "metrics" role
+2023-05-04 16:59:07.343 [27313] main/139/main I> Successfully validated config "metrics" role in 0.000002 sec
+2023-05-04 16:59:07.343 [27313] main/139/main I> Roles configuration validation finished
+2023-05-04 16:59:07.372 [27313] main/139/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
+2023-05-04 16:59:07.377 [27313] main/139/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:59:07.377 [27313] main/139/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:59:07.416 [27313] main/139/main I> Start applying roles config
+2023-05-04 16:59:07.416 [27313] main/139/main I> Appling "ddl-manager" role config
+2023-05-04 16:59:07.416 [27313] main/139/main I> Successfully applied "ddl-manager" role config in 0.000002 sec
+2023-05-04 16:59:07.416 [27313] main/139/main I> Appling "vshard-storage" role config
+2023-05-04 16:59:07.417 [27313] main/139/main I> Successfully applied "vshard-storage" role config in 0.000259 sec
+2023-05-04 16:59:07.417 [27313] main/139/main I> Appling "metrics" role config
+2023-05-04 16:59:07.417 [27313] main/139/main I> Successfully applied "metrics" role config in 0.000155 sec
+2023-05-04 16:59:07.417 [27313] main/139/main I> Roles configuration finished
+2023-05-04 16:59:07.417 [27313] main/139/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 16:59:26.853 [27313] main/139/main I> Validate roles configurations
+2023-05-04 16:59:26.853 [27313] main/139/main I> Validate config "ddl-manager" role
+2023-05-04 16:59:26.853 [27313] main/139/main I> Successfully validated config "ddl-manager" role in 0.000007 sec
+2023-05-04 16:59:26.853 [27313] main/139/main I> Validate config "metrics" role
+2023-05-04 16:59:26.853 [27313] main/139/main I> Successfully validated config "metrics" role in 0.000001 sec
+2023-05-04 16:59:26.853 [27313] main/139/main I> Roles configuration validation finished
+2023-05-04 16:59:26.882 [27313] main/139/main I> Backup of active config created: "/home/user/Cartridge-Tarantool/tmp/data/myapp.s2-replica/config.backup"
+2023-05-04 16:59:26.887 [27313] main/139/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2023-05-04 16:59:26.888 [27313] main/139/main I> Stateful failover enabled with stateboard at localhost:4401
+2023-05-04 16:59:26.911 [27313] main/139/main I> Start applying roles config
+2023-05-04 16:59:26.911 [27313] main/139/main I> Appling "ddl-manager" role config
+2023-05-04 16:59:26.911 [27313] main/139/main I> Successfully applied "ddl-manager" role config in 0.000001 sec
+2023-05-04 16:59:26.911 [27313] main/139/main I> Appling "vshard-storage" role config
+2023-05-04 16:59:26.911 [27313] main/139/main I> Successfully applied "vshard-storage" role config in 0.000304 sec
+2023-05-04 16:59:26.911 [27313] main/139/main I> Appling "metrics" role config
+2023-05-04 16:59:26.911 [27313] main/139/main I> Successfully applied "metrics" role config in 0.000224 sec
+2023-05-04 16:59:26.911 [27313] main/139/main I> Roles configuration finished
+2023-05-04 16:59:26.911 [27313] main/139/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2023-05-04 17:01:55.811 [27313] main C> got signal 15 - Terminated
+2023-05-04 17:01:55.811 [27313] main/151/trigger_fiber1 I> Stop "ddl-manager" role
+2023-05-04 17:01:55.811 [27313] main/151/trigger_fiber1 I> Successfully stopped "ddl-manager" role in 0.000003 sec
+2023-05-04 17:01:55.811 [27313] main/151/trigger_fiber1 I> Stop "vshard-storage" role
+2023-05-04 17:01:55.811 [27313] main/151/trigger_fiber1 I> Starting reconfiguration of replica 6f45a305-958b-4e30-9e30-679c3ab515fb
+2023-05-04 17:01:55.811 [27313] main/151/trigger_fiber1 I> Box has been configured
+2023-05-04 17:01:55.811 [27313] main/152/lua I> Old replicaset and replica objects are outdated.
+2023-05-04 17:01:55.821 [27313] main/151/trigger_fiber1 I> Successfully stopped "vshard-storage" role in 0.010729 sec
+2023-05-04 17:01:55.822 [27313] main/151/trigger_fiber1 I> Stop "crud-storage" role
+2023-05-04 17:01:55.822 [27313] main/151/trigger_fiber1 I> Successfully stopped "crud-storage" role in 0.000002 sec
+2023-05-04 17:01:55.822 [27313] main/151/trigger_fiber1 I> Stop "metrics" role
+2023-05-04 17:01:55.822 [27313] main/151/trigger_fiber1 I> Successfully stopped "metrics" role in 0.000006 sec
+2023-05-04 17:01:55.822 [27313] main/150/iproto.shutdown I> tx_binary: stopped
