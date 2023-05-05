@@ -5,6 +5,8 @@ local crud = require('crud')
 local log = require('log')
 local os = require('os')
 local tnt_kafka = require('kafka')
+local json = require('json')
+
 
 local err_httpd = errors.new_class("httpd error")
 
@@ -38,6 +40,28 @@ local function http_kafka_producer()
     producer:close()
 end
 
+local function kafka_producer(customer)
+    local cluster_config = cartridge.config_get_deepcopy()
+    local hello_section = cluster_config['hello']
+    local var = hello_section['name2']
+    local producer, err = tnt_kafka.Producer.create({ brokers = var })
+    if err ~= nil then
+        log.info(err)
+        os.exit(1)
+    end
+    local err = producer:produce({
+        topic = "topic_json",
+        key = "key_json",
+        value = json.encode(customer)
+    })
+    if err ~= nil then
+        log.info(string.format("got error '%s' while sending value '%s'", err, customer))
+    else
+        log.info(string.format("successfully sent value '%s'", customer))
+    end
+    producer:close()
+end
+
 local function http_customer_add(req)
     local customer = req:json()
     local _, err = crud.insert_object('customer', customer)
@@ -52,7 +76,7 @@ local function http_customer_add(req)
     end
 
     cartridge.rpc_call('app.roles.myqueue', 'on_replace_function', {customer})
-
+    kafka_producer(customer)
     local resp = req:render({json = { info = "Successfully created" }})
     resp.status = 201
 
